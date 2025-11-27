@@ -1,0 +1,162 @@
+/* ============================================================
+   OPTIMIZACIONES DE RENDIMIENTO
+   ============================================================ */
+
+/* Reducir animaciones en dispositivos de bajo rendimiento */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Optimizar rendering - usar will-change solo cuando sea necesario */
+.card:hover,
+.editorial-card:hover,
+.cat-box:hover,
+.popular-card:hover {
+    will-change: transform;
+}
+
+/* Remover will-change después de la animación */
+.card,
+.editorial-card,
+.cat-box,
+.popular-card {
+    will-change: auto;
+}
+
+/* Usar transform en lugar de propiedades que causan reflow */
+.cta-button:hover,
+.hero-btn:hover,
+.card-btn:hover {
+    will-change: transform, box-shadow;
+}
+
+/* Optimizar parallax - desactivar en móviles */
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll !important;
+    }
+}
+
+/* Reducir complejidad de sombras en hover */
+.card:hover {
+    box-shadow: 0 15px 30px rgba(0, 200, 83, 0.15);
+}
+
+.editorial-card:hover {
+    box-shadow: 0 12px 35px rgba(0, 200, 83, 0.12);
+}
+
+/* Lazy loading para imágenes */
+img {
+    content-visibility: auto;
+}
+
+/* Prevenir layout shift en imágenes */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Aspect ratio para imágenes de cards */
+.card img,
+.editorial-card img,
+.popular-card img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* Optimizar animaciones con GPU - usar translate3d */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Reducir delays de animación para carga más rápida */
+.card:nth-child(n+5) {
+    animation-delay: 0.2s !important;
+}
+
+.editorial-card:nth-child(n+5) {
+    animation-delay: 0.2s !important;
+}
+
+/* Optimizar transiciones - más suaves y rápidas */
+* {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.2s;
+}
+
+/* Prevenir layout shift */
+.card h3 {
+    min-height: 60px;
+    contain: layout;
+}
+
+.card p {
+    min-height: 72px;
+    contain: layout;
+}
+
+/* Optimizar backdrop-filter para mejor rendimiento */
+.main-header {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.widget-box {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Reducir repaints - usar contain */
+.card,
+.editorial-card,
+.article-card {
+    contain: layout style paint;
+}
+
+/* Optimizar scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Mejorar performance de hover effects */
+.card,
+.editorial-card,
+.cta-button,
+.card-btn {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}

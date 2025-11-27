@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Página Principal -->
+  <url>
+    <loc>https://avfinanzas.com/</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Páginas de Categorías -->
+  <url>
+    <loc>https://avfinanzas.com/todos-los-articulos.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/economia.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/mercados.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/criptomonedas.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/empresas.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Artículos Principales -->
+  <url>
+    <loc>https://avfinanzas.com/fondos-indexados-guia.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/ahorro-jubilacion-guia.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/nfts-inversion-especulacion.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/empresas-tecnologicas-emergentes.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/inflacion-proteger-dinero.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/trading-vs-inversion-largo-plazo.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/tarjetas-credito-guia.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/estrategias-inversion-2025.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/guia-basica-defi.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/analisis-sector-tecnologico.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Artículos de Noticias -->
+  <url>
+    <loc>https://avfinanzas.com/economia-articulo1.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/dolar-sube-presiona-economias-emergentes.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/bitcoin-ethereum-rebote-mercado-cripto.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/tecnologicas-mantienen-crecimiento.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/impacto-tasas-interes.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/presupuesto-que-funciona.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/auge-banca-digital.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Páginas Legales -->
+  <url>
+    <loc>https://avfinanzas.com/politica-privacidad.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/cookies.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/aviso-legal.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://avfinanzas.com/contacto.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+</urlset>

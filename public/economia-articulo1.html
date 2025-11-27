@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendencias del mercado esta semana | AV Finanzas</title>
+
+    <meta name="description"
+        content="Análisis detallado de las tendencias del mercado esta semana: bolsas, divisas, renta fija y riesgos clave que siguen de cerca los inversores.">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="AV Finanzas - Portal de información financiera">
+        </div>
+
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="todos-los-articulos.html">Noticias</a></li>
+                <li><a href="economia.html">Economía</a></li>
+                <li><a href="mercados.html">Mercados</a></li>
+                <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <a href="todos-los-articulos.html" class="cta-button">Leer artículos</a>
+        </nav>
+    </header>
+
+    <!-- Barra de progreso de lectura -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <main class="article-layout">
+
+        <!-- Migas de pan -->
+        <nav class="breadcrumb">
+            <a href="index.html">Inicio</a> ›
+            <a href="economia.html">Economía</a> ›
+            <span>Tendencias del mercado esta semana</span>
+        </nav>
+
+        <!-- Hero del artículo -->
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Economía</span>
+                <h1>Tendencias del mercado esta semana</h1>
+                <p class="article-subtitle">
+                    Un repaso claro y estructurado a los movimientos que están marcando a las bolsas, las divisas
+                    y la confianza de los inversores.
+                </p>
+                <div class="article-meta-row">
+                    <span>Actualizado: Noviembre 2025</span>
+                    <span>·</span>
+                    <span>Tiempo de lectura: 8 min</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estadísticas clave -->
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box">
+                <span class="stat-number" data-count="2.4" data-suffix="%">0%</span>
+                <span class="stat-label">S&P 500 Semanal</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="1.8" data-suffix="%">0%</span>
+                <span class="stat-label">Nasdaq Semanal</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="3.2" data-suffix="%">0%</span>
+                <span class="stat-label">Inflación Anual</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="5.25" data-suffix="%">0%</span>
+                <span class="stat-label">Tasa de Interés</span>
+            </div>
+        </div>
+
+        <!-- Resumen rápido plegable -->
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen rápido</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>Los principales índices muestran una ligera recuperación tras semanas de volatilidad.</li>
+                    <li>Los datos macroeconómicos ofrecen señales mixtas, pero mejores de lo esperado.</li>
+                    <li>Las divisas se mueven con menos tensión y el dólar se mantiene estable.</li>
+                    <li>La renta fija sigue siendo clave para quienes priorizan estabilidad.</li>
+                    <li>Los analistas recomiendan prudencia, diversificación y foco en el largo plazo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Espacio para anuncio dentro del artículo -->
+        <div class="ad-space ad-in-article">
+            <!-- Aquí irá el bloque de anuncio de AdSense -->
+        </div>
+
+        <!-- Índice de contenidos -->
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
+                <li><a href="#contexto">1. Contexto general de la semana</a></li>
+                <li><a href="#bolsas">2. Bolsas y renta variable</a></li>
+                <li><a href="#divisas">3. Divisas: dólar, euro y emergentes</a></li>
+                <li><a href="#renta-fija">4. Renta fija y tipos de interés</a></li>
+                <li><a href="#riesgos">5. Riesgos que siguen presentes</a></li>
+                <li><a href="#que-hacer">6. Qué puede hacer el inversor informado</a></li>
+                <li><a href="#faq">7. Preguntas frecuentes</a></li>
+            </ol>
+        </aside>
+
+        <!-- Contenido principal -->
+        <article class="article-content">
+
+            <section id="contexto">
+                <h2>1. Contexto general de la semana</h2>
+                <p>
+                    La semana ha estado marcada por una mejora gradual del sentimiento en los mercados. Los inversores
+                    siguen pendientes de los datos de inflación, de las decisiones de los bancos centrales y de los
+                    resultados empresariales, pero el tono general ha pasado de la preocupación intensa a una postura
+                    más constructiva.
+                </p>
+                <p>
+                    Los principales índices bursátiles han cerrado varias sesiones en positivo, aunque con variaciones
+                    moderadas. Este comportamiento suele ser típico de fases en las que el mercado empieza a digerir
+                    noticias previas y a reajustar expectativas.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Claves rápidas de la semana</h3>
+                    <ul>
+                        <li>Los índices han oscilado entre pequeñas alzas y correcciones puntuales.</li>
+                        <li>Los datos de empleo y consumo han sido mejores de lo previsto en varias economías.</li>
+                        <li>Los bancos centrales mantienen un mensaje prudente, pero menos agresivo que meses atrás.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Gráfico de tendencias del mercado -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Evolución de Índices Principales (Últimos 7 días)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="marketTrendsChart"></canvas>
+                </div>
+            </div>
+
+            <section id="bolsas">
+                <h2>2. Bolsas y renta variable: estabilización con matices</h2>
+                <p>
+                    En la renta variable, la sensación predominante ha sido la de cierta calma después de semanas de
+                    movimientos bruscos. Algunos sectores han destacado por encima del promedio, especialmente
+                    aquellos ligados a tecnología, salud y consumo básico.
+                </p>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>Sectores con mejor comportamiento</h3>
+                        <ul>
+                            <li>Tecnología: beneficiada por expectativas de crecimiento a largo plazo.</li>
+                            <li>Salud: percibida como sector defensivo en momentos de incertidumbre.</li>
+                            <li>Consumo básico: empresas ligadas a bienes esenciales mantienen ingresos estables.</li>
+                        </ul>
+                    </div>
+                    <div class="card-info">
+                        <h3>Sectores más volátiles</h3>
+                        <ul>
+                            <li>Energía: muy ligada a la evolución de las materias primas.</li>
+                            <li>Servicios cíclicos: sensibles a cambios en el consumo y la confianza.</li>
+                            <li>Industriales: afectados por costes de transporte y materias primas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Rendimiento por sector -->
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Rendimiento Semanal por Sector</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="sectorPerformanceChart"></canvas>
+                    </div>
+                </div>
+
+                <p>
+                    A nivel técnico, muchos índices se sitúan en zonas intermedias, lejos de mínimos recientes, pero
+                    también sin romper máximos anteriores. Esto suele interpretarse como una fase de consolidación:
+                    el mercado toma aire antes de definir un movimiento más claro.
+                </p>
+            </section>
+
+            <section id="divisas">
+                <h2>3. Divisas: menor tensión, pero con movimientos relevantes</h2>
+                <p>
+                    En el mercado de divisas, el dólar ha registrado movimientos más contenidos respecto a semanas
+                    anteriores. Esta estabilidad ha supuesto un ligero alivio para algunas economías emergentes,
+                    que habían sufrido por la fortaleza de la moneda estadounidense.
+                </p>
+
+                <p>
+                    El euro, por su parte, se ha movido dentro de un rango relativamente acotado, reflejando la espera
+                    de nuevos datos macroeconómicos y anuncios de política monetaria en la zona euro.
+                </p>
+
+                <div class="table-wrapper fade-in-scroll">
+                    <table class="simple-table">
+                        <thead>
+                            <tr>
+                                <th>Par de divisas</th>
+                                <th>Tendencia semanal</th>
+                                <th>Comentario general</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>EUR / USD</td>
+                                <td>Ligera estabilidad</td>
+                                <td>Oscila en un rango sin grandes rupturas.</td>
+                            </tr>
+                            <tr>
+                                <td>USD / JPY</td>
+                                <td>Movimientos moderados</td>
+                                <td>Atento a cambios en expectativas de tipos.</td>
+                            </tr>
+                            <tr>
+                                <td>Divisas emergentes</td>
+                                <td>Alivio parcial</td>
+                                <td>Menor presión cambiaria que semanas atrás.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="renta-fija">
+                <h2>4. Renta fija y tipos de interés</h2>
+                <p>
+                    La renta fija sigue ocupando un lugar central en el análisis de muchos inversores. Los movimientos
+                    de los bonos soberanos y corporativos ofrecen pistas sobre cómo interpreta el mercado las
+                    decisiones de los bancos centrales y las perspectivas de inflación.
+                </p>
+
+                <p>
+                    En esta semana se han observado ligeros descensos en algunas rentabilidades, lo que se asocia a un
+                    aumento de la demanda de activos considerados más seguros. No se trata de un giro radical, pero sí
+                    de un recordatorio de que la renta fija continua siendo una herramienta clave de diversificación.
+                </p>
+
+                <div class="callout callout-neutral">
+                    <strong>Recuerda:</strong> la renta fija no implica ausencia total de riesgo, pero suele ofrecer
+                    una volatilidad menor que la renta variable. Analizar plazos, emisores y calidad crediticia es
+                    esencial antes de tomar decisiones.
+                </div>
+            </section>
+
+            <section id="riesgos">
+                <h2>5. Riesgos que los mercados siguen vigilando</h2>
+                <p>
+                    Aunque el tono general de la semana ha sido algo más positivo, los riesgos no han desaparecido.
+                    Simplemente han pasado a un segundo plano momentáneo. Entre los factores que los analistas siguen
+                    de cerca destacan los siguientes:
+                </p>
+
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Riesgo 1</div>
+                        <div class="timeline-content">Evolución de la inflación en las principales economías.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Riesgo 2</div>
+                        <div class="timeline-content">Decisiones futuras de tipos de interés por parte de los bancos
+                            centrales.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Riesgo 3</div>
+                        <div class="timeline-content">Tensiones geopolíticas y su impacto en materias primas clave.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Riesgo 4</div>
+                        <div class="timeline-content">Ritmo de crecimiento en sectores sensibles al ciclo económico.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout callout-warning">
+                    <strong>Importante:</strong> ningún escenario está garantizado. Los mercados pueden reaccionar
+                    de forma intensa ante nuevas noticias, por lo que es recomendable evitar decisiones impulsivas
+                    basadas únicamente en movimientos de corto plazo.
+                </div>
+            </section>
+
+            <section id="que-hacer">
+                <h2>6. Qué puede hacer el inversor informado</h2>
+                <p>
+                    En un entorno como el actual, la información y la planificación marcan la diferencia. No se trata
+                    de anticipar cada movimiento del mercado, algo prácticamente imposible, sino de construir una
+                    estrategia coherente con los objetivos y el perfil de riesgo de cada persona.
+                </p>
+
+                <h3>Buenas prácticas a considerar</h3>
+                <ol>
+                    <li>
+                        <strong>Revisar la diversificación:</strong> combinar distintos tipos de activos puede reducir
+                        el impacto de la volatilidad en una sola área del mercado.
+                    </li>
+                    <li>
+                        <strong>Definir horizontes de tiempo:</strong> a corto plazo, los movimientos pueden ser
+                        ruidosos.
+                        A medio y largo plazo, la perspectiva suele ser más clara.
+                    </li>
+                    <li>
+                        <strong>Evitar decisiones impulsivas:</strong> actuar solo por miedo o euforia suele conducir
+                        a errores difíciles de corregir.
+                    </li>
+                    <li>
+                        <strong>Formarse de manera continua:</strong> entender los conceptos básicos de economía y
+                        finanzas ayuda a interpretar mejor las noticias diarias.
+                    </li>
+                </ol>
+
+                <p class="disclaimer">
+                    Este contenido tiene carácter informativo y educativo. No constituye una recomendación personalizada
+                    de inversión ni sustituye el asesoramiento profesional.
+                </p>
+            </section>
+
+            <section id="faq">
+                <h2>7. Preguntas frecuentes</h2>
+
+                <details class="faq-item">
+                    <summary>¿Significa esta recuperación que el riesgo ha desaparecido?</summary>
+                    <p>
+                        No. Los mercados pueden mejorar durante unas semanas y, aun así, seguir expuestos a cambios
+                        bruscos si aparecen nuevas noticias relevantes. La recuperación gradual es una señal positiva,
+                        pero no garantiza resultados futuros.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Es un buen momento para empezar a invertir?</summary>
+                    <p>
+                        Cada persona tiene una situación distinta. Más que buscar "el momento perfecto", suele ser
+                        más útil construir una estrategia adaptada al perfil de riesgo, objetivos y horizonte temporal.
+                        Ante dudas, es recomendable consultar con un profesional autorizado.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cómo puedo seguir estas tendencias sin saturarme de información?</summary>
+                    <p>
+                        Una opción es seleccionar unas pocas fuentes fiables y revisar resúmenes periódicos, en lugar
+                        de seguir cada movimiento diario. Contenidos estructurados por temas, como este tipo de
+                        artículos, pueden ayudar a mantener una visión clara sin caer en el ruido constante.
+                    </p>
+                </details>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="cookies.html">Política de Cookies</a></li>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2024 AV Finanzas. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="article-interactive.js"></script>
+    <script>
+        // Gráfico de tendencias del mercado
+        createLineChart('marketTrendsChart',
+            ['Lun', 'Mar', 'Mié', 'Jue', 'Vie'],
+            [
+                {
+                    label: 'S&P 500',
+                    data: [4520, 4535, 4510, 4545, 4630],
+                    borderColor: '#00c853',
+                    backgroundColor: 'rgba(0, 200, 83, 0.1)',
+                    tension: 0.4
+                },
+                {
+                    label: 'Nasdaq',
+                    data: [14200, 14250, 14180, 14300, 14450],
+                    borderColor: '#2196f3',
+                    backgroundColor: 'rgba(33, 150, 243, 0.1)',
+                    tension: 0.4
+                }
+            ]
+        );
+
+        // Gráfico de rendimiento por sector
+        createBarChart('sectorPerformanceChart',
+            ['Tecnología', 'Salud', 'Consumo', 'Energía', 'Financiero', 'Industrial'],
+            [
+                {
+                    label: 'Rendimiento Semanal (%)',
+                    data: [3.2, 2.8, 1.9, -0.5, 1.2, 0.8],
+                    backgroundColor: [
+                        '#00c853',
+                        '#4caf50',
+                        '#8bc34a',
+                        '#ff5722',
+                        '#2196f3',
+                        '#9e9e9e'
+                    ]
+                }
+            ]
+        );
+    </script>
+
+</body>
+
+</html>

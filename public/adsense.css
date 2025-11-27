@@ -1,0 +1,76 @@
+/* ============================================================
+   ESTILOS PARA ESPACIOS DE ADSENSE
+   ============================================================ */
+
+/* Contenedor general de anuncios */
+.ad-container {
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+    background: #f8f9fa;
+    border: 1px dashed #dee2e6;
+    border-radius: 8px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Texto placeholder antes de activar AdSense */
+.ad-placeholder {
+    color: #6c757d;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Diferentes tamaños de anuncios */
+.ad-horizontal {
+    max-width: 728px;
+    min-height: 90px;
+}
+
+.ad-square {
+    max-width: 336px;
+    min-height: 280px;
+}
+
+.ad-vertical {
+    max-width: 160px;
+    min-height: 600px;
+}
+
+.ad-responsive {
+    width: 100%;
+    min-height: 250px;
+}
+
+/* Espaciado para anuncios en artículos */
+.article-container .ad-container {
+    margin: 40px auto;
+}
+
+/* Anuncio en el header */
+.ad-header {
+    margin: 20px auto;
+    max-width: 970px;
+}
+
+/* Anuncio en el sidebar */
+.ad-sidebar {
+    margin: 20px 0;
+    position: sticky;
+    top: 100px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ad-horizontal {
+        max-width: 320px;
+        min-height: 100px;
+    }
+
+    .ad-sidebar {
+        position: relative;
+        top: 0;
+    }
+}
