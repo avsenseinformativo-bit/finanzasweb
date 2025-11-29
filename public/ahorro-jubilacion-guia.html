@@ -2,10 +2,11 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,241 +16,693 @@
         gtag('config', 'G-3FNCYG6XM1');
     </script>
 
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Guía completa para planificar tu jubilación. Aprende cuánto necesitas ahorrar, dónde invertir y cómo asegurar tu futuro financiero." />
-    <title>Ahorro para la jubilación: Guía completa – AV Finanzas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorro para la jubilación: Guía completa | AV Finanzas</title>
 
-    <link rel="stylesheet" href="article.css">
+    <meta name="description"
+        content="Guía completa para planificar tu jubilación. Aprende cuánto necesitas ahorrar, dónde invertir y cómo asegurar tu futuro financiero con el poder del interés compuesto.">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="adsense.css">
-        
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
 </head>
 
 <body>
-    <header class="article-header">
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="AV Finanzas - Portal de información financiera">
+        </div>
+
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+
+            <a href="index.html" class="cta-button">Volver al inicio</a>
+        </nav>
+    </header>
+
+    <!-- Barra de progreso -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <main class="article-layout">
+
+        <!-- Migas de pan -->
         <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="economia.html">Finanzas Personales</a> >
+            <a href="index.html">Inicio</a> ›
+            <a href="#">Finanzas Personales</a> ›
             <span>Ahorro para la jubilación</span>
         </nav>
 
-        <div class="article-hero">
-            <img src="markus-winkler-IrRbSND5EUc-unsplash.jpg" alt="Planificación de jubilación" loading="lazy">
-            <div class="hero-text">
+        <!-- HERO -->
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Finanzas Personales</span>
+
                 <h1>Ahorro para la jubilación: Nunca es demasiado pronto para empezar</h1>
-                <p class="article-subtitle">Descubre cuánto necesitas ahorrar, las mejores estrategias de inversión y
-                    cómo garantizar una jubilación cómoda.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
+
+                <p class="article-subtitle">
+                    Descubre cuánto necesitas ahorrar, las mejores estrategias de inversión y cómo garantizar
+                    una jubilación cómoda aprovechando el poder del interés compuesto.
+                </p>
+
+                <div class="article-meta-row">
+                    <span>Actualizado: Noviembre 2025</span>
+                    <span>·</span>
+                    <span>Tiempo de lectura: 10 min</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparación: Empezar pronto vs tarde -->
+        <div class="comparison-widget fade-in-scroll">
+            <div class="comparison-side">
+                <div class="comparison-label">Empezar a los 25</div>
+                <div class="comparison-value">€525K</div>
+                <div style="font-size: 14px; color: #888; margin-top: 5px;">Aportando €96K total</div>
+            </div>
+            <div class="comparison-divider">vs</div>
+            <div class="comparison-side">
+                <div class="comparison-label">Empezar a los 35</div>
+                <div class="comparison-value">€244K</div>
+                <div style="font-size: 14px; color: #f44336; margin-top: 5px; font-weight: 700;">-€281K menos</div>
             </div>
         </div>
-    </header>
 
-    <main class="article-container">
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
+        <!-- Estadísticas de jubilación -->
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box">
+                <span class="stat-number" data-count="750" data-suffix="K">0K</span>
+                <span class="stat-label">Capital para €30K/año</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="615" data-suffix="€">0€</span>
+                <span class="stat-label">Ahorro mensual necesario</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="7" data-suffix="%">0%</span>
+                <span class="stat-label">Rentabilidad histórica</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="40">0</span>
+                <span class="stat-label">Años de ahorro ideal</span>
+            </div>
         </div>
 
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>Planificar la jubilación requiere calcular tus necesidades futuras, aprovechar el interés compuesto y
-                diversificar tus inversiones entre planes de pensiones, fondos indexados y otros vehículos de ahorro.
-            </p>
-        </details>
+        <!-- Resumen rápido -->
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen rápido</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>La regla del 4% indica que necesitas 25 veces tus gastos anuales para jubilarte.</li>
+                    <li>El interés compuesto es tu mejor aliado: empezar 10 años antes puede duplicar tu capital final.
+                    </li>
+                    <li>Diversifica entre planes de pensiones, fondos indexados y otros vehículos de ahorro.</li>
+                    <li>Ajusta tu asignación de activos según tu edad: más agresivo cuando joven, más conservador cerca
+                        de la jubilación.</li>
+                    <li>Nunca es tarde para empezar, pero cuanto antes mejor.</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="toc">
-            <h2>Contenido</h2>
-            <ul>
+        <!-- Anuncio -->
+        <div class="ad-space ad-in-article"></div>
+
+        <!-- TOC -->
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
                 <li><a href="#seccion1">1. ¿Cuánto necesitas para jubilarte?</a></li>
                 <li><a href="#seccion2">2. El poder del interés compuesto</a></li>
                 <li><a href="#seccion3">3. Vehículos de ahorro para la jubilación</a></li>
                 <li><a href="#seccion4">4. Estrategia por edades</a></li>
-            </ul>
-        </div>
+                <li><a href="#faq">5. Preguntas frecuentes</a></li>
+            </ol>
+        </aside>
 
-        <section id="seccion1">
-            <h2>1. ¿Cuánto necesitas para jubilarte?</h2>
-            <p>
-                La regla del 4% sugiere que necesitas ahorrar 25 veces tus gastos anuales esperados. Si planeas gastar
-                30.000€ al año en la jubilación, necesitarías aproximadamente 750.000€.
+        <!-- CONTENIDO -->
+        <article class="article-content">
+
+            <!-- SECCIÓN 1 -->
+            <section id="seccion1">
+                <h2>1. ¿Cuánto necesitas para jubilarte?</h2>
+                <p>
+                    La regla del 4% es una guía ampliamente aceptada que sugiere que necesitas ahorrar 25 veces
+                    tus gastos anuales esperados. Si planeas gastar 30.000€ al año en la jubilación, necesitarías
+                    aproximadamente 750.000€ de capital acumulado.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Fórmula simple para calcular tu objetivo</h3>
+                    <p style="font-size: 18px; font-weight: 700; color: #2196f3; margin: 15px 0;">
+                        Gastos anuales deseados × 25 = Capital necesario
+                    </p>
+                    <p>
+                        Esta regla asume que puedes retirar el 4% de tu capital anualmente sin agotarlo,
+                        ajustando por inflación. Está basada en estudios históricos del mercado estadounidense.
+                    </p>
+                </div>
+
+                <h3>Ejemplos prácticos según diferentes estilos de vida:</h3>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>💰 Jubilación Modesta</h3>
+                        <p><strong>Gastos anuales:</strong> €20,000</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Capital necesario</span>
+                                <span>€500,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="50"
+                                    style="width: 0%; background: linear-gradient(90deg, #4caf50, #8bc34a);"></div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 10px;"><strong>Ahorro mensual (30 años al 7%):</strong> ~€410/mes</p>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>💎 Jubilación Cómoda</h3>
+                        <p><strong>Gastos anuales:</strong> €30,000</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Capital necesario</span>
+                                <span>€750,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="75"
+                                    style="width: 0%; background: linear-gradient(90deg, #2196f3, #03a9f4);"></div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 10px;"><strong>Ahorro mensual (30 años al 7%):</strong> ~€615/mes</p>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🏆 Jubilación Holgada</h3>
+                        <p><strong>Gastos anuales:</strong> €40,000</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Capital necesario</span>
+                                <span>€1,000,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="100"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff9800, #ff5722);"></div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 10px;"><strong>Ahorro mensual (30 años al 7%):</strong> ~€820/mes</p>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>👑 Jubilación Premium</h3>
+                        <p><strong>Gastos anuales:</strong> €60,000</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Capital necesario</span>
+                                <span>€1,500,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="100"
+                                    style="width: 0%; background: linear-gradient(90deg, #9c27b0, #e91e63);"></div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 10px;"><strong>Ahorro mensual (30 años al 7%):</strong> ~€1,230/mes</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2 -->
+            <section id="seccion2">
+                <h2>2. El poder del interés compuesto</h2>
+                <p>
+                    Einstein supuestamente llamó al interés compuesto "la octava maravilla del mundo". Y tenía razón:
+                    cuanto antes empieces a ahorrar, más trabajará el tiempo a tu favor de forma exponencial.
+                </p>
+
+                <div class="callout callout-warning">
+                    <strong>Ejemplo impactante del coste de esperar:</strong>
+                    <ul>
+                        <li>Si inviertes €200/mes desde los 25 años al 7% anual, tendrás ~€525,000 a los 65.</li>
+                        <li>Si empiezas a los 35 años con la misma cantidad, solo tendrás ~€244,000.</li>
+                        <li><strong>10 años de diferencia = €281,000 menos</strong> (¡más del doble!)</li>
+                    </ul>
+                </div>
+
+                <h3>Comparación por edad de inicio:</h3>
+
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">25 años</div>
+                        <div class="timeline-content">
+                            <strong>Aportas €96,000 total</strong> (€200/mes × 40 años)<br>
+                            <strong>Obtienes ~€525,000</strong> a los 65 años<br>
+                            <span style="color: #00c853; font-weight: 700;">Ganancia: €429,000 (447% ROI)</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">35 años</div>
+                        <div class="timeline-content">
+                            <strong>Aportas €72,000 total</strong> (€200/mes × 30 años)<br>
+                            <strong>Obtienes ~€244,000</strong> a los 65 años<br>
+                            <span style="color: #ffc107; font-weight: 700;">Ganancia: €172,000 (239% ROI)</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">45 años</div>
+                        <div class="timeline-content">
+                            <strong>Aportas €48,000 total</strong> (€200/mes × 20 años)<br>
+                            <strong>Obtienes ~€98,000</strong> a los 65 años<br>
+                            <span style="color: #ff9800; font-weight: 700;">Ganancia: €50,000 (104% ROI)</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">55 años</div>
+                        <div class="timeline-content">
+                            <strong>Aportas €24,000 total</strong> (€200/mes × 10 años)<br>
+                            <strong>Obtienes ~€34,000</strong> a los 65 años<br>
+                            <span style="color: #f44336; font-weight: 700;">Ganancia: €10,000 (42% ROI)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico de crecimiento compuesto -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Crecimiento del Capital según Edad de Inicio (€200/mes al 7%)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="compoundGrowthChart"></canvas>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3 -->
+            <section id="seccion3">
+                <h2>3. Vehículos de ahorro para la jubilación</h2>
+                <p>
+                    Existen múltiples opciones para ahorrar para la jubilación en España. Cada una tiene ventajas
+                    y desventajas. Lo ideal es diversificar entre varios vehículos.
+                </p>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>📊 Plan de Pensiones</h3>
+                        <p><strong>Ventajas:</strong></p>
+                        <ul>
+                            <li>Deducción fiscal inmediata (hasta €1,500/año)</li>
+                            <li>Diseñado específicamente para jubilación</li>
+                            <li>Protección ante embargos</li>
+                        </ul>
+                        <p><strong>Desventajas:</strong></p>
+                        <ul>
+                            <li>Dinero bloqueado hasta jubilación</li>
+                            <li>Comisiones generalmente altas (1-2%)</li>
+                            <li>Tributas al rescatar</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Recomendación</span>
+                                <span>Media</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="60"
+                                    style="width: 0%; background: linear-gradient(90deg, #ffc107, #ff9800);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>📈 Fondos Indexados</h3>
+                        <p><strong>Ventajas:</strong></p>
+                        <ul>
+                            <li>Bajas comisiones (0.1-0.5%)</li>
+                            <li>Flexibilidad total de retirada</li>
+                            <li>Diversificación global automática</li>
+                        </ul>
+                        <p><strong>Desventajas:</strong></p>
+                        <ul>
+                            <li>Sin ventajas fiscales inmediatas</li>
+                            <li>Tributas por plusvalías al vender</li>
+                            <li>Requiere disciplina para no tocar</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Recomendación</span>
+                                <span>Alta</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="85"
+                                    style="width: 0%; background: linear-gradient(90deg, #00c853, #4caf50);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🏦 PIAS (Plan Individual de Ahorro Sistemático)</h3>
+                        <p><strong>Ventajas:</strong></p>
+                        <ul>
+                            <li>Exención fiscal en rescate (si >5 años)</li>
+                            <li>Flexibilidad en aportaciones</li>
+                            <li>Bueno para complementar pensión</li>
+                        </ul>
+                        <p><strong>Desventajas:</strong></p>
+                        <ul>
+                            <li>Límite de €8,000/año en aportaciones</li>
+                            <li>Requiere mantener 5 años mínimo</li>
+                            <li>Rentabilidades generalmente bajas</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Recomendación</span>
+                                <span>Media</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="55"
+                                    style="width: 0%; background: linear-gradient(90deg, #ffc107, #ff9800);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🏠 Inmuebles</h3>
+                        <p><strong>Ventajas:</strong></p>
+                        <ul>
+                            <li>Activo tangible y visible</li>
+                            <li>Ingresos pasivos por alquiler</li>
+                            <li>Protección contra inflación</li>
+                        </ul>
+                        <p><strong>Desventajas:</strong></p>
+                        <ul>
+                            <li>Baja liquidez (difícil vender rápido)</li>
+                            <li>Requiere gestión activa</li>
+                            <li>Concentración de riesgo</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Recomendación</span>
+                                <span>Complementaria</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="50"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff9800, #ffc107);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Recomendación de diversificación</h3>
+                    <p>
+                        No pongas todos los huevos en la misma cesta. Una estrategia equilibrada podría ser:
+                    </p>
+                    <ul>
+                        <li><strong>60%</strong> en fondos indexados (núcleo de la cartera)</li>
+                        <li><strong>20%</strong> en plan de pensiones (ventaja fiscal)</li>
+                        <li><strong>15%</strong> en PIAS o similar (complemento)</li>
+                        <li><strong>5%</strong> en liquidez o emergencias</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Gráfico de comparación de vehículos -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Comparación de Rentabilidad Histórica (últimos 20 años)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="vehiclesComparisonChart"></canvas>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 4 -->
+            <section id="seccion4">
+                <h2>4. Estrategia por edades</h2>
+                <p>
+                    Tu estrategia de inversión debe evolucionar con tu edad. Cuando eres joven puedes asumir más
+                    riesgo porque tienes tiempo para recuperarte de caídas. Cerca de la jubilación, debes proteger
+                    lo ganado.
+                </p>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>🚀 20-30 años: Agresividad máxima</h3>
+                        <p><strong>Asignación recomendada:</strong></p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Renta Variable</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="100"
+                                    style="width: 0%; background: linear-gradient(90deg, #00c853, #4caf50);"></div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>100% renta variable (fondos indexados globales)</li>
+                            <li>Aprovecha el largo plazo para recuperarte de caídas</li>
+                            <li>Prioriza ahorrar el 15-20% de tus ingresos</li>
+                            <li>No te asustes por la volatilidad</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>💪 30-40 años: Mantén el rumbo</h3>
+                        <p><strong>Asignación recomendada:</strong></p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Renta Variable</span>
+                                <span>80-90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="85"
+                                    style="width: 0%; background: linear-gradient(90deg, #00c853, #8bc34a);"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Renta Fija</span>
+                                <span>10-20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="15"
+                                    style="width: 0%; background: linear-gradient(90deg, #2196f3, #03a9f4);"></div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Aumenta aportaciones con subidas salariales</li>
+                            <li>Revisa anualmente pero no hagas cambios drásticos</li>
+                            <li>Considera empezar plan de pensiones (ventaja fiscal)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>⚖️ 40-50 años: Empieza a moderar</h3>
+                        <p><strong>Asignación recomendada:</strong></p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Renta Variable</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="70"
+                                    style="width: 0%; background: linear-gradient(90deg, #4caf50, #8bc34a);"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Renta Fija</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="30"
+                                    style="width: 0%; background: linear-gradient(90deg, #2196f3, #03a9f4);"></div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Diversifica geográficamente (no solo España)</li>
+                            <li>Maxim iza aportaciones si puedes</li>
+                            <li>Empieza a reducir riesgo gradualmente</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🛡️ 50-65 años: Protege lo ganado</h3>
+                        <p><strong>Asignación recomendada:</strong></p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Renta Variable</span>
+                                <span>50-60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="55"
+                                    style="width: 0%; background: linear-gradient(90deg, #8bc34a, #cddc39);"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Renta Fija</span>
+                                <span>40-50%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="45"
+                                    style="width: 0%; background: linear-gradient(90deg, #03a9f4, #00bcd4);"></div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Reduce riesgo gradualmente cada año</li>
+                            <li>Planifica la transición a la jubilación</li>
+                            <li>Considera tener 2-3 años de gastos en liquidez</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq">
+                <h2>5. Preguntas frecuentes</h2>
+
+                <details class="faq-item">
+                    <summary>¿Puedo confiar en la pensión pública?</summary>
+                    <p>
+                        La pensión pública existirá, pero probablemente será menor que los salarios actuales debido
+                        al envejecimiento de la población y la reducción de la base de cotizantes. Es prudente
+                        complementarla con ahorro privado. No cuentes con recibir más del 60-70% de tu último salario
+                        de la pensión pública.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué pasa si necesito el dinero antes de jubilarme?</summary>
+                    <p>
+                        Por eso es importante tener un fondo de emergencia separado (3-6 meses de gastos) antes de
+                        empezar a ahorrar para la jubilación. Los fondos indexados ofrecen más flexibilidad que los
+                        planes de pensiones tradicionales, ya que puedes vender cuando quieras (aunque tributarás
+                        por las plusvalías).
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Es tarde para empezar a los 40?</summary>
+                    <p>
+                        Nunca es tarde. Aunque hayas perdido años de interés compuesto, 25 años de ahorro disciplinado
+                        pueden generar un capital significativo. Tendrás que ahorrar más mensualmente que alguien que
+                        empezó a los 25, pero es totalmente factible. Lo importante es empezar YA.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Debo pagar mi hipoteca o ahorrar para la jubilación?</summary>
+                    <p>
+                        Depende del interés de tu hipoteca. Si es menor al 3-4%, probablemente es mejor invertir en
+                        fondos indexados (rentabilidad histórica ~7%). Si es mayor, prioriza pagar la hipoteca. Lo
+                        ideal es hacer ambas cosas: paga la hipoteca normalmente y ahorra para jubilación en paralelo.
+                    </p>
+                </details>
+
+            </section>
+
+            <p class="disclaimer">
+                Este contenido es educativo. Consulta con un asesor financiero para planificación personalizada de
+                tu jubilación. Las rentabilidades pasadas no garantizan rentabilidades futuras.
             </p>
 
-            <div class="highlight-box">
-                <strong>Fórmula simple:</strong> Gastos anuales deseados × 25 = Capital necesario
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Gastos anuales</th>
-                        <th>Capital necesario (regla 4%)</th>
-                        <th>Ahorro mensual (30 años al 7%)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>20.000€</td>
-                        <td>500.000€</td>
-                        <td>~410€/mes</td>
-                    </tr>
-                    <tr>
-                        <td>30.000€</td>
-                        <td>750.000€</td>
-                        <td>~615€/mes</td>
-                    </tr>
-                    <tr>
-                        <td>40.000€</td>
-                        <td>1.000.000€</td>
-                        <td>~820€/mes</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion2">
-            <h2>2. El poder del interés compuesto</h2>
-            <p>
-                Einstein llamó al interés compuesto "la octava maravilla del mundo". Cuanto antes empieces, más
-                trabajará el tiempo a tu favor.
-            </p>
-
-            <div class="callout warning">
-                <strong>Ejemplo impactante:</strong> Si inviertes 200€/mes desde los 25 años al 7% anual, tendrás
-                ~525.000€ a los 65. Si empiezas a los 35, solo tendrás ~244.000€. ¡10 años de diferencia = 281.000€
-                menos!
-            </div>
-
-            <ul>
-                <li>Empezar a los 25: Aportas 96.000€ → Obtienes ~525.000€</li>
-                <li>Empezar a los 35: Aportas 72.000€ → Obtienes ~244.000€</li>
-                <li>Empezar a los 45: Aportas 48.000€ → Obtienes ~98.000€</li>
-            </ul>
-        </section>
-
-        <section id="seccion3">
-            <h2>3. Vehículos de ahorro para la jubilación</h2>
-            <p>Existen múltiples opciones para ahorrar para la jubilación en España:</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Vehículo</th>
-                        <th>Ventajas</th>
-                        <th>Desventajas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Plan de Pensiones</td>
-                        <td>Deducción fiscal, específico para jubilación</td>
-                        <td>Dinero bloqueado, comisiones altas</td>
-                    </tr>
-                    <tr>
-                        <td>Fondos Indexados</td>
-                        <td>Bajas comisiones, flexibilidad total</td>
-                        <td>Sin ventajas fiscales inmediatas</td>
-                    </tr>
-                    <tr>
-                        <td>PIAS</td>
-                        <td>Exención fiscal en rescate</td>
-                        <td>Requiere mantener 5 años mínimo</td>
-                    </tr>
-                    <tr>
-                        <td>Inmuebles</td>
-                        <td>Activo tangible, ingresos por alquiler</td>
-                        <td>Baja liquidez, gestión activa</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="highlight-box">
-                <strong>Recomendación:</strong> Diversifica entre varios vehículos. No pongas todos los huevos en la
-                misma cesta.
-            </div>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion4">
-            <h2>4. Estrategia por edades</h2>
-
-            <h3>20-30 años: Agresividad máxima</h3>
-            <ul>
-                <li>100% renta variable (fondos indexados globales)</li>
-                <li>Aprovecha el largo plazo para recuperarte de caídas</li>
-                <li>Prioriza ahorrar el 15-20% de tus ingresos</li>
-            </ul>
-
-            <h3>30-40 años: Mantén el rumbo</h3>
-            <ul>
-                <li>80-90% renta variable, 10-20% renta fija</li>
-                <li>Aumenta aportaciones con subidas salariales</li>
-                <li>Revisa anualmente pero no hagas cambios drásticos</li>
-            </ul>
-
-            <h3>40-50 años: Empieza a moderar</h3>
-            <ul>
-                <li>70% renta variable, 30% renta fija</li>
-                <li>Considera diversificar geográficamente</li>
-                <li>Maximiza aportaciones si puedes</li>
-            </ul>
-
-            <h3>50-65 años: Protege lo ganado</h3>
-            <ul>
-                <li>50-60% renta variable, 40-50% renta fija</li>
-                <li>Reduce riesgo gradualmente</li>
-                <li>Planifica la transición a la jubilación</li>
-            </ul>
-        </section>
-
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
-
-            <details>
-                <summary>¿Puedo confiar en la pensión pública?</summary>
-                <p>La pensión pública existirá, pero probablemente será menor que los salarios actuales. Es prudente
-                    complementarla con ahorro privado.</p>
-            </details>
-
-            <details>
-                <summary>¿Qué pasa si necesito el dinero antes de jubilarme?</summary>
-                <p>Por eso es importante tener un fondo de emergencia separado. Los fondos indexados ofrecen más
-                    flexibilidad que los planes de pensiones tradicionales.</p>
-            </details>
-
-            <details>
-                <summary>¿Es tarde para empezar a los 40?</summary>
-                <p>Nunca es tarde. Aunque hayas perdido años de interés compuesto, 25 años de ahorro disciplinado
-                    pueden generar un capital significativo.</p>
-            </details>
-        </section>
-
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> Este contenido es educativo. Consulta con un asesor financiero para
-            planificación personalizada de tu jubilación.
-        </div>
-
+        </article>
     </main>
 
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- JS -->
     <script src="article-interactive.js"></script>
+    <script>
+        // Gráfico de crecimiento compuesto
+        createLineChart('compoundGrowthChart',
+            ['25', '30', '35', '40', '45', '50', '55', '60', '65'],
+            [
+                {
+                    label: 'Empezar a los 25',
+                    data: [0, 14, 34, 62, 101, 154, 225, 320, 525],
+                    borderColor: '#00c853',
+                    backgroundColor: 'rgba(0, 200, 83, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                },
+                {
+                    label: 'Empezar a los 35',
+                    data: [0, 0, 0, 0, 14, 34, 62, 101, 154, 244],
+                    borderColor: '#ffc107',
+                    backgroundColor: 'rgba(255, 193, 7, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                },
+                {
+                    label: 'Empezar a los 45',
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 14, 34, 62, 98],
+                    borderColor: '#ff9800',
+                    backgroundColor: 'rgba(255, 152, 0, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }
+            ],
+            {
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Capital acumulado (miles €)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Edad'
+                        }
+                    }
+                }
+            }
+        );
+
+        // Gráfico de comparación de vehículos
+        createBarChart('vehiclesComparisonChart',
+            ['Fondos Indexados', 'Plan Pensiones', 'PIAS', 'Depósitos', 'Inmuebles'],
+            [
+                {
+                    label: 'Rentabilidad anual media (%)',
+                    data: [7.2, 4.5, 3.8, 1.5, 5.5],
+                    backgroundColor: ['#00c853', '#2196f3', '#ffc107', '#f44336', '#9c27b0']
+                }
+            ]
+        );
+    </script>
 
 </body>
 

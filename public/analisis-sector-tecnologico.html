@@ -2,10 +2,11 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,155 +16,589 @@
         gtag('config', 'G-3FNCYG6XM1');
     </script>
 
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Análisis del sector tecnológico. ¿Sigue siendo el motor del mercado o se acerca una corrección?" />
-    <title>Análisis del Sector Tecnológico: ¿Burbuja o Crecimiento Real? – AV Finanzas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis del Sector Tecnológico 2025 | AV Finanzas</title>
 
-    <!-- CSS general de artículos -->
-    <link rel="stylesheet" href="article.css">
+    <meta name="description"
+        content="Análisis completo del sector tecnológico. Las Big Tech dominan el mercado con IA, pero ¿están las valoraciones justificadas? Descubre riesgos y oportunidades.">
+
     <link rel="stylesheet" href="style.css">
-        
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
 </head>
 
 <body>
-    <header class="article-header">
-        <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="mercados.html">Mercados</a> >
-            <span>Sector Tech</span>
-        </nav>
 
-        <div class="hero-article">
-            <img src="imagen4.jpg" alt="Tecnología" loading="lazy">
-            <div class="hero-text">
-                <h1>Análisis del Sector Tecnológico: ¿Burbuja o Crecimiento Real?</h1>
-                <p class="article-subtitle">Las grandes tecnológicas siguen rompiendo récords, pero algunos analistas
-                    advierten sobre valoraciones excesivas.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
-            </div>
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="AV Finanzas - Portal de información financiera">
         </div>
+
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+
+            <a href="index.html" class="cta-button">Volver al inicio</a>
+        </nav>
     </header>
 
-    <main class="article-container">
+    <!-- Barra de progreso -->
+    <div class="reading-progress" id="readingProgress"></div>
 
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
+    <main class="article-layout">
+
+        <!-- Migas de pan -->
+        <nav class="breadcrumb">
+            <a href="index.html">Inicio</a> ›
+            <a href="#">Mercados</a> ›
+            <span>Sector Tecnológico</span>
+        </nav>
+
+        <!-- HERO -->
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Análisis de Mercado</span>
+
+                <h1>Sector Tecnológico 2025: ¿Burbuja o Crecimiento Real?</h1>
+
+                <p class="article-subtitle">
+                    Las Big Tech dominan el S&P 500 con la IA como catalizador. Analizamos valoraciones,
+                    riesgos regulatorios y si el rally tecnológico es sostenible.
+                </p>
+
+                <div class="article-meta-row">
+                    <span>Actualizado: Noviembre 2025</span>
+                    <span>·</span>
+                    <span>Tiempo de lectura: 8 min</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparación: Tech vs S&P 500 -->
+        <div class="comparison-widget fade-in-scroll">
+            <div class="comparison-side">
+                <div class="comparison-label">Sector Tech (2024)</div>
+                <div class="comparison-value">+45%</div>
+                <div style="font-size: 14px; color: #888; margin-top: 5px;">Rentabilidad anual</div>
+            </div>
+            <div class="comparison-divider">vs</div>
+            <div class="comparison-side">
+                <div class="comparison-label">S&P 500 (2024)</div>
+                <div class="comparison-value">+24%</div>
+                <div style="font-size: 14px; color: #00c853; margin-top: 5px; font-weight: 700;">Tech supera x1.9</div>
+            </div>
         </div>
 
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>Examinamos los fundamentos de las "Big Tech", el impacto de la IA en sus beneficios y si las valoraciones
-                actuales están justificadas.</p>
-        </details>
+        <!-- Estadísticas del sector tech -->
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box">
+                <span class="stat-number" data-count="28" data-suffix="%">0%</span>
+                <span class="stat-label">Peso en S&P 500</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="35">0</span>
+                <span class="stat-label">P/E ratio promedio</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="12" data-suffix="T">0T</span>
+                <span class="stat-label">Capitalización total (USD)</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="7">0</span>
+                <span class="stat-label">Magníficas (AAPL, MSFT, etc.)</span>
+            </div>
+        </div>
 
-        <div class="toc">
-            <h2>Contenido</h2>
-            <ul>
+        <!-- Resumen rápido -->
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen rápido</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>Las 7 Magníficas (Apple, Microsoft, Google, Amazon, Meta, Tesla, Nvidia) representan el 28% del
+                        S&P 500.</li>
+                    <li>La IA está generando ingresos reales, especialmente en cloud computing (Azure, AWS, Google
+                        Cloud).</li>
+                    <li>Valoraciones exigentes: P/E promedio de 35 vs 20 del mercado general.</li>
+                    <li>Riesgos regulatorios en EE.UU. y Europa por prácticas monopolísticas.</li>
+                    <li>Cualquier corrección podría ser oportunidad de compra a largo plazo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Anuncio -->
+        <div class="ad-space ad-in-article"></div>
+
+        <!-- TOC -->
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
                 <li><a href="#seccion1">1. El dominio de las Big Tech</a></li>
                 <li><a href="#seccion2">2. El factor Inteligencia Artificial</a></li>
-                <li><a href="#seccion3">3. Riesgos Regulatorios</a></li>
-                <li><a href="#seccion4">4. Conclusión</a></li>
-            </ul>
-        </div>
+                <li><a href="#seccion3">3. Riesgos regulatorios</a></li>
+                <li><a href="#seccion4">4. Valoraciones: ¿Justificadas?</a></li>
+                <li><a href="#faq">5. Preguntas frecuentes</a></li>
+            </ol>
+        </aside>
 
-        <section id="seccion1">
-            <h2>1. El dominio de las Big Tech</h2>
-            <p>
-                Empresas como Apple, Microsoft, Google y Amazon continúan dominando el S&P 500. Su capacidad para
-                generar flujo de caja libre es inigualable en la historia moderna.
-            </p>
-            <div class="highlight-box">
-                <strong>Dato:</strong> Las 7 magníficas representan más del 25% del valor total del mercado
-                estadounidense.
+        <!-- CONTENIDO -->
+        <article class="article-content">
+
+            <!-- SECCIÓN 1 -->
+            <section id="seccion1">
+                <h2>1. El dominio de las Big Tech</h2>
+                <p>
+                    Las empresas tecnológicas han consolidado su posición como las más valiosas del mundo.
+                    Apple, Microsoft, Google (Alphabet), Amazon, Meta, Tesla y Nvidia - conocidas como las
+                    "7 Magníficas" - representan más del 28% del valor total del S&P 500.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Dato impactante</h3>
+                    <p>
+                        La capitalización de mercado combinada de las 7 Magníficas (~$12 billones) es mayor
+                        que el PIB de todos los países excepto EE.UU. y China.
+                    </p>
+                </div>
+
+                <h3>Las 7 Magníficas y su dominio:</h3>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>🍎 Apple</h3>
+                        <p><strong>Cap. mercado:</strong> ~$3.0T</p>
+                        <p><strong>Ventaja:</strong> Ecosistema cerrado + servicios recurrentes</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Dominio de mercado</span>
+                                <span>Muy Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="95"
+                                    style="width: 0%; background: linear-gradient(90deg, #00c853, #4caf50);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>💻 Microsoft</h3>
+                        <p><strong>Cap. mercado:</strong> ~$2.8T</p>
+                        <p><strong>Ventaja:</strong> Azure + Office 365 + IA (OpenAI)</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Dominio de mercado</span>
+                                <span>Muy Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="92"
+                                    style="width: 0%; background: linear-gradient(90deg, #2196f3, #03a9f4);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🔍 Google (Alphabet)</h3>
+                        <p><strong>Cap. mercado:</strong> ~$1.8T</p>
+                        <p><strong>Ventaja:</strong> Monopolio en búsquedas + YouTube + Cloud</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Dominio de mercado</span>
+                                <span>Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="88"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff9800, #ff5722);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>📦 Amazon</h3>
+                        <p><strong>Cap. mercado:</strong> ~$1.6T</p>
+                        <p><strong>Ventaja:</strong> E-commerce + AWS (líder en cloud)</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Dominio de mercado</span>
+                                <span>Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="85"
+                                    style="width: 0%; background: linear-gradient(90deg, #ffc107, #ff9800);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🤖 Nvidia</h3>
+                        <p><strong>Cap. mercado:</strong> ~$1.2T</p>
+                        <p><strong>Ventaja:</strong> GPUs para IA (90% cuota de mercado)</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Dominio de mercado</span>
+                                <span>Extremo</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="98"
+                                    style="width: 0%; background: linear-gradient(90deg, #9c27b0, #e91e63);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>📱 Meta</h3>
+                        <p><strong>Cap. mercado:</strong> ~$900B</p>
+                        <p><strong>Ventaja:</strong> Facebook + Instagram + WhatsApp</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Dominio de mercado</span>
+                                <span>Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="80"
+                                    style="width: 0%; background: linear-gradient(90deg, #03a9f4, #00bcd4);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico de capitalización de mercado -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Capitalización de Mercado de las 7 Magníficas (Billones USD)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="marketCapChart"></canvas>
+                </div>
             </div>
-        </section>
 
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
-        </div>
+            <!-- SECCIÓN 2 -->
+            <section id="seccion2">
+                <h2>2. El factor Inteligencia Artificial</h2>
+                <p>
+                    La IA no es solo hype - está generando ingresos reales. Las empresas de cloud computing
+                    (Azure, AWS, Google Cloud) están viendo crecimientos de 2 dígitos gracias a la demanda
+                    de computación para IA.
+                </p>
 
-        <section id="seccion2">
-            <h2>2. El factor Inteligencia Artificial</h2>
-            <p>
-                La IA no es solo humo. Está empezando a monetizarse. Las empresas de la nube (Azure, AWS, Google Cloud)
-                están viendo crecimientos acelerados gracias a la demanda de computación para IA.
-            </p>
-            <div class="callout warning">
-                <strong>Riesgo:</strong> Las expectativas son tan altas que cualquier reporte de ganancias "simplemente
-                bueno" puede provocar caídas en la bolsa.
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <strong>Lanzamiento de ChatGPT</strong><br>
+                            OpenAI lanza ChatGPT, desatando la carrera de la IA. Microsoft invierte $10B
+                            en OpenAI y lo integra en sus productos.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <strong>Boom de GPUs</strong><br>
+                            Nvidia se convierte en la empresa más valiosa por demanda de GPUs para entrenar
+                            modelos de IA. Acciones suben +240% en el año.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <strong>Monetización real</strong><br>
+                            Microsoft reporta $10B en ingresos anuales de IA. Google integra Gemini en todos
+                            sus productos. Amazon AWS crece 20% YoY por IA.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <strong>Consolidación</strong><br>
+                            La IA se convierte en parte estándar de productos tech. Las Big Tech dominan
+                            por su infraestructura y datos.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout callout-warning">
+                    <strong>Riesgo de expectativas:</strong> Las valoraciones actuales asumen que la IA
+                    seguirá creciendo exponencialmente. Cualquier desaceleración en la adopción o
+                    monetización podría provocar correcciones significativas.
+                </div>
+            </section>
+
+            <!-- Gráfico de crecimiento de ingresos por IA -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Ingresos Estimados de IA por Empresa (Miles de Millones USD)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="aiRevenueChart"></canvas>
+                </div>
             </div>
-        </section>
 
-        <section id="seccion3">
-            <h2>3. Riesgos Regulatorios</h2>
-            <p>
-                No todo es color de rosa. La Unión Europea y Estados Unidos tienen la lupa puesta sobre estas empresas
-                por prácticas monopolísticas.
+            <!-- SECCIÓN 3 -->
+            <section id="seccion3">
+                <h2>3. Riesgos regulatorios</h2>
+                <p>
+                    No todo es color de rosa. Los reguladores en EE.UU. y Europa tienen la lupa puesta sobre
+                    las Big Tech por prácticas monopolísticas, privacidad de datos y competencia desleal.
+                </p>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>⚖️ Google - Monopolio en búsquedas</h3>
+                        <p><strong>Riesgo:</strong> Alto</p>
+                        <ul>
+                            <li>Demanda antimonopolio del DOJ (EE.UU.)</li>
+                            <li>Posible división forzada de la empresa</li>
+                            <li>Multas de €4.3B en Europa</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Nivel de riesgo</span>
+                                <span>Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="80"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff5722, #f44336);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🍎 Apple - App Store</h3>
+                        <p><strong>Riesgo:</strong> Medio-Alto</p>
+                        <ul>
+                            <li>Comisión del 30% cuestionada</li>
+                            <li>Obligada a permitir tiendas alternativas en EU</li>
+                            <li>Demandas de Epic Games y otros</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Nivel de riesgo</span>
+                                <span>Medio-Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="70"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff9800, #ff5722);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>📱 Meta - Privacidad de datos</h3>
+                        <p><strong>Riesgo:</strong> Medio</p>
+                        <ul>
+                            <li>Multas por violación de privacidad</li>
+                            <li>Regulación de contenido en redes sociales</li>
+                            <li>Impacto de iOS privacy changes</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Nivel de riesgo</span>
+                                <span>Medio</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="60"
+                                    style="width: 0%; background: linear-gradient(90deg, #ffc107, #ff9800);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>📦 Amazon - Competencia desleal</h3>
+                        <p><strong>Riesgo:</strong> Medio</p>
+                        <ul>
+                            <li>Acusaciones de favorecer productos propios</li>
+                            <li>Prácticas anticompetitivas con vendedores</li>
+                            <li>Investigaciones en múltiples países</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Nivel de riesgo</span>
+                                <span>Medio</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="55"
+                                    style="width: 0%; background: linear-gradient(90deg, #ffc107, #4caf50);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4 -->
+            <section id="seccion4">
+                <h2>4. Valoraciones: ¿Justificadas?</h2>
+                <p>
+                    Las valoraciones del sector tech son exigentes. El P/E ratio promedio de las 7 Magníficas
+                    es de ~35, comparado con ~20 del S&P 500. ¿Están justificadas estas valoraciones?
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Argumentos a favor de las valoraciones actuales:</h3>
+                    <ul>
+                        <li><strong>Crecimiento sostenido:</strong> Ingresos creciendo 10-20% anual</li>
+                        <li><strong>Márgenes altos:</strong> 20-40% de margen operativo vs 10% promedio</li>
+                        <li><strong>Flujo de caja:</strong> Generan cientos de miles de millones en cash</li>
+                        <li><strong>Ventajas competitivas:</strong> Efectos de red y economías de escala</li>
+                        <li><strong>IA como catalizador:</strong> Nueva fuente de crecimiento a largo plazo</li>
+                    </ul>
+                </div>
+
+                <div class="callout callout-warning">
+                    <h3>Argumentos en contra:</h3>
+                    <ul>
+                        <li><strong>Expectativas muy altas:</strong> Cualquier decepción = caídas fuertes</li>
+                        <li><strong>Concentración de riesgo:</strong> 28% del S&P 500 en 7 empresas</li>
+                        <li><strong>Ciclo económico:</strong> En recesión, tech suele caer más que el mercado</li>
+                        <li><strong>Competencia en IA:</strong> Startups y open-source podrían disrumpir</li>
+                        <li><strong>Regulación:</strong> Multas y restricciones pueden afectar márgenes</li>
+                    </ul>
+                </div>
+
+                <div class="callout callout-success">
+                    <strong>Conclusión para inversores:</strong><br>
+                    Aunque las valoraciones son exigentes, la calidad de estos negocios es indiscutible.
+                    Para inversores a largo plazo (10+ años), cualquier corrección significativa (20-30%)
+                    podría verse como una oportunidad de compra. Para inversores a corto plazo, el riesgo
+                    de volatilidad es alto.
+                </div>
+            </section>
+
+            <!-- Gráfico comparativo P/E ratios -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">P/E Ratio: Big Tech vs S&P 500</h3>
+                <div class="chart-wrapper">
+                    <canvas id="peRatioChart"></canvas>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <section id="faq">
+                <h2>5. Preguntas frecuentes</h2>
+
+                <details class="faq-item">
+                    <summary>¿Es tarde para invertir en tecnología?</summary>
+                    <p>
+                        Nunca es tarde si tu horizonte es a largo plazo (10+ años). La tecnología seguirá
+                        siendo el motor de la productividad mundial. Sin embargo, las valoraciones actuales
+                        son altas, así que considera hacer DCA (aportaciones mensuales) en lugar de invertir
+                        todo de golpe.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué pasa si hay una recesión?</summary>
+                    <p>
+                        El sector tecnológico suele sufrir más que el mercado general en recesiones (mayor
+                        volatilidad). Sin embargo, las Big Tech con mucha caja y flujos de caja positivos
+                        suelen resistir mejor que startups sin beneficios. Históricamente, las caídas han
+                        sido oportunidades de compra.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Debería invertir en las 7 Magníficas o en un ETF tecnológico?</summary>
+                    <p>
+                        Para la mayoría de inversores, un ETF tecnológico (como QQQ o VGT) es mejor porque
+                        ofrece diversificación automática. Si inviertes en acciones individuales, necesitas
+                        seguir de cerca los resultados trimestrales y noticias de cada empresa.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿La IA es una burbuja?</summary>
+                    <p>
+                        Hay elementos de burbuja (hype excesivo, valoraciones altas), pero también fundamentos
+                        reales (ingresos creciendo, productividad mejorando). Probablemente veremos una
+                        "limpieza" donde empresas sin modelo de negocio claro caerán, pero las Big Tech
+                        con infraestructura y datos seguirán dominando.
+                    </p>
+                </details>
+
+            </section>
+
+            <p class="disclaimer">
+                Este artículo es informativo y educativo. No constituye recomendación de compra o venta.
+                Las valoraciones y datos son aproximados y pueden cambiar. Haz tu propia investigación
+                antes de invertir.
             </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Empresa</th>
-                        <th>Riesgo Principal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Google</td>
-                        <td>Demanda por monopolio en búsquedas</td>
-                    </tr>
-                    <tr>
-                        <td>Apple</td>
-                        <td>Regulaciones de la App Store</td>
-                    </tr>
-                    <tr>
-                        <td>Meta</td>
-                        <td>Privacidad de datos y redes sociales</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
 
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
-        </div>
-
-        <section id="seccion4">
-            <h2>4. Conclusión</h2>
-            <p>
-                Aunque las valoraciones son exigentes, la calidad de estos negocios es indiscutible. Cualquier
-                corrección significativa podría verse como una oportunidad de compra para el largo plazo.
-            </p>
-        </section>
-
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
-            <details>
-                <summary>¿Es tarde para invertir en tecnología?</summary>
-                <p>Nunca es tarde si tu horizonte es a largo plazo. La tecnología seguirá siendo el motor de la
-                    productividad mundial.</p>
-            </details>
-            <details>
-                <summary>¿Qué pasa si hay una recesión?</summary>
-                <p>El sector tecnológico suele sufrir en recesiones, pero las grandes empresas con mucha caja suelen
-                    resistir mejor que las pequeñas startups.</p>
-            </details>
-        </section>
-
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> Este artículo no es una recomendación de compra o venta. Haz tu propia
-            investigación.
-        </div>
-
+        </article>
     </main>
 
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- JS -->
     <script src="article-interactive.js"></script>
+    <script>
+        // Gráfico de capitalización de mercado
+        createBarChart('marketCapChart',
+            ['Apple', 'Microsoft', 'Google', 'Amazon', 'Nvidia', 'Meta', 'Tesla'],
+            [
+                {
+                    label: 'Capitalización (Billones USD)',
+                    data: [3.0, 2.8, 1.8, 1.6, 1.2, 0.9, 0.7],
+                    backgroundColor: ['#00c853', '#2196f3', '#ff9800', '#ffc107', '#9c27b0', '#03a9f4', '#f44336']
+                }
+            ]
+        );
+
+        // Gráfico de ingresos por IA
+        createBarChart('aiRevenueChart',
+            ['Microsoft', 'Google', 'Amazon', 'Nvidia', 'Meta'],
+            [
+                {
+                    label: '2024 (estimado)',
+                    data: [10, 8, 6, 15, 3],
+                    backgroundColor: '#2196f3'
+                },
+                {
+                    label: '2025 (proyección)',
+                    data: [18, 14, 11, 25, 6],
+                    backgroundColor: '#00c853'
+                }
+            ]
+        );
+
+        // Gráfico de P/E ratios
+        createBarChart('peRatioChart',
+            ['Apple', 'Microsoft', 'Google', 'Amazon', 'Nvidia', 'Meta', 'Tesla', 'S&P 500'],
+            [
+                {
+                    label: 'P/E Ratio',
+                    data: [30, 35, 25, 45, 65, 28, 70, 20],
+                    backgroundColor: ['#00c853', '#2196f3', '#ff9800', '#ffc107', '#9c27b0', '#03a9f4', '#f44336', '#888']
+                }
+            ]
+        );
+    </script>
 
 </body>
 

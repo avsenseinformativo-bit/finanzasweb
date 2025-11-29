@@ -2,174 +2,549 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
-
-<!-- Google tag (gtag.js) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-3FNCYG6XM1');
-    </script>
-
-<meta charset="UTF-8" />
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-3FNCYG6XM1');</script>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Aprende a crear un presupuesto que realmente funcione. Consejos prácticos para ahorrar dinero y controlar tus gastos." />
+        content="Aprende a crear un presupuesto que realmente funcione con la regla 50/30/20, herramientas recomendadas y consejos prácticos para controlar tus finanzas personales." />
     <title>Cómo crear un presupuesto que sí funciona – AV Finanzas</title>
-
-    <!-- CSS general de artículos -->
-    <link rel="stylesheet" href="article.css">
     <link rel="stylesheet" href="style.css">
-        
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 
 <body>
-    <header class="article-header">
-        <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="economia.html">Finanzas Personales</a> >
-            <span>Presupuesto Efectivo</span>
+    <header class="main-header">
+        <div class="logo"><img src="logo.png" alt="AV Finanzas - Portal de información financiera"></div>
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+            <a href="index.html" class="cta-button">Volver al inicio</a>
         </nav>
-
-        <div class="hero-article">
-            <img src="imagen8.jpg" alt="Presupuesto personal" loading="lazy">
-            <div class="hero-text">
-                <h1>Cómo crear un presupuesto que sí funciona (y cumplirlo)</h1>
-                <p class="article-subtitle">Olvídate de las hojas de cálculo complicadas. Aquí tienes un método simple
-                    para tomar el control de tu dinero.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
-            </div>
-        </div>
     </header>
-
-    <main class="article-container">
-
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
-        </div>
-
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>Descubre la regla 50/30/20 y cómo aplicarla para gestionar tus ingresos, gastos y ahorros de manera
-                eficiente sin privarte de todo.</p>
-        </details>
-
-        <div class="toc">
-            <h2>Contenido</h2>
-            <ul>
-                <li><a href="#seccion1">1. ¿Por qué fallan los presupuestos?</a></li>
-                <li><a href="#seccion2">2. La Regla 50/30/20</a></li>
-                <li><a href="#seccion3">3. Herramientas Recomendadas</a></li>
-                <li><a href="#seccion4">4. Conclusión</a></li>
-            </ul>
-        </div>
-
-        <section id="seccion1">
-            <h2>1. ¿Por qué fallan los presupuestos?</h2>
-            <p>
-                La mayoría de las personas abandonan su presupuesto porque es demasiado restrictivo o complicado. Un
-                buen presupuesto debe ser flexible y realista.
-            </p>
-            <div class="highlight-box">
-                <strong>Consejo:</strong> No intentes rastrear cada centavo al principio. Enfócate en las categorías
-                grandes.
+    <div class="reading-progress" id="readingProgress"></div>
+    <main class="article-layout">
+        <nav class="breadcrumb"><a href="index.html">Inicio</a> › <a href="#">Finanzas Personales</a> ›
+            <span>Presupuesto</span></nav>
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Finanzas Personales</span>
+                <h1>Cómo crear un presupuesto que realmente funciona</h1>
+                <p class="article-subtitle">Descubre la regla 50/30/20, herramientas prácticas y estrategias probadas
+                    para controlar tus finanzas sin privarte de todo. Guía completa con ejemplos reales y calculadoras
+                    interactivas.</p>
+                <div class="article-meta-row"><span>Actualizado: Noviembre 2025</span> · <span>Tiempo de lectura: 12
+                        min</span></div>
             </div>
         </section>
-
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box"><span class="stat-number" data-count="78" data-suffix="%">0%</span><span
+                    class="stat-label">Personas sin presupuesto</span></div>
+            <div class="stat-box"><span class="stat-number" data-count="3">0</span><span class="stat-label">Meses para
+                    crear hábito</span></div>
+            <div class="stat-box"><span class="stat-number" data-count="20" data-suffix="%">0%</span><span
+                    class="stat-label">Ahorro recomendado</span></div>
+            <div class="stat-box"><span class="stat-number" data-count="500">0</span><span class="stat-label">€ Ahorro
+                    promedio mensual</span></div>
         </div>
-
-        <section id="seccion2">
-            <h2>2. La Regla 50/30/20</h2>
-            <p>
-                Este es el método más popular por su simplicidad:
-            </p>
-            <ul>
-                <li><strong>50% Necesidades:</strong> Alquiler, comida, servicios básicos.</li>
-                <li><strong>30% Deseos:</strong> Ocio, cenas fuera, caprichos.</li>
-                <li><strong>20% Ahorro y Deudas:</strong> Fondo de emergencia, inversiones, pago de tarjetas.</li>
-            </ul>
-
-            <div class="callout warning">
-                <strong>Importante:</strong> Si tus necesidades superan el 50%, es señal de que debes recortar gastos
-                fijos o aumentar ingresos.
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen rápido</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>El 78% de las personas no tiene un presupuesto definido y vive al día.</li>
+                    <li>La regla 50/30/20 es el método más simple y efectivo: 50% necesidades, 30% deseos, 20% ahorro.
+                    </li>
+                    <li>Herramientas como YNAB, Mint, Fintonic o Excel facilitan enormemente el seguimiento.</li>
+                    <li>Un presupuesto realista debe ser flexible, no restrictivo. Permite caprichos controlados.</li>
+                    <li>Se necesitan aproximadamente 3 meses de constancia para crear el hábito de seguir un
+                        presupuesto.</li>
+                    <li>El error más común es ser demasiado estricto desde el principio, lo que lleva al abandono.</li>
+                </ul>
             </div>
         </section>
-
-        <section id="seccion3">
-            <h2>3. Herramientas Recomendadas</h2>
-            <p>No necesitas ser un experto en Excel. Hoy en día existen apps que lo hacen por ti.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Herramienta</th>
-                        <th>Costo</th>
-                        <th>Mejor para</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Excel / Google Sheets</td>
-                        <td>Gratis</td>
-                        <td>Personalización total</td>
-                    </tr>
-                    <tr>
-                        <td>Apps de Banco</td>
-                        <td>Gratis</td>
-                        <td>Automatización</td>
-                    </tr>
-                    <tr>
-                        <td>Libreta y Lápiz</td>
-                        <td>Gratis</td>
-                        <td>Simplicidad y consciencia</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
-        </div>
-
-        <section id="seccion4">
-            <h2>4. Conclusión</h2>
-            <p>
-                El mejor presupuesto es el que eres capaz de mantener. Empieza hoy, ajusta sobre la marcha y verás cómo
-                tu tranquilidad financiera mejora drásticamente.
-            </p>
-        </section>
-
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
-            <details>
-                <summary>¿Cuánto debería tener en mi fondo de emergencia?</summary>
-                <p>Lo ideal es tener entre 3 y 6 meses de tus gastos fijos ahorrados en una cuenta líquida.</p>
-            </details>
-            <details>
-                <summary>¿Debo pagar deudas antes de ahorrar?</summary>
-                <p>Generalmente sí, especialmente si son deudas con intereses altos (como tarjetas de crédito). Pero
-                    intenta mantener un pequeño fondo de emergencia simultáneamente.</p>
-            </details>
-        </section>
-
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> La información aquí presentada es educativa y no sustituye el asesoramiento
-            profesional.
-        </div>
-
+        <div class="ad-space ad-in-article"></div>
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
+                <li><a href="#por-que-fallan">1. ¿Por qué fallan los presupuestos?</a></li>
+                <li><a href="#regla-50-30-20">2. La regla 50/30/20 explicada</a></li>
+                <li><a href="#herramientas">3. Herramientas recomendadas</a></li>
+                <li><a href="#pasos">4. 5 pasos para empezar hoy</a></li>
+                <li><a href="#errores">5. Errores comunes a evitar</a></li>
+                <li><a href="#faq">6. Preguntas frecuentes</a></li>
+            </ol>
+        </aside>
+        <article class="article-content">
+            <section id="por-que-fallan">
+                <h2>1. ¿Por qué fallan los presupuestos?</h2>
+                <p>La mayoría de personas abandonan su presupuesto en las primeras semanas. Según estudios de
+                    comportamiento financiero, solo el 22% de las personas mantiene un presupuesto activo durante más de
+                    3 meses. Los motivos principales son:</p>
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Principales razones de fracaso en presupuestos</h3>
+                    <div class="chart-wrapper"><canvas id="failureReasonsChart"></canvas></div>
+                </div>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>❌ Error #1: Demasiado restrictivo</h3>
+                        <p>Un presupuesto que no permite ningún capricho es insostenible. Es como una dieta extrema:
+                            funciona 2 semanas y luego abandonas.</p>
+                        <p><strong>Solución:</strong> Incluye un 30% para "deseos" donde puedas gastar sin culpa.</p>
+                    </div>
+                    <div class="card-info">
+                        <h3>❌ Error #2: Demasiado complejo</h3>
+                        <p>Intentar rastrear cada céntimo en 50 categorías diferentes es agotador y poco práctico.</p>
+                        <p><strong>Solución:</strong> Empieza con solo 3 categorías grandes: Necesidades, Deseos,
+                            Ahorro.</p>
+                    </div>
+                    <div class="card-info">
+                        <h3>❌ Error #3: Sin seguimiento</h3>
+                        <p>Crear el presupuesto pero no revisar los gastos reales es como tener un mapa y no mirarlo.
+                        </p>
+                        <p><strong>Solución:</strong> Dedica 10 minutos cada domingo a revisar la semana.</p>
+                    </div>
+                    <div class="card-info">
+                        <h3>❌ Error #4: Poco realista</h3>
+                        <p>Presupuestar 50€/mes en comida cuando gastas 400€ es autoengañarse.</p>
+                        <p><strong>Solución:</strong> Rastrea tus gastos reales 1 mes ANTES de crear el presupuesto.</p>
+                    </div>
+                </div>
+                <div class="callout callout-warning">
+                    <strong>Dato importante:</strong> El 35% de las personas que abandonan su presupuesto lo hacen
+                    porque era demasiado restrictivo. La clave está en el equilibrio, no en la privación total.
+                </div>
+            </section>
+            <section id="regla-50-30-20">
+                <h2>2. La regla 50/30/20: Simple y efectiva</h2>
+                <p>Este método, popularizado por la senadora Elizabeth Warren, divide tus ingresos netos (después de
+                    impuestos) en tres categorías principales. Es simple, flexible y ha demostrado funcionar para
+                    millones de personas.</p>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info" style="border-top: 4px solid #2196f3;">
+                        <h3>💰 50% Necesidades</h3>
+                        <p><strong>Qué incluye:</strong> Alquiler/hipoteca, comida básica, transporte al trabajo,
+                            seguros obligatorios, servicios básicos (luz, agua, internet), pago mínimo de deudas.</p>
+                        <p><strong>Ejemplo con 2.000€ netos:</strong> 1.000€ máximo</p>
+                        <p><strong>Consejo clave:</strong> Si superas el 50%, tienes dos opciones: reducir gastos fijos
+                            (mudarte, cambiar de coche) o aumentar ingresos (segundo trabajo, freelance).</p>
+                        <p><strong>Desglose típico:</strong></p>
+                        <ul>
+                            <li>Vivienda: 600€ (30%)</li>
+                            <li>Comida: 250€ (12.5%)</li>
+                            <li>Transporte: 100€ (5%)</li>
+                            <li>Seguros: 50€ (2.5%)</li>
+                        </ul>
+                    </div>
+                    <div class="card-info" style="border-top: 4px solid #00c853;">
+                        <h3>🎉 30% Deseos</h3>
+                        <p><strong>Qué incluye:</strong> Restaurantes, ocio, suscripciones (Netflix, Spotify), hobbies,
+                            ropa no esencial, viajes, caprichos.</p>
+                        <p><strong>Ejemplo con 2.000€ netos:</strong> 600€</p>
+                        <p><strong>Consejo clave:</strong> Esta es tu válvula de escape. Aquí está tu margen de
+                            flexibilidad. Si un mes gastas 700€, ajusta el siguiente mes a 500€.</p>
+                        <p><strong>Desglose típico:</strong></p>
+                        <ul>
+                            <li>Restaurantes/cafés: 200€</li>
+                            <li>Ocio/entretenimiento: 150€</li>
+                            <li>Suscripciones: 50€</li>
+                            <li>Compras personales: 200€</li>
+                        </ul>
+                    </div>
+                    <div class="card-info" style="border-top: 4px solid #ff9800;">
+                        <h3>💎 20% Ahorro y Deudas</h3>
+                        <p><strong>Qué incluye:</strong> Fondo de emergencia, inversiones, pago EXTRA de deudas (más
+                            allá del mínimo), jubilación.</p>
+                        <p><strong>Ejemplo con 2.000€ netos:</strong> 400€</p>
+                        <p><strong>Consejo clave:</strong> Automatiza este ahorro el mismo día que cobras. Si esperas al
+                            final del mes, no quedará nada.</p>
+                        <p><strong>Priorización recomendada:</strong></p>
+                        <ol>
+                            <li>Fondo emergencia: 1.000€ inicial</li>
+                            <li>Deudas con interés >10%</li>
+                            <li>Fondo emergencia: 3-6 meses gastos</li>
+                            <li>Inversiones largo plazo</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Distribución visual 50/30/20</h3>
+                    <div class="chart-wrapper"><canvas id="distribution503020Chart"></canvas></div>
+                </div>
+                <div class="comparison-widget fade-in-scroll">
+                    <div class="comparison-side">
+                        <div class="comparison-label">Ingresos 2.000€/mes</div>
+                        <div class="comparison-value">1.000€</div>
+                        <div style="font-size: 14px; color: #888; margin-top: 5px;">Necesidades (50%)</div>
+                    </div>
+                    <div class="comparison-divider">+</div>
+                    <div class="comparison-side">
+                        <div class="comparison-label">Deseos + Ahorro</div>
+                        <div class="comparison-value">1.000€</div>
+                        <div style="font-size: 14px; color: #00c853; margin-top: 5px; font-weight: 700;">600€ deseos +
+                            400€ ahorro</div>
+                    </div>
+                </div>
+                <div class="callout callout-info">
+                    <strong>¿Qué pasa si mis porcentajes no coinciden?</strong> No te preocupes. La regla 50/30/20 es
+                    una guía, no una ley. Si vives con tus padres (gastos bajos), podrías hacer 30/30/40. Si tienes
+                    hijos pequeños, quizás 60/20/20. Ajusta a tu realidad, pero siempre intenta ahorrar al menos un
+                    10-15%.
+                </div>
+            </section>
+            <section id="herramientas">
+                <h2>3. Herramientas recomendadas para gestionar tu presupuesto</h2>
+                <p>No necesitas ser un experto en finanzas ni tener un máster en Excel. Estas herramientas hacen el
+                    trabajo pesado por ti:</p>
+                <div class="table-wrapper fade-in-scroll">
+                    <table class="simple-table">
+                        <thead>
+                            <tr>
+                                <th>Herramienta</th>
+                                <th>Tipo</th>
+                                <th>Precio</th>
+                                <th>Mejor para</th>
+                                <th>Pros</th>
+                                <th>Contras</th>
+                                <th>Valoración</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>YNAB</strong></td>
+                                <td>App</td>
+                                <td>14.99$/mes</td>
+                                <td>Control total, método envelope</td>
+                                <td>Muy completo, filosofía sólida</td>
+                                <td>Curva aprendizaje, precio</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mint</strong></td>
+                                <td>App</td>
+                                <td>Gratis</td>
+                                <td>Principiantes, sincronización bancaria</td>
+                                <td>Gratis, fácil, automático</td>
+                                <td>Solo USA/Canadá, anuncios</td>
+                                <td>⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Excel/Sheets</strong></td>
+                                <td>Hoja cálculo</td>
+                                <td>Gratis</td>
+                                <td>Personalización total</td>
+                                <td>Flexible, privado, offline</td>
+                                <td>Manual, requiere disciplina</td>
+                                <td>⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fintonic</strong></td>
+                                <td>App (España)</td>
+                                <td>Gratis</td>
+                                <td>Usuarios españoles, bancos locales</td>
+                                <td>Sincroniza bancos españoles</td>
+                                <td>Funciones limitadas gratis</td>
+                                <td>⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Wallet</strong></td>
+                                <td>App</td>
+                                <td>Gratis</td>
+                                <td>Seguimiento manual simple</td>
+                                <td>Simple, rápido</td>
+                                <td>Muy básico</td>
+                                <td>⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Notion</strong></td>
+                                <td>Todo-en-uno</td>
+                                <td>Gratis/10$/mes</td>
+                                <td>Integración con vida personal</td>
+                                <td>Personalizable, bonito</td>
+                                <td>Requiere configuración inicial</td>
+                                <td>⭐⭐⭐⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Comparativa: Facilidad vs Funcionalidades</h3>
+                    <div class="chart-wrapper"><canvas id="toolsComparisonChart"></canvas></div>
+                </div>
+                <div class="highlight-box">
+                    <h3>Mi recomendación personal</h3>
+                    <p><strong>Si eres principiante:</strong> Empieza con Fintonic (España) o Mint (internacional). Son
+                        gratis y automatizan el 80% del trabajo.</p>
+                    <p><strong>Si quieres control total:</strong> YNAB es la mejor opción, pero requiere compromiso.
+                        Prueba su trial de 34 días.</p>
+                    <p><strong>Si eres old-school:</strong> Una hoja de Excel simple funciona perfectamente. Descarga
+                        plantillas gratis de internet.</p>
+                </div>
+            </section>
+            <section id="pasos">
+                <h2>4. 5 pasos para empezar hoy mismo</h2>
+                <p>No necesitas esperar al próximo mes ni al lunes. Puedes empezar ahora mismo con estos pasos:</p>
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 1: Calcula tus ingresos netos</div>
+                        <div class="timeline-content">
+                            <p>Suma todos tus ingresos mensuales DESPUÉS de impuestos y Seguridad Social. Incluye:</p>
+                            <ul>
+                                <li>Nómina neta</li>
+                                <li>Ingresos freelance (después de impuestos)</li>
+                                <li>Rentas de alquiler</li>
+                                <li>Otros ingresos recurrentes</li>
+                            </ul>
+                            <p><strong>Ejemplo:</strong> Nómina 1.800€ + Freelance 300€ = 2.100€ netos/mes</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 2: Rastrea TODOS tus gastos durante 1 mes</div>
+                        <div class="timeline-content">
+                            <p>Este es el paso más importante. Anota CADA gasto durante 30 días. Usa una app (Fintonic,
+                                Wallet) o simplemente las notas del móvil.</p>
+                            <p><strong>Incluye TODO:</strong> Ese café de 1.50€, el parking, la propina, las compras
+                                online. Todo cuenta.</p>
+                            <p><strong>Truco:</strong> Guarda todos los tickets en una caja y al final del día
+                                regístralos. Solo toma 2 minutos.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 3: Categoriza tus gastos</div>
+                        <div class="timeline-content">
+                            <p>Al final del mes, separa todos tus gastos en las 3 categorías:</p>
+                            <ul>
+                                <li><strong>Necesidades:</strong> ¿Morirías sin esto? ¿Te echarían de casa?</li>
+                                <li><strong>Deseos:</strong> ¿Es algo que quieres pero no necesitas?</li>
+                                <li><strong>Ahorro:</strong> ¿Cuánto ahorraste o pagaste extra en deudas?</li>
+                            </ul>
+                            <p>Calcula el % de cada categoría. Ejemplo: 1.200€ necesidades / 2.100€ ingresos = 57%</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 4: Ajusta para alcanzar 50/30/20</div>
+                        <div class="timeline-content">
+                            <p>Si tus porcentajes no coinciden con 50/30/20, identifica dónde recortar:</p>
+                            <p><strong>Recortes fáciles (deseos):</strong></p>
+                            <ul>
+                                <li>Suscripciones que no usas (Netflix, gimnasio, apps)</li>
+                                <li>Comer fuera menos veces (cocina más en casa)</li>
+                                <li>Compras impulsivas (espera 48h antes de comprar)</li>
+                            </ul>
+                            <p><strong>Recortes difíciles (necesidades):</strong></p>
+                            <ul>
+                                <li>Mudarte a algo más barato</li>
+                                <li>Cambiar de coche o usar transporte público</li>
+                                <li>Cambiar de compañía (seguros, móvil, internet)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 5: Automatiza y revisa mensualmente</div>
+                        <div class="timeline-content">
+                            <p><strong>Automatiza el ahorro:</strong> Configura una transferencia automática el día 1 de
+                                cada mes (cuando cobras) a una cuenta de ahorro separada. Si no lo ves, no lo gastas.
+                            </p>
+                            <p><strong>Revisa cada mes:</strong> Dedica 30 minutos el último domingo del mes a revisar:
+                            </p>
+                            <ul>
+                                <li>¿Cumpliste el presupuesto?</li>
+                                <li>¿Dónde te pasaste?</li>
+                                <li>¿Qué ajustar el próximo mes?</li>
+                            </ul>
+                            <p><strong>Celebra los logros:</strong> Si cumpliste 3 meses seguidos, date un capricho
+                                pequeño (dentro del 30% de deseos).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar-container fade-in-scroll">
+                    <div class="progress-label"><span>Mes 1: Seguimiento y aprendizaje</span><span>33%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="33" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="progress-bar-container fade-in-scroll">
+                    <div class="progress-label"><span>Mes 2: Ajustes y optimización</span><span>66%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="66" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="progress-bar-container fade-in-scroll">
+                    <div class="progress-label"><span>Mes 3: Hábito formado ✅</span><span>100%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="100" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="errores">
+                <h2>5. Errores comunes a evitar</h2>
+                <div class="comparison-widget fade-in-scroll">
+                    <div class="comparison-side">
+                        <div class="comparison-label">❌ Presupuesto restrictivo</div>
+                        <div class="comparison-value">0€ ocio</div>
+                        <div style="font-size: 14px; color: #f44336; margin-top: 5px;">Insostenible, abandonarás en 2
+                            semanas</div>
+                    </div>
+                    <div class="comparison-divider">vs</div>
+                    <div class="comparison-side">
+                        <div class="comparison-label">✅ Presupuesto flexible</div>
+                        <div class="comparison-value">30% deseos</div>
+                        <div style="font-size: 14px; color: #00c853; margin-top: 5px; font-weight: 700;">Sostenible a
+                            largo plazo</div>
+                    </div>
+                </div>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info" style="background: linear-gradient(135deg, #ffebee 0%, #fff 100%);">
+                        <h3>⚠️ Error: Olvidar gastos anuales</h3>
+                        <p>Seguro del coche, IBI, regalos de Navidad... Gastos que "aparecen de repente" y destrozan tu
+                            presupuesto.</p>
+                        <p><strong>Solución:</strong> Súmalos todos, divídelos entre 12, y reserva esa cantidad
+                            mensualmente.</p>
+                        <p><strong>Ejemplo:</strong> Seguro 600€ + IBI 400€ + Regalos 300€ = 1.300€/año = 108€/mes a
+                            apartar</p>
+                    </div>
+                    <div class="card-info" style="background: linear-gradient(135deg, #fff3e0 0%, #fff 100%);">
+                        <h3>⚠️ Error: No tener fondo de emergencia</h3>
+                        <p>Una avería del coche, una urgencia médica, o perder el trabajo puede destruir tu presupuesto
+                            si no tienes colchón.</p>
+                        <p><strong>Solución:</strong> Antes de invertir o pagar deudas extra, ahorra 1.000€ de
+                            emergencia. Luego amplía a 3-6 meses de gastos.</p>
+                    </div>
+                    <div class="card-info" style="background: linear-gradient(135deg, #e3f2fd 0%, #fff 100%);">
+                        <h3>⚠️ Error: Compararte con otros</h3>
+                        <p>"Mi amigo ahorra el 40% de su sueldo, yo soy un fracaso". Cada situación es única.</p>
+                        <p><strong>Solución:</strong> Compárate solo contigo mismo del mes pasado. ¿Mejoraste? Eso es
+                            éxito.</p>
+                    </div>
+                    <div class="card-info" style="background: linear-gradient(135deg, #f3e5f5 0%, #fff 100%);">
+                        <h3>⚠️ Error: Abandonar tras un mal mes</h3>
+                        <p>Te pasaste 200€ en deseos. "Ya lo arruiné todo, para qué seguir".</p>
+                        <p><strong>Solución:</strong> Un mal mes no borra 3 meses buenos. Ajusta el siguiente mes y
+                            continúa. La constancia vence a la perfección.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="faq">
+                <h2>6. Preguntas frecuentes</h2>
+                <details class="faq-item">
+                    <summary>¿Qué hago si mis necesidades superan el 50% de mis ingresos?</summary>
+                    <p>Tienes dos opciones principales:</p>
+                    <p><strong>Opción 1 - Reducir gastos fijos:</strong></p>
+                    <ul>
+                        <li>Mudarte a un piso más barato o compartir vivienda</li>
+                        <li>Vender el coche y usar transporte público</li>
+                        <li>Cambiar de compañía de seguros, móvil, internet (compara precios)</li>
+                        <li>Reducir la cesta de la compra (marcas blancas, mercados locales)</li>
+                    </ul>
+                    <p><strong>Opción 2 - Aumentar ingresos:</strong></p>
+                    <ul>
+                        <li>Pedir un aumento o cambiar de trabajo</li>
+                        <li>Segundo trabajo part-time o freelance</li>
+                        <li>Monetizar un hobby (clases, vender artesanías, etc.)</li>
+                    </ul>
+                    <p>Mientras tanto, ajusta temporalmente a 60/20/20 o 65/20/15, pero trabaja para volver al 50%.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Debo incluir el pago de deudas en el 20% de ahorro?</summary>
+                    <p>Depende del tipo de pago:</p>
+                    <p><strong>Pago MÍNIMO de deudas:</strong> Va en Necesidades (50%). Es obligatorio, como el
+                        alquiler.</p>
+                    <p><strong>Pago EXTRA para salir antes de deudas:</strong> Va en el 20% de Ahorro/Deudas.</p>
+                    <p><strong>Ejemplo:</strong> Tarjeta con pago mínimo 50€/mes → Necesidades. Si pagas 200€/mes, los
+                        150€ extra → Ahorro/Deudas (20%).</p>
+                    <p><strong>Prioridad recomendada dentro del 20%:</strong></p>
+                    <ol>
+                        <li>Fondo emergencia mínimo (1.000€)</li>
+                        <li>Deudas con interés >10% (tarjetas, créditos rápidos)</li>
+                        <li>Fondo emergencia completo (3-6 meses)</li>
+                        <li>Deudas con interés 4-10% (préstamos personales)</li>
+                        <li>Inversiones largo plazo</li>
+                    </ol>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto tiempo tarda en funcionar un presupuesto?</summary>
+                    <p><strong>Mes 1:</strong> Caos total. Descubres que gastas mucho más de lo que pensabas. Es normal,
+                        no te desanimes.</p>
+                    <p><strong>Mes 2:</strong> Empiezas a ajustar. Todavía te pasas en algunas categorías, pero mejoras.
+                    </p>
+                    <p><strong>Mes 3:</strong> El hábito empieza a formarse. Ya piensas "¿esto entra en mi presupuesto?"
+                        antes de comprar.</p>
+                    <p><strong>Mes 6:</strong> Es automático. Ya no necesitas pensar tanto, tu cerebro se ha adaptado.
+                    </p>
+                    <p>La clave es la constancia. No abandones en el mes 1 porque "no funciona". Dale tiempo.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué hago con gastos anuales como seguros o impuestos?</summary>
+                    <p>Estos gastos "sorpresa" destrozan presupuestos. La solución:</p>
+                    <p><strong>Paso 1:</strong> Lista todos tus gastos anuales:</p>
+                    <ul>
+                        <li>Seguro coche: 600€</li>
+                        <li>IBI: 400€</li>
+                        <li>Regalos Navidad/cumpleaños: 500€</li>
+                        <li>Vacaciones: 1.000€</li>
+                        <li>Revisión coche: 200€</li>
+                        <li>Total: 2.700€/año</li>
+                    </ul>
+                    <p><strong>Paso 2:</strong> Divide entre 12: 2.700€ / 12 = 225€/mes</p>
+                    <p><strong>Paso 3:</strong> Cada mes, transfiere 225€ a una cuenta separada "Gastos anuales".</p>
+                    <p>Cuando llegue el seguro en julio, ya tienes el dinero apartado. No destroza tu presupuesto.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Puedo ajustar los porcentajes 50/30/20?</summary>
+                    <p>¡Por supuesto! La regla 50/30/20 es una guía, no una ley inmutable. Ajusta según tu situación:
+                    </p>
+                    <p><strong>Vives con padres (gastos bajos):</strong> 30/30/40 - Aprovecha para ahorrar más</p>
+                    <p><strong>Tienes hijos pequeños:</strong> 60/20/20 - Los niños son caros, es normal</p>
+                    <p><strong>Estás pagando deudas agresivamente:</strong> 50/20/30 - Menos deseos, más a deudas</p>
+                    <p><strong>Vives en ciudad cara (Madrid, Barcelona):</strong> 60/25/15 - Vivienda come más
+                        presupuesto</p>
+                    <p><strong>Regla de oro:</strong> Intenta ahorrar MÍNIMO un 10-15%, aunque sea ajustando otras
+                        categorías. Tu yo del futuro te lo agradecerá.</p>
+                </details>
+            </section>
+        </article>
     </main>
-
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
-
     <script src="article-interactive.js"></script>
-
+    <script>
+        createBarChart('failureReasonsChart', ['Muy restrictivo', 'Muy complejo', 'Sin seguimiento', 'Poco realista', 'Sin motivación'],
+            [{ label: 'Porcentaje (%)', data: [35, 25, 20, 12, 8], backgroundColor: ['#f44336', '#ff9800', '#ffc107', '#ff5722', '#666'] }]);
+        createDoughnutChart('distribution503020Chart', ['Necesidades (50%)', 'Deseos (30%)', 'Ahorro (20%)'], [50, 30, 20], ['#2196f3', '#00c853', '#ff9800']);
+        createBarChart('toolsComparisonChart', ['YNAB', 'Mint', 'Excel', 'Fintonic', 'Wallet', 'Notion'],
+            [{ label: 'Facilidad de uso (1-10)', data: [9, 8, 6, 8, 7, 7], backgroundColor: '#2196f3' }, { label: 'Funcionalidades (1-10)', data: [10, 7, 9, 7, 5, 8], backgroundColor: '#00c853' }]);
+    </script>
 </body>
 
 </html>

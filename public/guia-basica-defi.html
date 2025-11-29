@@ -2,10 +2,11 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,160 +16,554 @@
         gtag('config', 'G-3FNCYG6XM1');
     </script>
 
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Guía básica sobre Finanzas Descentralizadas (DeFi). Aprende qué son, cómo funcionan y sus riesgos." />
-    <title>Guía Básica de DeFi: Finanzas sin Bancos – AV Finanzas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Básica de DeFi: Finanzas sin Bancos | AV Finanzas</title>
 
-    <!-- CSS general de artículos -->
-    <link rel="stylesheet" href="article.css">
+    <meta name="description"
+        content="Guía completa sobre Finanzas Descentralizadas (DeFi). Aprende qué son, cómo funcionan, sus riesgos y oportunidades en el ecosistema blockchain.">
+
     <link rel="stylesheet" href="style.css">
-        
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
 </head>
 
 <body>
-    <header class="article-header">
-        <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="criptomonedas.html">Criptomonedas</a> >
-            <span>Guía DeFi</span>
-        </nav>
 
-        <div class="hero-article">
-            <img src="imagen3.jpg" alt="DeFi Criptomonedas" loading="lazy">
-            <div class="hero-text">
-                <h1>Guía Básica de DeFi: Finanzas sin Bancos</h1>
-                <p class="article-subtitle">Imagina pedir un préstamo o ganar intereses sin pasar por un banco. Eso es
-                    DeFi. Te explicamos cómo funciona.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
-            </div>
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="AV Finanzas - Portal de información financiera">
         </div>
+
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+
+            <a href="index.html" class="cta-button">Volver al inicio</a>
+        </nav>
     </header>
 
-    <main class="article-container">
+    <!-- Barra de progreso -->
+    <div class="reading-progress" id="readingProgress"></div>
 
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
+    <main class="article-layout">
+
+        <!-- Migas de pan -->
+        <nav class="breadcrumb">
+            <a href="index.html">Inicio</a> ›
+            <a href="#">Criptomonedas</a> ›
+            <span>Guía Básica de DeFi</span>
+        </nav>
+
+        <!-- HERO -->
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">DeFi</span>
+
+                <h1>Guía Básica de DeFi: Finanzas Descentralizadas sin Intermediarios</h1>
+
+                <p class="article-subtitle">
+                    Descubre cómo funcionan las finanzas descentralizadas, qué oportunidades ofrecen y por qué
+                    representan tanto una revolución como un riesgo extremo para tu capital.
+                </p>
+
+                <div class="article-meta-row">
+                    <span>Actualizado: Noviembre 2025</span>
+                    <span>·</span>
+                    <span>Tiempo de lectura: 9 min</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparación DeFi vs Banca Tradicional -->
+        <div class="comparison-widget fade-in-scroll">
+            <div class="comparison-side">
+                <div class="comparison-label">Banca Tradicional</div>
+                <div class="comparison-value">2-5%</div>
+                <div style="font-size: 14px; color: #888; margin-top: 5px;">APY típico</div>
+            </div>
+            <div class="comparison-divider">vs</div>
+            <div class="comparison-side">
+                <div class="comparison-label">DeFi</div>
+                <div class="comparison-value">5-20%</div>
+                <div style="font-size: 14px; color: #00c853; margin-top: 5px; font-weight: 700;">Mayor rendimiento*
+                </div>
+            </div>
         </div>
 
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>Introducción al mundo de las Finanzas Descentralizadas, explicando conceptos clave como Smart Contracts,
-                Yield Farming y los riesgos de seguridad asociados.</p>
-        </details>
+        <!-- Estadísticas DeFi -->
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box">
+                <span class="stat-number" data-count="85" data-suffix="B">0B</span>
+                <span class="stat-label">Total Value Locked</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="4.5" data-suffix="M">0M</span>
+                <span class="stat-label">Usuarios activos</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="12" data-suffix="B">0B</span>
+                <span class="stat-label">Pérdidas por hacks</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="2500">0</span>
+                <span class="stat-label">Protocolos activos</span>
+            </div>
+        </div>
 
-        <div class="toc">
-            <h2>Contenido</h2>
-            <ul>
+        <!-- Resumen rápido -->
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen rápido</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>DeFi permite servicios financieros sin bancos usando smart contracts en blockchain.</li>
+                    <li>Ofrece rendimientos superiores a la banca tradicional, pero con riesgos significativamente
+                        mayores.</li>
+                    <li>Los principales riesgos incluyen: bugs en smart contracts, impermanent loss y rug pulls.</li>
+                    <li>$12 mil millones perdidos en hacks y exploits desde 2020.</li>
+                    <li>Solo recomendado para usuarios que entienden profundamente la tecnología blockchain.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Anuncio -->
+        <div class="ad-space ad-in-article"></div>
+
+        <!-- TOC -->
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
                 <li><a href="#seccion1">1. ¿Qué es DeFi?</a></li>
-                <li><a href="#seccion2">2. ¿Cómo funciona?</a></li>
-                <li><a href="#seccion3">3. Riesgos Importantes</a></li>
-                <li><a href="#seccion4">4. Conclusión</a></li>
-            </ul>
-        </div>
+                <li><a href="#seccion2">2. ¿Cómo funciona DeFi?</a></li>
+                <li><a href="#seccion3">3. Principales protocolos DeFi</a></li>
+                <li><a href="#seccion4">4. Riesgos importantes</a></li>
+                <li><a href="#seccion5">5. ¿Deberías usar DeFi?</a></li>
+                <li><a href="#faq">6. Preguntas frecuentes</a></li>
+            </ol>
+        </aside>
 
-        <section id="seccion1">
-            <h2>1. ¿Qué es DeFi?</h2>
-            <p>
-                DeFi (Decentralized Finance) es un ecosistema de aplicaciones financieras construidas sobre redes
-                blockchain (principalmente Ethereum). Su objetivo es recrear servicios bancarios tradicionales
-                (préstamos, ahorros, intercambios) sin intermediarios.
-            </p>
-            <div class="highlight-box">
-                <strong>Concepto clave:</strong> "Smart Contract" (Contrato Inteligente). Es un código que ejecuta
-                automáticamente los acuerdos sin necesidad de un abogado o un banco.
+        <!-- CONTENIDO -->
+        <article class="article-content">
+
+            <!-- SECCIÓN 1 -->
+            <section id="seccion1">
+                <h2>1. ¿Qué es DeFi?</h2>
+                <p>
+                    DeFi (Decentralized Finance o Finanzas Descentralizadas) es un ecosistema de aplicaciones
+                    financieras construidas sobre redes blockchain, principalmente Ethereum. Su objetivo es recrear
+                    servicios bancarios tradicionales (préstamos, ahorros, intercambios) sin intermediarios
+                    centralizados.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Concepto clave: Smart Contracts</h3>
+                    <p>
+                        Un "Smart Contract" (Contrato Inteligente) es código que ejecuta automáticamente acuerdos
+                        cuando se cumplen ciertas condiciones. Es como un cajero automático que funciona 24/7 sin
+                        necesidad de empleados bancarios, abogados o intermediarios.
+                    </p>
+                </div>
+
+                <p>
+                    A diferencia de la banca tradicional donde confías en una institución, en DeFi confías en código
+                    verificable públicamente. Esto ofrece transparencia total, pero también significa que los errores
+                    en el código pueden ser catastróficos.
+                </p>
+            </section>
+
+            <!-- Comparación DeFi vs TradFi -->
+            <div class="grid-two fade-in-scroll">
+                <div class="card-info">
+                    <h3>🏦 Finanzas Tradicionales</h3>
+                    <ul>
+                        <li>Requiere identificación y aprobación</li>
+                        <li>Horarios limitados de operación</li>
+                        <li>Intermediarios cobran comisiones</li>
+                        <li>Protección de depósitos (hasta cierto límite)</li>
+                        <li>Regulación y supervisión estricta</li>
+                        <li>Rendimientos bajos pero estables</li>
+                    </ul>
+                </div>
+
+                <div class="card-info">
+                    <h3>⛓️ DeFi</h3>
+                    <ul>
+                        <li>Sin KYC, solo necesitas una wallet</li>
+                        <li>Disponible 24/7/365</li>
+                        <li>Sin intermediarios, comisiones de red</li>
+                        <li>Sin protección, pérdidas son permanentes</li>
+                        <li>Regulación mínima o inexistente</li>
+                        <li>Rendimientos altos pero muy volátiles</li>
+                    </ul>
+                </div>
             </div>
-        </section>
 
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
-        </div>
+            <!-- SECCIÓN 2 -->
+            <section id="seccion2">
+                <h2>2. ¿Cómo funciona DeFi?</h2>
+                <p>
+                    En lugar de depositar tu dinero en un banco, lo depositas en un protocolo (un programa informático
+                    en blockchain). Estos protocolos funcionan mediante pools de liquidez y smart contracts
+                    automatizados.
+                </p>
 
-        <section id="seccion2">
-            <h2>2. ¿Cómo funciona?</h2>
-            <p>
-                En lugar de depositar tu dinero en un banco, lo depositas en un protocolo (un programa informático).
-            </p>
-            <ul>
-                <li><strong>DEX (Exchange Descentralizado):</strong> Como Uniswap, te permite cambiar monedas sin
-                    registrarte.</li>
-                <li><strong>Lending (Préstamos):</strong> Como Aave, puedes prestar tus criptos para ganar intereses o
-                    pedir prestado dejando una garantía.</li>
-            </ul>
-        </section>
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 1</div>
+                        <div class="timeline-content">
+                            <strong>Conectas tu wallet</strong> - Usas MetaMask, Trust Wallet u otra billetera digital
+                            para conectarte al protocolo DeFi.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 2</div>
+                        <div class="timeline-content">
+                            <strong>Depositas criptomonedas</strong> - Transfieres tus activos al smart contract del
+                            protocolo. Tú mantienes el control mediante tu clave privada.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 3</div>
+                        <div class="timeline-content">
+                            <strong>El protocolo trabaja</strong> - Tu capital se usa para préstamos, provisión de
+                            liquidez u otras funciones según el protocolo.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 4</div>
+                        <div class="timeline-content">
+                            <strong>Generas rendimientos</strong> - Recibes intereses, comisiones o recompensas en
+                            tokens, generalmente de forma automática.
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="seccion3">
-            <h2>3. Riesgos Importantes</h2>
-            <p>
-                DeFi ofrece altos rendimientos, pero conlleva altos riesgos.
-            </p>
-            <div class="callout warning">
-                <strong>Peligro:</strong> Si pierdes tu clave privada, pierdes tu dinero. No hay "atención al cliente" a
-                quien llamar. Además, los contratos pueden tener fallos (hacks).
+            <!-- SECCIÓN 3 -->
+            <section id="seccion3">
+                <h2>3. Principales protocolos DeFi</h2>
+                <p>El ecosistema DeFi incluye diferentes tipos de protocolos, cada uno con funciones específicas:</p>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>🔄 DEX (Exchanges Descentralizados)</h3>
+                        <p><strong>Ejemplos:</strong> Uniswap, PancakeSwap, SushiSwap</p>
+                        <p>
+                            Permiten intercambiar criptomonedas sin registrarte ni pasar por KYC. Funcionan mediante
+                            pools de liquidez donde los usuarios proveen fondos y ganan comisiones.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Riesgo</span>
+                                <span>Medio</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="55"
+                                    style="width: 0%; background: linear-gradient(90deg, #ffc107, #ff9800);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>💰 Lending (Préstamos)</h3>
+                        <p><strong>Ejemplos:</strong> Aave, Compound, MakerDAO</p>
+                        <p>
+                            Puedes prestar tus criptos para ganar intereses o pedir prestado dejando una garantía
+                            (colateral). Todo automatizado mediante smart contracts.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Riesgo</span>
+                                <span>Medio-Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="65"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff9800, #ff5722);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🌾 Yield Farming</h3>
+                        <p><strong>Ejemplos:</strong> Yearn Finance, Curve, Convex</p>
+                        <p>
+                            Estrategias automatizadas que mueven tu capital entre diferentes protocolos para maximizar
+                            rendimientos. Complejidad y riesgo muy altos.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Riesgo</span>
+                                <span>Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="80"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff5722, #f44336);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>💵 Stablecoins</h3>
+                        <p><strong>Ejemplos:</strong> USDC, DAI, USDT</p>
+                        <p>
+                            Criptomonedas diseñadas para mantener valor estable (generalmente 1:1 con el dólar).
+                            Esenciales para operar en DeFi sin exposición a volatilidad cripto.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Riesgo</span>
+                                <span>Bajo-Medio</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="40"
+                                    style="width: 0%; background: linear-gradient(90deg, #4caf50, #ffc107);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico de TVL -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Total Value Locked (TVL) en DeFi - Evolución 2020-2025</h3>
+                <div class="chart-wrapper">
+                    <canvas id="defiTVLChart"></canvas>
+                </div>
             </div>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Riesgo</th>
-                        <th>Descripción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Smart Contract Risk</td>
-                        <td>Fallos en el código que permiten robos.</td>
-                    </tr>
-                    <tr>
-                        <td>Impermanet Loss</td>
-                        <td>Pérdida al proveer liquidez si el precio cambia mucho.</td>
-                    </tr>
-                    <tr>
-                        <td>Rug Pull</td>
-                        <td>Los desarrolladores huyen con el dinero (común en proyectos nuevos).</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <!-- SECCIÓN 4 -->
+            <section id="seccion4">
+                <h2>4. Riesgos importantes</h2>
+                <p>
+                    DeFi ofrece rendimientos atractivos, pero conlleva riesgos significativamente mayores que las
+                    finanzas tradicionales. Es crucial entenderlos antes de participar.
+                </p>
 
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
-        </div>
+                <div class="callout callout-warning">
+                    <strong>Advertencia crítica:</strong> Si pierdes tu clave privada, pierdes tu dinero para siempre.
+                    No hay "atención al cliente" a quien llamar, no hay "recuperar contraseña". La responsabilidad
+                    es 100% tuya.
+                </div>
 
-        <section id="seccion4">
-            <h2>4. Conclusión</h2>
-            <p>
-                DeFi es fascinante y revolucionario, pero no es para todos. Empieza con cantidades pequeñas que estés
-                dispuesto a perder mientras aprendes.
-            </p>
-        </section>
+                <h3>Principales riesgos del ecosistema DeFi:</h3>
 
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
-            <details>
-                <summary>¿Necesito identificación (KYC) para usar DeFi?</summary>
-                <p>Generalmente no. Solo necesitas una billetera digital (wallet) como MetaMask.</p>
-            </details>
-            <details>
-                <summary>¿Cuánto dinero necesito para empezar?</summary>
-                <p>Puedes empezar con muy poco, pero ten en cuenta las comisiones de la red (gas fees), que a veces
-                    pueden ser altas.</p>
-            </details>
-        </section>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>🐛 Smart Contract Risk</h3>
+                        <p>
+                            Fallos en el código que permiten robos o pérdidas. Incluso protocolos auditados han sido
+                            hackeados. Más de $12 mil millones robados desde 2020 en exploits de smart contracts.
+                        </p>
+                        <div
+                            style="margin-top: 10px; padding: 10px; background: rgba(244, 67, 54, 0.1); border-radius: 8px;">
+                            <strong>Ejemplo real:</strong> Poly Network perdió $611M en 2021 por un bug.
+                        </div>
+                    </div>
 
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> Las criptomonedas son activos de alto riesgo. Este artículo es meramente
-            educativo.
-        </div>
+                    <div class="card-info">
+                        <h3>📉 Impermanent Loss</h3>
+                        <p>
+                            Pérdida temporal (que puede volverse permanente) al proveer liquidez en DEXs si el precio
+                            de los activos cambia significativamente. Puede anular completamente tus ganancias.
+                        </p>
+                        <div
+                            style="margin-top: 10px; padding: 10px; background: rgba(244, 67, 54, 0.1); border-radius: 8px;">
+                            <strong>Escenario típico:</strong> Provees ETH/USDC, ETH sube 50%, pierdes ganancias vs
+                            simplemente holdear.
+                        </div>
+                    </div>
 
+                    <div class="card-info">
+                        <h3>🏃 Rug Pull</h3>
+                        <p>
+                            Los desarrolladores huyen con el dinero de los usuarios. Extremadamente común en proyectos
+                            nuevos y no auditados. Miles de proyectos han resultado ser estafas.
+                        </p>
+                        <div
+                            style="margin-top: 10px; padding: 10px; background: rgba(244, 67, 54, 0.1); border-radius: 8px;">
+                            <strong>Señal de alerta:</strong> APYs irrealmente altos (>1000%) son casi siempre scams.
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>⚡ Liquidación</h3>
+                        <p>
+                            Si usas préstamos con colateral y el precio cae, tu garantía puede ser liquidada
+                            automáticamente. Puedes perder todo en minutos durante alta volatilidad.
+                        </p>
+                        <div
+                            style="margin-top: 10px; padding: 10px; background: rgba(244, 67, 54, 0.1); border-radius: 8px;">
+                            <strong>Riesgo real:</strong> Liquidaciones en cascada durante crashes del mercado.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico de pérdidas por hacks -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Pérdidas por Hacks en DeFi (2020-2025)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="defiHacksChart"></canvas>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 5 -->
+            <section id="seccion5">
+                <h2>5. ¿Deberías usar DeFi?</h2>
+                <p>
+                    DeFi es fascinante y potencialmente revolucionario, pero <strong>no es para todos</strong>.
+                    Requiere conocimiento técnico, tolerancia al riesgo extremo y capital que puedas permitirte perder.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Criterios para considerar DeFi</h3>
+                    <p>Solo deberías participar en DeFi si cumples TODOS estos criterios:</p>
+                    <ul>
+                        <li>Entiendes cómo funcionan blockchain y smart contracts</li>
+                        <li>Puedes permitirte perder el 100% del capital invertido</li>
+                        <li>Tienes tiempo para investigar protocolos y auditorías</li>
+                        <li>Entiendes los riesgos específicos de cada protocolo</li>
+                        <li>Sabes gestionar claves privadas de forma segura</li>
+                    </ul>
+                </div>
+
+                <h3>Si decides participar:</h3>
+
+                <div class="callout callout-success">
+                    <strong>Estrategia prudente:</strong>
+                    <ul>
+                        <li>Empieza con cantidades pequeñas que estés dispuesto a perder</li>
+                        <li>Usa solo protocolos establecidos con auditorías múltiples</li>
+                        <li>Nunca inviertas más del 5% de tu patrimonio cripto en DeFi</li>
+                        <li>Diversifica entre varios protocolos (no todo en uno)</li>
+                        <li>Evita APYs irrealmente altos (>100% anual es sospechoso)</li>
+                        <li>Ten en cuenta las comisiones de gas (pueden ser muy altas en Ethereum)</li>
+                    </ul>
+                </div>
+
+                <p class="disclaimer">
+                    Este artículo es educativo, no asesoramiento financiero. DeFi es extremadamente arriesgado.
+                    Consulta con un asesor financiero antes de invertir. Las criptomonedas pueden resultar en
+                    pérdida total del capital.
+                </p>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq">
+                <h2>6. Preguntas frecuentes</h2>
+
+                <details class="faq-item">
+                    <summary>¿Necesito identificación (KYC) para usar DeFi?</summary>
+                    <p>
+                        Generalmente no. Solo necesitas una billetera digital (wallet) como MetaMask, Trust Wallet o
+                        Phantom. Sin embargo, algunos protocolos están empezando a implementar KYC por presión
+                        regulatoria,
+                        especialmente en jurisdicciones como EE.UU. y la UE.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cuánto dinero necesito para empezar?</summary>
+                    <p>
+                        Técnicamente puedes empezar con muy poco, pero ten en cuenta las comisiones de la red (gas
+                        fees).
+                        En Ethereum, las gas fees pueden ser de $20-$100 por transacción durante alta congestión, lo que
+                        hace inviable operar con menos de $1,000. Alternativas como Polygon, Arbitrum o BSC tienen fees
+                        mucho menores (centavos).
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Es DeFi legal?</summary>
+                    <p>
+                        Depende de tu jurisdicción. En la mayoría de países, usar DeFi no es ilegal, pero la regulación
+                        está evolucionando rápidamente. Algunos países están implementando restricciones. Además, las
+                        ganancias en DeFi generalmente están sujetas a impuestos como ganancias de capital. Consulta con
+                        un asesor fiscal local.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué pasa si el protocolo es hackeado?</summary>
+                    <p>
+                        En la mayoría de casos, pierdes tu dinero. A diferencia de los bancos, no hay seguro de
+                        depósitos
+                        en DeFi. Algunos protocolos tienen fondos de seguro comunitarios (como Nexus Mutual), pero la
+                        cobertura es limitada y no garantizada. Por eso es crucial usar solo protocolos bien
+                        establecidos
+                        y auditados.
+                    </p>
+                </details>
+
+            </section>
+
+        </article>
     </main>
 
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- JS -->
     <script src="article-interactive.js"></script>
+    <script>
+        // Gráfico de TVL en DeFi
+        createLineChart('defiTVLChart',
+            ['Ene 20', 'Abr 20', 'Jul 20', 'Oct 20', 'Ene 21', 'Abr 21', 'Jul 21', 'Oct 21', 'Ene 22', 'Abr 22', 'Jul 22', 'Oct 22', 'Ene 23', 'Abr 23', 'Jul 23', 'Oct 23', 'Ene 24', 'Abr 24', 'Jul 24', 'Oct 24', 'Ene 25'],
+            [
+                {
+                    label: 'Total Value Locked (Miles de millones $)',
+                    data: [1, 2.5, 4.8, 12, 18, 55, 85, 180, 240, 160, 75, 55, 48, 52, 58, 62, 68, 72, 78, 82, 85],
+                    borderColor: '#2196f3',
+                    backgroundColor: 'rgba(33, 150, 243, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }
+            ]
+        );
+
+        // Gráfico de pérdidas por hacks
+        createBarChart('defiHacksChart',
+            ['2020', '2021', '2022', '2023', '2024', '2025'],
+            [
+                {
+                    label: 'Pérdidas por Hacks (Miles de millones $)',
+                    data: [0.5, 2.8, 3.9, 1.8, 2.1, 0.9],
+                    backgroundColor: '#f44336'
+                }
+            ]
+        );
+    </script>
 
 </body>
 

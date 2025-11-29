@@ -2,277 +2,504 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
-
-<!-- Google tag (gtag.js) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-3FNCYG6XM1');
-    </script>
-
-<meta charset="UTF-8" />
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-3FNCYG6XM1');</script>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Guía completa sobre cómo proteger tu dinero de la inflación. Estrategias de inversión y activos refugio para preservar tu poder adquisitivo." />
-    <title>Inflación: Cómo proteger tu dinero – AV Finanzas</title>
-
-    <link rel="stylesheet" href="article.css">
+        content="Guía completa sobre cómo proteger tu dinero de la inflación. Estrategias, activos refugio y consejos prácticos para 2025." />
+    <title>Inflación: Cómo proteger tu dinero en 2025 – AV Finanzas</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="adsense.css">
-   </head>
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
 
 <body>
-    <header class="article-header">
-        <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="economia.html">Economía</a> >
-            <span>Protección contra inflación</span>
+    <header class="main-header">
+        <div class="logo"><img src="logo.png" alt="AV Finanzas - Portal de información financiera"></div>
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+            <a href="index.html" class="cta-button">Volver al inicio</a>
         </nav>
-
-        <div class="article-hero">
-            <img src="vitaly-gariev-Kul6JqIDA3I-unsplash.jpg" alt="Inflación y protección del dinero" loading="lazy">
-            <div class="hero-text">
-                <h1>Inflación: Estrategias para proteger tu dinero del aumento de precios</h1>
-                <p class="article-subtitle">Descubre cómo la inflación erosiona tu poder adquisitivo y qué activos
-                    pueden ayudarte a preservar tu riqueza.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
-            </div>
-        </div>
     </header>
-
-    <main class="article-container">
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
+    <div class="reading-progress" id="readingProgress"></div>
+    <main class="article-layout">
+        <nav class="breadcrumb"><a href="index.html">Inicio</a> › <a href="#">Economía</a> › <span>Inflación</span>
+        </nav>
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Economía</span>
+                <h1>Inflación: Cómo proteger tu dinero y no perder poder adquisitivo</h1>
+                <p class="article-subtitle">Descubre estrategias probadas para proteger tus ahorros de la inflación,
+                    activos refugio y cómo mantener tu poder adquisitivo en 2025.</p>
+                <div class="article-meta-row"><span>Actualizado: Noviembre 2025</span> · <span>13 min lectura</span>
+                </div>
+            </div>
+        </section>
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box"><span class="stat-number" data-count="3.2" data-suffix="%">0%</span><span
+                    class="stat-label">Inflación actual (2025)</span></div>
+            <div class="stat-box"><span class="stat-number" data-count="32">0</span><span class="stat-label">€ Pérdida
+                    diaria (10k€ ahorro)</span></div>
+            <div class="stat-box"><span class="stat-number" data-count="10" data-suffix="%">0%</span><span
+                    class="stat-label">Inflación pico (2022)</span></div>
+            <div class="stat-box"><span class="stat-number" data-count="2" data-suffix="%">0%</span><span
+                    class="stat-label">Objetivo BCE</span></div>
         </div>
-
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>La inflación reduce el valor real de tu dinero con el tiempo. Protegerte requiere invertir en activos
-                que superen la inflación: acciones, inmuebles, bonos indexados y, con precaución, materias primas.</p>
-        </details>
-
-        <div class="toc">
+        <div class="comparison-widget fade-in-scroll">
+            <div class="comparison-side">
+                <div class="comparison-label">10.000€ en cuenta (0% interés)</div>
+                <div class="comparison-value">9.680€</div>
+                <div style="font-size: 14px; color: #f44336; margin-top: 5px; font-weight: 700;">Poder adquisitivo tras
+                    1 año (3.2% inflación)</div>
+            </div>
+            <div class="comparison-divider">vs</div>
+            <div class="comparison-side">
+                <div class="comparison-label">10.000€ invertidos (7% retorno)</div>
+                <div class="comparison-value">10.700€</div>
+                <div style="font-size: 14px; color: #00c853; margin-top: 5px; font-weight: 700;">+3.8% real tras
+                    inflación</div>
+            </div>
+        </div>
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen ejecutivo</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>La inflación en 2025 está en 3.2%, bajando desde el pico del 10% en 2022.</li>
+                    <li>Dejar dinero en cuenta corriente sin interés te hace perder 320€ anuales por cada 10.000€.</li>
+                    <li>Activos refugio: acciones, inmobiliario, oro, bonos indexados a inflación.</li>
+                    <li>Diversificación es clave: no pongas todos los huevos en la misma cesta.</li>
+                    <li>El efectivo es necesario (fondo emergencia), pero no para todo tu patrimonio.</li>
+                </ul>
+            </div>
+        </section>
+        <div class="ad-space ad-in-article"></div>
+        <aside class="article-toc">
             <h2>Contenido</h2>
-            <ul>
-                <li><a href="#seccion1">1. ¿Qué es la inflación realmente?</a></li>
-                <li><a href="#seccion2">2. El impacto real en tu bolsillo</a></li>
-                <li><a href="#seccion3">3. Activos anti-inflación</a></li>
-                <li><a href="#seccion4">4. Estrategia de protección</a></li>
-            </ul>
-        </div>
-
-        <section id="seccion1">
-            <h2>1. ¿Qué es la inflación realmente?</h2>
-            <p>
-                La inflación es el aumento generalizado y sostenido de los precios de bienes y servicios. Cuando hay
-                inflación, cada euro compra menos cosas que antes.
-            </p>
-
-            <div class="highlight-box">
-                <strong>Ejemplo práctico:</strong> Si la inflación es del 3% anual, lo que hoy cuesta 100€ costará
-                103€ el año que viene. En 10 años, costará ~134€.
-            </div>
-
-            <p>
-                El problema: si tu dinero está en una cuenta que paga 0% de interés, estás perdiendo poder adquisitivo
-                cada año. Es como si tu dinero se "evaporara" lentamente.
-            </p>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion2">
-            <h2>2. El impacto real en tu bolsillo</h2>
-            <p>
-                Veamos cómo la inflación afecta diferentes cantidades de dinero a lo largo del tiempo:
-            </p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Cantidad inicial</th>
-                        <th>Poder adquisitivo en 10 años (3% inflación)</th>
-                        <th>Pérdida de valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>10.000€</td>
-                        <td>7.441€</td>
-                        <td>-25.6%</td>
-                    </tr>
-                    <tr>
-                        <td>50.000€</td>
-                        <td>37.205€</td>
-                        <td>-25.6%</td>
-                    </tr>
-                    <tr>
-                        <td>100.000€</td>
-                        <td>74.410€</td>
-                        <td>-25.6%</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="callout warning">
-                <strong>Alerta:</strong> Con una inflación del 3% anual, tu dinero pierde más del 25% de su valor en
-                solo 10 años si no hace nada.
-            </div>
-
-            <p>
-                Por eso es crucial que tus inversiones generen rendimientos superiores a la inflación. Si ganas un 2%
-                pero la inflación es del 3%, realmente estás perdiendo un 1% de poder adquisitivo.
-            </p>
-        </section>
-
-        <section id="seccion3">
-            <h2>3. Activos que protegen contra la inflación</h2>
-            <p>
-                No todos los activos se comportan igual frente a la inflación. Aquí está el ranking de efectividad:
-            </p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Activo</th>
-                        <th>Protección inflación</th>
-                        <th>Ventajas</th>
-                        <th>Desventajas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Acciones</td>
-                        <td>Alta (largo plazo)</td>
-                        <td>Empresas suben precios con inflación</td>
-                        <td>Volatilidad a corto plazo</td>
-                    </tr>
-                    <tr>
-                        <td>Inmuebles</td>
-                        <td>Alta</td>
-                        <td>Alquileres suben con inflación</td>
-                        <td>Baja liquidez, costes altos</td>
-                    </tr>
-                    <tr>
-                        <td>Bonos indexados</td>
-                        <td>Media-Alta</td>
-                        <td>Ajuste automático a inflación</td>
-                        <td>Rendimientos modestos</td>
-                    </tr>
-                    <tr>
-                        <td>Oro</td>
-                        <td>Media</td>
-                        <td>Reserva de valor histórica</td>
-                        <td>No genera ingresos, volátil</td>
-                    </tr>
-                    <tr>
-                        <td>Efectivo</td>
-                        <td>Nula</td>
-                        <td>Liquidez total</td>
-                        <td>Pierde valor constantemente</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Recomendaciones por activo:</h3>
-
-            <div class="highlight-box">
-                <strong>Acciones (60-70% de cartera):</strong> Fondos indexados globales. Las empresas pueden
-                trasladar costes a clientes, protegiendo márgenes.
-            </div>
-
-            <div class="highlight-box">
-                <strong>Inmuebles (0-30%):</strong> Directamente o vía REITs. Los alquileres tienden a subir con
-                inflación.
-            </div>
-
-            <div class="highlight-box">
-                <strong>Bonos indexados (10-20%):</strong> Bonos del Estado ligados a inflación (en España: Bonos
-                indexados del Tesoro).
-            </div>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion4">
-            <h2>4. Estrategia de protección anti-inflación</h2>
-            <p>
-                Una cartera bien diseñada para combatir la inflación podría verse así:
-            </p>
-
-            <ul>
-                <li><strong>65% Renta Variable:</strong> Fondos indexados globales (MSCI World, S&P 500)</li>
-                <li><strong>15% Inmobiliario:</strong> REITs o propiedad directa</li>
-                <li><strong>10% Bonos Indexados:</strong> Protección directa contra inflación</li>
-                <li><strong>5% Materias Primas:</strong> Oro, commodities (opcional, para diversificación)</li>
-                <li><strong>5% Efectivo:</strong> Solo para emergencias y oportunidades</li>
-            </ul>
-
-            <div class="callout warning">
-                <strong>Importante:</strong> Esta es una cartera genérica. Tu asignación debe ajustarse a tu edad,
-                objetivos y tolerancia al riesgo.
-            </div>
-
-            <h3>Errores comunes a evitar:</h3>
             <ol>
-                <li>Mantener todo el dinero en cuentas corrientes o de ahorro</li>
-                <li>Comprar oro en exceso (no genera ingresos)</li>
-                <li>Vender acciones en pánico durante alta inflación</li>
-                <li>Ignorar los costes de las inversiones (comisiones altas erosionan rendimientos)</li>
+                <li><a href="#que-es">1. ¿Qué es la inflación?</a></li>
+                <li><a href="#impacto">2. Impacto en tu dinero</a></li>
+                <li><a href="#activos">3. Activos anti-inflación</a></li>
+                <li><a href="#estrategias">4. Estrategias por perfil</a></li>
+                <li><a href="#errores">5. Errores a evitar</a></li>
+                <li><a href="#faq">6. FAQ</a></li>
             </ol>
-        </section>
-
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
-
-            <details>
-                <summary>¿Las criptomonedas protegen contra la inflación?</summary>
-                <p>Bitcoin se promociona como "oro digital", pero su volatilidad extrema lo hace poco fiable como
-                    protección. Puede funcionar a muy largo plazo, pero es especulativo.</p>
-            </details>
-
-            <details>
-                <summary>¿Debo pagar mi hipoteca más rápido durante alta inflación?</summary>
-                <p>Depende. Si tu hipoteca tiene tipo fijo bajo, la inflación trabaja a tu favor (pagas con dinero que
-                    vale menos). Si es variable, considera amortizar.</p>
-            </details>
-
-            <details>
-                <summary>¿Qué hago si la inflación es temporal?</summary>
-                <p>Mantén tu estrategia a largo plazo. No hagas cambios drásticos por inflación temporal. La
-                    diversificación protege en todos los escenarios.</p>
-            </details>
-        </section>
-
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> Este artículo es educativo. La inflación y las inversiones varían según
-            circunstancias personales. Consulta con un asesor financiero.
-        </div>
-
+        </aside>
+        <article class="article-content">
+            <section id="que-es">
+                <h2>1. ¿Qué es la inflación y por qué importa?</h2>
+                <p>La inflación es el aumento generalizado y sostenido de los precios de bienes y servicios. En términos
+                    simples: cada año, tu dinero compra menos cosas.</p>
+                <div class="highlight-box">
+                    <h3>Ejemplo práctico</h3>
+                    <p><strong>2020:</strong> Con 100€ comprabas 50 litros de gasolina</p>
+                    <p><strong>2025:</strong> Con 100€ compras solo 38 litros de gasolina</p>
+                    <p><strong>Pérdida de poder adquisitivo:</strong> -24% en 5 años</p>
+                </div>
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Evolución inflación España (2018-2025)</h3>
+                    <div class="chart-wrapper"><canvas id="inflationHistoryChart"></canvas></div>
+                </div>
+                <div class="callout callout-warning">
+                    <strong>Dato clave:</strong> Con una inflación del 3% anual, tu dinero pierde la mitad de su valor
+                    en 24 años. Si tienes 30 años hoy, a los 54 tus ahorros valdrán la mitad si no haces nada.
+                </div>
+            </section>
+            <section id="impacto">
+                <h2>2. El impacto real en tu dinero</h2>
+                <p>Veamos con números reales cómo la inflación erosiona tus ahorros:</p>
+                <div class="table-wrapper fade-in-scroll">
+                    <table class="simple-table">
+                        <thead>
+                            <tr>
+                                <th>Ahorro inicial</th>
+                                <th>Tras 1 año</th>
+                                <th>Tras 5 años</th>
+                                <th>Tras 10 años</th>
+                                <th>Tras 20 años</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>10.000€</strong></td>
+                                <td style="color: #ff9800;">9.680€</td>
+                                <td style="color: #ff5722;">8.548€</td>
+                                <td style="color: #f44336;">7.305€</td>
+                                <td style="color: #d32f2f;">5.336€</td>
+                            </tr>
+                            <tr>
+                                <td><strong>50.000€</strong></td>
+                                <td style="color: #ff9800;">48.400€</td>
+                                <td style="color: #ff5722;">42.740€</td>
+                                <td style="color: #f44336;">36.525€</td>
+                                <td style="color: #d32f2f;">26.680€</td>
+                            </tr>
+                            <tr>
+                                <td><strong>100.000€</strong></td>
+                                <td style="color: #ff9800;">96.800€</td>
+                                <td style="color: #ff5722;">85.480€</td>
+                                <td style="color: #f44336;">73.050€</td>
+                                <td style="color: #d32f2f;">53.360€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="font-size: 14px; color: #666; margin-top: 10px;">*Asumiendo inflación constante del 3.2%
+                        anual y 0% de interés en cuenta</p>
+                </div>
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Erosión del poder adquisitivo (10.000€ iniciales)</h3>
+                    <div class="chart-wrapper"><canvas id="purchasingPowerChart"></canvas></div>
+                </div>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info" style="background: linear-gradient(135deg, #ffebee 0%, #fff 100%);">
+                        <h3>💸 Pérdida anual por 10.000€</h3>
+                        <p><strong>Inflación 2%:</strong> -200€/año</p>
+                        <p><strong>Inflación 3.2%:</strong> -320€/año</p>
+                        <p><strong>Inflación 5%:</strong> -500€/año</p>
+                        <p><strong>Inflación 10% (pico 2022):</strong> -1.000€/año</p>
+                    </div>
+                    <div class="card-info" style="background: linear-gradient(135deg, #e8f5e9 0%, #fff 100%);">
+                        <h3>✅ Solución: Rentabilidad > Inflación</h3>
+                        <p><strong>Objetivo:</strong> Ganar más del 3.2% anual</p>
+                        <p><strong>Ejemplo:</strong> Inversión al 7% anual</p>
+                        <p><strong>Resultado:</strong> +3.8% real (7% - 3.2%)</p>
+                        <p><strong>En 10 años:</strong> 10.000€ → 14.500€ reales</p>
+                    </div>
+                </div>
+            </section>
+            <section id="activos">
+                <h2>3. Activos que protegen contra la inflación</h2>
+                <p>No todos los activos se comportan igual ante la inflación. Aquí están los más efectivos:</p>
+                <div class="table-wrapper fade-in-scroll">
+                    <table class="simple-table">
+                        <thead>
+                            <tr>
+                                <th>Activo</th>
+                                <th>Protección inflación</th>
+                                <th>Rentabilidad histórica</th>
+                                <th>Riesgo</th>
+                                <th>Liquidez</th>
+                                <th>Mínimo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Acciones (S&P 500)</strong></td>
+                                <td style="color: #00c853;">Excelente</td>
+                                <td style="color: #00c853;">10% anual</td>
+                                <td style="color: #ff9800;">Alto</td>
+                                <td style="color: #00c853;">Alta</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Inmobiliario</strong></td>
+                                <td style="color: #00c853;">Excelente</td>
+                                <td style="color: #4caf50;">6-8% anual</td>
+                                <td style="color: #ffc107;">Medio</td>
+                                <td style="color: #f44336;">Baja</td>
+                                <td>50.000€+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>REITs (inmob. cotizado)</strong></td>
+                                <td style="color: #4caf50;">Buena</td>
+                                <td style="color: #4caf50;">7-9% anual</td>
+                                <td style="color: #ffc107;">Medio</td>
+                                <td style="color: #00c853;">Alta</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Oro</strong></td>
+                                <td style="color: #4caf50;">Buena</td>
+                                <td style="color: #ffc107;">5% anual</td>
+                                <td style="color: #4caf50;">Bajo</td>
+                                <td style="color: #00c853;">Alta</td>
+                                <td>50€</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bonos indexados</strong></td>
+                                <td style="color: #00c853;">Excelente</td>
+                                <td style="color: #ffc107;">Inflación + 1-2%</td>
+                                <td style="color: #4caf50;">Bajo</td>
+                                <td style="color: #ffc107;">Media</td>
+                                <td>1.000€</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Criptomonedas</strong></td>
+                                <td style="color: #ffc107;">Variable</td>
+                                <td style="color: #00c853;">15%+ anual*</td>
+                                <td style="color: #f44336;">Muy alto</td>
+                                <td style="color: #00c853;">Alta</td>
+                                <td>10€</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Depósitos bancarios</strong></td>
+                                <td style="color: #ff9800;">Pobre</td>
+                                <td style="color: #ff9800;">3-4% (2025)</td>
+                                <td style="color: #00c853;">Muy bajo</td>
+                                <td style="color: #00c853;">Alta</td>
+                                <td>1.000€</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cuenta corriente</strong></td>
+                                <td style="color: #f44336;">Nula</td>
+                                <td style="color: #f44336;">0%</td>
+                                <td style="color: #00c853;">Muy bajo</td>
+                                <td style="color: #00c853;">Alta</td>
+                                <td>0€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="font-size: 14px; color: #666; margin-top: 10px;">*Criptomonedas: Rentabilidad histórica
+                        muy volátil. Puede ser +100% o -50% en un año.</p>
+                </div>
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Rentabilidad histórica vs Inflación (últimos 20 años)</h3>
+                    <div class="chart-wrapper"><canvas id="assetPerformanceChart"></canvas></div>
+                </div>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info" style="border-top: 4px solid #2196f3;">
+                        <h3>📈 Acciones: El mejor protector histórico</h3>
+                        <p><strong>Por qué funcionan:</strong> Las empresas suben precios con la inflación, manteniendo
+                            márgenes.</p>
+                        <p><strong>Rentabilidad:</strong> S&P 500 ha dado 10% anual promedio (últimos 50 años)</p>
+                        <p><strong>Ejemplo:</strong> 10.000€ en S&P 500 (2015) → 27.000€ (2025)</p>
+                        <p><strong>Riesgo:</strong> Volatilidad. Puede caer -20% en un año malo.</p>
+                        <p><strong>Recomendación:</strong> Fondos indexados (bajo coste) con horizonte 10+ años</p>
+                    </div>
+                    <div class="card-info" style="border-top: 4px solid #ff9800;">
+                        <h3>🏠 Inmobiliario: Tangible y rentable</h3>
+                        <p><strong>Por qué funciona:</strong> Activo tangible. Alquileres suben con inflación.</p>
+                        <p><strong>Rentabilidad:</strong> 6-8% anual (alquiler + revalorización)</p>
+                        <p><strong>Ventaja:</strong> Puedes vivir en él o alquilarlo (genera ingresos)</p>
+                        <p><strong>Desventaja:</strong> Requiere capital alto (50.000€+), poca liquidez</p>
+                        <p><strong>Alternativa:</strong> REITs (inmobiliario cotizado) desde 100€</p>
+                    </div>
+                    <div class="card-info" style="border-top: 4px solid #ffc107;">
+                        <h3>🥇 Oro: El refugio clásico</h3>
+                        <p><strong>Por qué funciona:</strong> Reserva de valor durante 5.000 años</p>
+                        <p><strong>Rentabilidad:</strong> 5% anual promedio (últimos 20 años)</p>
+                        <p><strong>Ventaja:</strong> No correlacionado con bolsa. Sube en crisis.</p>
+                        <p><strong>Desventaja:</strong> No genera ingresos (dividendos/alquileres)</p>
+                        <p><strong>Recomendación:</strong> 5-10% de portfolio en oro (ETFs como GLD)</p>
+                    </div>
+                    <div class="card-info" style="border-top: 4px solid #00c853;">
+                        <h3>📊 Bonos indexados a inflación</h3>
+                        <p><strong>Por qué funcionan:</strong> Pagan inflación + prima fija</p>
+                        <p><strong>Rentabilidad:</strong> Inflación + 1-2% anual</p>
+                        <p><strong>Ejemplo:</strong> Si inflación es 3%, cobras 4-5%</p>
+                        <p><strong>Ventaja:</strong> Protección garantizada, bajo riesgo</p>
+                        <p><strong>Desventaja:</strong> Rentabilidad limitada vs acciones</p>
+                    </div>
+                </div>
+            </section>
+            <section id="estrategias">
+                <h2>4. Estrategias de protección según tu perfil</h2>
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Perfil Conservador (bajo riesgo)</div>
+                        <div class="timeline-content">
+                            <p><strong>Objetivo:</strong> Proteger capital, aceptar rentabilidad modesta</p>
+                            <p><strong>Distribución recomendada:</strong></p>
+                            <ul>
+                                <li>40% Bonos indexados a inflación</li>
+                                <li>30% Depósitos a plazo (3-4%)</li>
+                                <li>20% Fondos indexados acciones</li>
+                                <li>10% Oro</li>
+                            </ul>
+                            <p><strong>Rentabilidad esperada:</strong> 4-5% anual</p>
+                            <p><strong>Riesgo:</strong> Bajo. Máxima caída esperada: -5%</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Perfil Moderado (riesgo medio)</div>
+                        <div class="timeline-content">
+                            <p><strong>Objetivo:</strong> Equilibrio entre protección y crecimiento</p>
+                            <p><strong>Distribución recomendada:</strong></p>
+                            <ul>
+                                <li>50% Fondos indexados acciones (S&P 500, MSCI World)</li>
+                                <li>25% Bonos indexados</li>
+                                <li>15% REITs (inmobiliario cotizado)</li>
+                                <li>10% Oro</li>
+                            </ul>
+                            <p><strong>Rentabilidad esperada:</strong> 6-7% anual</p>
+                            <p><strong>Riesgo:</strong> Medio. Máxima caída esperada: -15%</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Perfil Agresivo (alto riesgo)</div>
+                        <div class="timeline-content">
+                            <p><strong>Objetivo:</strong> Máximo crecimiento, tolera volatilidad</p>
+                            <p><strong>Distribución recomendada:</strong></p>
+                            <ul>
+                                <li>70% Acciones (fondos indexados + acciones individuales)</li>
+                                <li>15% REITs</li>
+                                <li>10% Criptomonedas (Bitcoin, Ethereum)</li>
+                                <li>5% Oro</li>
+                            </ul>
+                            <p><strong>Rentabilidad esperada:</strong> 9-12% anual</p>
+                            <p><strong>Riesgo:</strong> Alto. Máxima caída esperada: -30%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar-container fade-in-scroll">
+                    <div class="progress-label"><span>Conservador: Protección</span><span>40%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="40" style="width: 0%; background: #4caf50;"></div>
+                    </div>
+                </div>
+                <div class="progress-bar-container fade-in-scroll">
+                    <div class="progress-label"><span>Moderado: Equilibrio</span><span>65%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="65" style="width: 0%; background: #ff9800;"></div>
+                    </div>
+                </div>
+                <div class="progress-bar-container fade-in-scroll">
+                    <div class="progress-label"><span>Agresivo: Crecimiento</span><span>90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="90" style="width: 0%; background: #f44336;"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="errores">
+                <h2>5. Errores comunes al protegerse de la inflación</h2>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info" style="background: linear-gradient(135deg, #ffebee 0%, #fff 100%);">
+                        <h3>❌ Error #1: Todo en efectivo</h3>
+                        <p>"No quiero arriesgar, lo dejo todo en la cuenta"</p>
+                        <p><strong>Consecuencia:</strong> Pierdes 3.2% anual garantizado por inflación</p>
+                        <p><strong>Solución:</strong> Máximo 6 meses de gastos en efectivo (emergencias). Resto
+                            invertido.</p>
+                    </div>
+                    <div class="card-info" style="background: linear-gradient(135deg, #fff3e0 0%, #fff 100%);">
+                        <h3>❌ Error #2: Pánico y vender en caídas</h3>
+                        <p>"La bolsa cayó 15%, vendo todo antes de perder más"</p>
+                        <p><strong>Consecuencia:</strong> Cristalizas pérdidas. Históricamente, la bolsa siempre se
+                            recupera.</p>
+                        <p><strong>Solución:</strong> Invierte solo dinero que no necesites en 5+ años. Aguanta caídas.
+                        </p>
+                    </div>
+                    <div class="card-info" style="background: linear-gradient(135deg, #e3f2fd 0%, #fff 100%);">
+                        <h3>❌ Error #3: No diversificar</h3>
+                        <p>"Todo en Bitcoin" o "Todo en un piso"</p>
+                        <p><strong>Consecuencia:</strong> Si ese activo cae, pierdes todo</p>
+                        <p><strong>Solución:</strong> Diversifica entre acciones, bonos, inmobiliario, oro. Nunca +30%
+                            en un solo activo.</p>
+                    </div>
+                    <div class="card-info" style="background: linear-gradient(135deg, #f3e5f5 0%, #fff 100%);">
+                        <h3>❌ Error #4: Intentar timing del mercado</h3>
+                        <p>"Espero a que baje para comprar"</p>
+                        <p><strong>Consecuencia:</strong> Nunca compras. El mercado sube mientras esperas.</p>
+                        <p><strong>Solución:</strong> DCA (Dollar Cost Averaging): invierte cantidad fija mensual,
+                            siempre.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="faq">
+                <h2>6. Preguntas frecuentes</h2>
+                <details class="faq-item">
+                    <summary>¿Cuánto efectivo debo mantener?</summary>
+                    <p><strong>Respuesta corta:</strong> 3-6 meses de gastos en cuenta corriente/depósito.</p>
+                    <p><strong>Respuesta larga:</strong> Depende de tu estabilidad laboral:</p>
+                    <ul>
+                        <li><strong>Empleo estable (funcionario):</strong> 3 meses de gastos</li>
+                        <li><strong>Empleo normal:</strong> 6 meses de gastos</li>
+                        <li><strong>Autónomo/freelance:</strong> 9-12 meses de gastos</li>
+                    </ul>
+                    <p><strong>Ejemplo:</strong> Gastos mensuales 2.000€ → Fondo emergencia 6.000-12.000€ en cuenta. El
+                        resto, invertido.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Es buen momento para invertir con inflación alta?</summary>
+                    <p><strong>Sí, de hecho es el MEJOR momento.</strong> Cuando la inflación es alta, dejar dinero en
+                        cuenta es garantía de pérdida.</p>
+                    <p><strong>Históricamente:</strong> Las acciones han dado mejores rendimientos en periodos de
+                        inflación moderada (2-4%).</p>
+                    <p><strong>Estrategia:</strong> No intentes adivinar el momento perfecto. Empieza con DCA (inversión
+                        mensual fija) y mantén largo plazo.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Oro físico o ETF de oro?</summary>
+                    <p><strong>Para la mayoría: ETF de oro (como GLD, IAU)</strong></p>
+                    <p><strong>Ventajas ETF:</strong></p>
+                    <ul>
+                        <li>Liquidez: Vendes en segundos</li>
+                        <li>Sin almacenamiento: No necesitas caja fuerte</li>
+                        <li>Divisible: Compras desde 50€</li>
+                        <li>Comisiones bajas: 0.25% anual</li>
+                    </ul>
+                    <p><strong>Oro físico solo si:</strong> Eres muy conservador y quieres tenerlo en mano. Pero implica
+                        costes de almacenamiento y seguridad.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Las criptomonedas protegen de la inflación?</summary>
+                    <p><strong>Teóricamente sí, prácticamente es complicado.</strong></p>
+                    <p><strong>Argumento a favor:</strong> Bitcoin tiene oferta limitada (21M), a diferencia del dinero
+                        fiat que se imprime sin límite.</p>
+                    <p><strong>Argumento en contra:</strong> Extremadamente volátil. Puede caer -50% en meses, lo que
+                        anula cualquier protección anti-inflación.</p>
+                    <p><strong>Recomendación:</strong> Máximo 5-10% de tu portfolio en cripto. Considéralo una apuesta
+                        de alto riesgo, no tu protección principal.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué hago si la inflación sube al 10% otra vez?</summary>
+                    <p><strong>Estrategia de emergencia para inflación extrema:</strong></p>
+                    <ol>
+                        <li><strong>Aumenta % en acciones:</strong> Las empresas suben precios con inflación</li>
+                        <li><strong>Reduce bonos normales:</strong> Pierden valor con inflación alta. Mantén solo bonos
+                            indexados</li>
+                        <li><strong>Aumenta oro a 15-20%:</strong> Históricamente sube en inflación extrema</li>
+                        <li><strong>Considera inmobiliario:</strong> Alquileres suben con inflación</li>
+                        <li><strong>Evita deudas variables:</strong> Los intereses subirán. Fija hipoteca si puedes</li>
+                    </ol>
+                    <p><strong>Ejemplo portfolio inflación 10%:</strong> 60% acciones, 20% oro, 15% bonos indexados, 5%
+                        efectivo</p>
+                </details>
+            </section>
+        </article>
     </main>
-
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
-
     <script src="article-interactive.js"></script>
-
+    <script>
+        createLineChart('inflationHistoryChart', ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+            [{ label: 'Inflación (%)', data: [1.7, 0.8, -0.3, 3.0, 8.5, 3.5, 3.3, 3.2], borderColor: '#f44336', backgroundColor: 'rgba(244,67,54,0.1)', tension: 0.4 }]);
+        createLineChart('purchasingPowerChart', ['Hoy', '1 año', '5 años', '10 años', '20 años'],
+            [{ label: 'Poder adquisitivo (€)', data: [10000, 9680, 8548, 7305, 5336], borderColor: '#f44336', backgroundColor: 'rgba(244,67,54,0.1)', tension: 0.4 }]);
+        createBarChart('assetPerformanceChart', ['Acciones', 'Inmobiliario', 'REITs', 'Oro', 'Bonos indexados', 'Depósitos', 'Inflación'],
+            [{ label: 'Rentabilidad anual (%)', data: [10, 7, 8, 5, 4.5, 3.5, 3.2], backgroundColor: ['#00c853', '#4caf50', '#8bc34a', '#ffc107', '#ff9800', '#ff5722', '#f44336'] }]);
+    </script>
 </body>
 
 </html>

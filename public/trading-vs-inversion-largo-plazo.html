@@ -2,10 +2,11 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,276 +16,610 @@
         gtag('config', 'G-3FNCYG6XM1');
     </script>
 
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Trading vs Inversión a largo plazo: ¿Cuál es mejor? Comparativa completa de rentabilidad, riesgos y tiempo requerido." />
-    <title>Trading vs Inversión a largo plazo – AV Finanzas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading vs Inversión a Largo Plazo: La Batalla Final | AV Finanzas</title>
 
-    <link rel="stylesheet" href="article.css">
+    <meta name="description"
+        content="La guía definitiva: Day Trading vs Buy & Hold. Analizamos rentabilidad real, riesgos, estrés y qué estrategia te hará millonario (y cuál te dejará en la ruina).">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="adsense.css">
-        
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <style>
+        /* Animaciones exclusivas para este artículo */
+        .vs-badge {
+            background: linear-gradient(135deg, #ff4b1f, #ff9068);
+            color: #ffffff !important;
+            /* Force white text */
+            padding: 8px 16px;
+            border-radius: 12px;
+            /* Less rounded to look less like a bubble */
+            font-weight: 900;
+            font-size: 1.2em;
+            box-shadow: 0 4px 15px rgba(255, 75, 31, 0.4);
+            animation: pulse 2s infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: normal;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 75, 31, 0.7);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(255, 75, 31, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 75, 31, 0);
+            }
+        }
+
+        .strategy-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            height: 100%;
+            /* Ensure equal height */
+        }
+
+        .strategy-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .winner-glow {
+            border: 2px solid #00c853;
+            box-shadow: 0 0 30px rgba(0, 200, 83, 0.2);
+        }
+
+        .loser-glow {
+            border: 2px solid #f44336;
+            box-shadow: 0 0 30px rgba(244, 67, 54, 0.2);
+        }
+
+        /* Barra de progreso animada con "carrera" */
+        .race-track {
+            background: #f0f0f0;
+            height: 30px;
+            border-radius: 15px;
+            margin: 10px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .race-car {
+            height: 100%;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            padding-right: 10px;
+            justify-content: flex-end;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+            width: 0%;
+            min-width: 70px;
+            /* Ensure text fits */
+            transition: width 2s cubic-bezier(0.22, 1, 0.36, 1);
+            white-space: nowrap;
+        }
+
+        /* Grid Layout Fix - Match stats-grid sizing */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            /* Same as stats-grid */
+            gap: 25px;
+            /* Same as stats-grid */
+            margin: 40px auto;
+            /* Center horizontally */
+            max-width: 1100px;
+            /* Limit width to keep cards centered */
+            justify-content: center;
+            /* Center grid items */
+        }
+
+        .comparison-grid>* {
+            min-width: 0;
+            /* Prevent content overflow */
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+                /* Stack on mobile */
+            }
+        }
+    </style>
+
 </head>
 
 <body>
-    <header class="article-header">
-        <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="mercados.html">Mercados</a> >
-            <span>Trading vs Inversión</span>
-        </nav>
 
-        <div class="article-hero">
-            <img src="ibrahim-rifath-OApHds2yEGQ-unsplash.jpg" alt="Trading vs inversión a largo plazo">
-            <div class="hero-text">
-                <h1>Trading vs Inversión a largo plazo: ¿Cuál te conviene más?</h1>
-                <p class="article-subtitle">Análisis objetivo de dos filosofías opuestas: la especulación activa frente
-                    a la paciencia del inversor a largo plazo.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
-            </div>
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="AV Finanzas - Portal de información financiera">
         </div>
+
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+
+            <a href="index.html" class="cta-button">Volver al inicio</a>
+        </nav>
     </header>
 
-    <main class="article-container">
+    <!-- Barra de progreso -->
+    <div class="reading-progress" id="readingProgress"></div>
 
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
+    <main class="article-layout">
+
+        <!-- Migas de pan -->
+        <nav class="breadcrumb">
+            <a href="index.html">Inicio</a> ›
+            <a href="#">Inversiones</a> ›
+            <span>Estrategia</span>
+        </nav>
+
+        <!-- HERO -->
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Estrategia de Inversión</span>
+
+                <h1>Trading vs Inversión a Largo Plazo</h1>
+
+                <p class="article-subtitle">
+                    La batalla eterna de Wall Street. ¿Es mejor buscar el "pelotazo" rápido comprando y vendiendo cada
+                    día,
+                    o dormir tranquilo mientras el interés compuesto te hace rico lentamente? Los datos tienen un claro
+                    ganador.
+                </p>
+
+                <div class="article-meta-row">
+                    <span>Actualizado: Noviembre 2025</span>
+                    <span>·</span>
+                    <span>Tiempo de lectura: 15 min</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparación Visual Interactiva -->
+        <div class="comparison-widget fade-in-scroll" style="padding: 40px 0;">
+            <div class="comparison-grid">
+                <!-- Card 1: Trading Win Rate -->
+                <div class="comparison-side strategy-card loser-glow" style="padding: 25px; border-radius: 15px;">
+                    <div class="comparison-label">Day Trading</div>
+                    <div class="comparison-value" style="color: #f44336;">90% Pierden</div>
+                    <div style="font-size: 14px; color: #666; margin-top: 5px;">Probabilidad de éxito a 1 año</div>
+                    <div class="race-track">
+                        <div class="race-car" style="background: #f44336; width: 10%;">10%</div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Investing Win Rate -->
+                <div class="comparison-side strategy-card winner-glow" style="padding: 25px; border-radius: 15px;">
+                    <div class="comparison-label">Inversión Pasiva</div>
+                    <div class="comparison-value" style="color: #00c853;">94% Ganan</div>
+                    <div style="font-size: 14px; color: #666; margin-top: 5px;">Probabilidad de éxito a 20 años</div>
+                    <div class="race-track">
+                        <div class="race-car" style="background: #00c853; width: 94%;">94%</div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Trading Lifestyle -->
+                <div class="comparison-side strategy-card loser-glow" style="padding: 25px; border-radius: 15px;">
+                    <div class="comparison-label">Estilo de Vida</div>
+                    <div class="comparison-value" style="color: #f44336;">Esclavitud</div>
+                    <div style="font-size: 14px; color: #666; margin-top: 5px;">Tiempo frente a pantalla</div>
+                    <div class="race-track">
+                        <div class="race-car" style="background: #f44336; width: 95%;">8h/día</div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Investing Lifestyle -->
+                <div class="comparison-side strategy-card winner-glow" style="padding: 25px; border-radius: 15px;">
+                    <div class="comparison-label">Estilo de Vida</div>
+                    <div class="comparison-value" style="color: #00c853;">Libertad</div>
+                    <div style="font-size: 14px; color: #666; margin-top: 5px;">Tiempo frente a pantalla</div>
+                    <div class="race-track">
+                        <div class="race-car" style="background: #00c853; width: 5%;">1h/mes</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>El trading busca ganancias rápidas con alto riesgo y dedicación intensiva. La inversión a largo plazo
-                prioriza el crecimiento sostenido con menor estrés. Los datos muestran que el 90% de traders pierden
-                dinero.</p>
-        </details>
-
-        <div class="toc">
-            <h2>Contenido</h2>
-            <ul>
-                <li><a href="#seccion1">1. Definiciones y diferencias clave</a></li>
-                <li><a href="#seccion2">2. Comparativa de resultados reales</a></li>
-                <li><a href="#seccion3">3. Ventajas y desventajas de cada enfoque</a></li>
-                <li><a href="#seccion4">4. ¿Cuál deberías elegir?</a></li>
-            </ul>
+        <!-- Estadísticas del sector -->
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box">
+                <span class="stat-number" data-count="10" data-suffix="%">0%</span>
+                <span class="stat-label">Rentabilidad media histórica (Bolsa)</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="97" data-suffix="%">0%</span>
+                <span class="stat-label">Day Traders que pierden dinero</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="35" data-suffix="%">0%</span>
+                <span class="stat-label">Impuestos sobre ganancias (Corto plazo)</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="10000">0</span>
+                <span class="stat-label">Horas necesarias para ser experto</span>
+            </div>
         </div>
 
-        <section id="seccion1">
-            <h2>1. Definiciones y diferencias clave</h2>
+        <!-- Resumen rápido -->
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen rápido</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li><strong>Day Trading:</strong> Comprar y vender en el mismo día. Requiere dedicación total,
+                        control emocional de acero y compite contra algoritmos de alta frecuencia. El 90-95% pierde
+                        dinero.</li>
+                    <li><strong>Inversión a Largo Plazo (Buy & Hold):</strong> Comprar activos de calidad y mantenerlos
+                        años. Aprovecha el interés compuesto y requiere mínimo esfuerzo. Históricamente infalible a >15
+                        años.</li>
+                    <li><strong>El factor psicológico:</strong> El trading genera adrenalina (y cortisol); la inversión
+                        a largo plazo es "aburrida" pero efectiva.</li>
+                    <li><strong>Fiscalidad:</strong> El trading paga impuestos cada año por cada venta; la inversión a
+                        largo plazo difiere impuestos hasta el final, maximizando el interés compuesto.</li>
+                </ul>
+            </div>
+        </section>
 
-            <h3>Trading (Especulación Activa)</h3>
-            <p>
-                El trading implica comprar y vender activos frecuentemente (desde minutos hasta semanas) buscando
-                aprovechar movimientos de precio a corto plazo.
+        <!-- Anuncio -->
+        <div class="ad-space ad-in-article"></div>
+
+        <!-- TOC -->
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
+                <li><a href="#seccion1">1. Day Trading: La ilusión del dinero rápido</a></li>
+                <li><a href="#seccion2">2. Inversión a Largo Plazo: La magia del interés compuesto</a></li>
+                <li><a href="#seccion3">3. La Batalla de los Datos (Estudios Reales)</a></li>
+                <li><a href="#seccion4">4. Psicología y Calidad de Vida</a></li>
+                <li><a href="#seccion5">5. Veredicto Final</a></li>
+                <li><a href="#faq">6. Preguntas frecuentes</a></li>
+            </ol>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <article class="article-content">
+
+            <!-- SECCIÓN 1 -->
+            <section id="seccion1">
+                <h2>1. Day Trading: La ilusión del dinero rápido</h2>
+                <p>
+                    El trading se vende en redes sociales con fotos de Lamborghinis y portátiles en la playa.
+                    La realidad es mucho más oscura: pantallas múltiples, estrés constante y competencia contra
+                    superordenadores de Goldman Sachs.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>¿Qué es el Day Trading?</h3>
+                    <p>
+                        Consiste en abrir y cerrar posiciones en el mismo día para aprovechar pequeñas fluctuaciones
+                        de precio. No importa el valor fundamental de la empresa, solo el movimiento del gráfico.
+                    </p>
+                </div>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info strategy-card">
+                        <h3>🔴 Desventajas Brutales</h3>
+                        <ul>
+                            <li><strong>Suma Cero:</strong> Para que tú ganes, otro tiene que perder. Y el "otro" suele
+                                ser un banco con mejor información.</li>
+                            <li><strong>Comisiones:</strong> El broker gana siempre. Los spreads y comisiones se comen
+                                tus beneficios.</li>
+                            <li><strong>Estrés:</strong> Niveles de cortisol comparables a controladores aéreos.</li>
+                        </ul>
+                    </div>
+                    <div class="card-info strategy-card">
+                        <h3>🟢 ¿Quién gana dinero?</h3>
+                        <p>
+                            Solo el <strong>1-3%</strong> de los traders logran ser rentables consistentemente durante
+                            más de 5 años.
+                            Son profesionales dedicados, no aficionados con una app en el móvil.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico de Supervivencia Traders -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Tasa de Supervivencia de Traders (Meses)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="traderSurvivalChart"></canvas>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 2 -->
+            <section id="seccion2">
+                <h2>2. Inversión a Largo Plazo: La magia del interés compuesto</h2>
+                <p>
+                    Albert Einstein llamó al interés compuesto "la octava maravilla del mundo". Es la estrategia de
+                    Warren Buffett: comprar grandes negocios y no hacer nada.
+                </p>
+
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Año 1</div>
+                        <div class="timeline-content">
+                            <strong>La Semilla</strong><br>
+                            Inviertes €10,000. Ganas un 10% (€1,000). Total: €11,000. Parece poco.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Año 10</div>
+                        <div class="timeline-content">
+                            <strong>El Brote</strong><br>
+                            Sin añadir nada más, tienes €25,937. Tu dinero ha empezado a trabajar solo.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Año 30</div>
+                        <div class="timeline-content">
+                            <strong>El Bosque</strong><br>
+                            Tienes €174,494. ¡Multiplicaste tu dinero por 17 sin hacer nada! El 90% del beneficio vino
+                            de los intereses generados por los intereses.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico de Interés Compuesto vs Trading -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Carrera de Rentabilidad: Trading vs S&P 500 (10 Años)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="performanceComparisonChart"></canvas>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3 -->
+            <section id="seccion3">
+                <h2>3. La Batalla de los Datos: SPIVA Scorecard</h2>
+                <p>
+                    No me creas a mí, cree a los datos. El informe SPIVA (S&P Indices Versus Active) mide cada año
+                    cuántos fondos de gestión activa (profesionales que hacen trading/selección) logran batir al
+                    mercado.
+                </p>
+
+                <div class="comparison-widget fade-in-scroll">
+                    <div class="grid-two">
+                        <div class="comparison-side">
+                            <div class="comparison-label">Gestores Profesionales</div>
+                            <div class="comparison-value">15%</div>
+                            <div style="font-size: 14px; color: #666;">Baten al mercado a 15 años</div>
+                        </div>
+                        <div class="comparison-divider">VS</div>
+                        <div class="comparison-side">
+                            <div class="comparison-label">Inversores Pasivos</div>
+                            <div class="comparison-value">85%</div>
+                            <div style="font-size: 14px; color: #00c853;">Ganan a los profesionales</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout callout-success">
+                    <strong>Conclusión devastadora:</strong> Si el 85% de los profesionales de Wall Street no pueden
+                    ganar al mercado haciendo trading,
+                    ¿qué te hace pensar que tú podrás hacerlo desde tu casa en tus ratos libres?
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4 -->
+            <section id="seccion4">
+                <h2>4. Psicología y Calidad de Vida</h2>
+                <p>
+                    El dinero no lo es todo. Hablemos de cómo vives con cada estrategia.
+                </p>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info strategy-card" style="border-left: 5px solid #f44336;">
+                        <h3>😫 Vida del Trader</h3>
+                        <ul>
+                            <li>Pegado a la pantalla de 9:00 a 17:30.</li>
+                            <li>Ansiedad cada vez que sale una noticia.</li>
+                            <li>Euforia cuando gana, depresión cuando pierde.</li>
+                            <li>Vacaciones interrumpidas por "el mercado".</li>
+                        </ul>
+                    </div>
+                    <div class="card-info strategy-card" style="border-left: 5px solid #00c853;">
+                        <h3>😎 Vida del Inversor</h3>
+                        <ul>
+                            <li>Mira la cartera 1 vez al mes (o al año).</li>
+                            <li>Duerme tranquilo ante caídas del 20% ("son rebajas").</li>
+                            <li>Tiene tiempo para familia, hobbies y trabajo real.</li>
+                            <li>Su patrimonio crece en "piloto automático".</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5 -->
+            <section id="seccion5">
+                <h2>5. Veredicto Final</h2>
+                <p>
+                    El trading es un trabajo (y uno muy duro). La inversión es un mecanismo de riqueza.
+                </p>
+                <div class="highlight-box"
+                    style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border: 2px solid #4caf50;">
+                    <h3>🏆 Ganador Indiscutible: Inversión a Largo Plazo</h3>
+                    <p>
+                        Para el 99% de la población, la estrategia ganadora es:
+                        <strong>Gastar menos de lo que ganas, invertir la diferencia en fondos indexados globales
+                            diversificados,
+                            y esperar décadas.</strong> Es aburrido, pero te hará rico. El trading es emocionante, pero
+                        probablemente te hará pobre.
+                    </p>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq">
+                <h2>6. Preguntas frecuentes</h2>
+
+                <details class="faq-item">
+                    <summary>¿Puedo hacer las dos cosas?</summary>
+                    <p>
+                        Sí, es la estrategia "Core & Satellite". Pon el 90% de tu dinero en inversión pasiva a largo
+                        plazo (Core)
+                        y usa un 10% máximo para "jugar" al trading (Satellite) si te divierte. Considera ese 10% como
+                        dinero gastado en ocio.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cuánto dinero necesito para empezar?</summary>
+                    <p>
+                        Para trading necesitas capital sustancial (mínimo €25k para evitar la regla PDT en EEUU y
+                        absorber comisiones).
+                        Para inversión a largo plazo, puedes empezar con €50 al mes en muchos roboadvisors o brokers.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué pasa si hay un crash bursátil?</summary>
+                    <p>
+                        El trader puede perderlo todo si está apalancado. El inversor a largo plazo ve caer su saldo
+                        temporalmente,
+                        pero históricamente el mercado siempre se recupera y supera máximos anteriores.
+                    </p>
+                </details>
+
+            </section>
+
+            <p class="disclaimer">
+                Este artículo es opinión financiera basada en datos históricos. El rendimiento pasado no garantiza
+                resultados futuros.
+                El trading conlleva riesgo de pérdida total del capital.
             </p>
 
-            <h3>Inversión a Largo Plazo</h3>
-            <p>
-                Invertir significa comprar activos de calidad y mantenerlos durante años o décadas, beneficiándose del
-                crecimiento económico y el interés compuesto.
-            </p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Característica</th>
-                        <th>Trading</th>
-                        <th>Inversión Largo Plazo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Horizonte temporal</td>
-                        <td>Minutos a semanas</td>
-                        <td>5-30+ años</td>
-                    </tr>
-                    <tr>
-                        <td>Tiempo dedicado</td>
-                        <td>Horas diarias</td>
-                        <td>Horas al año</td>
-                    </tr>
-                    <tr>
-                        <td>Objetivo</td>
-                        <td>Batir al mercado</td>
-                        <td>Igualar al mercado</td>
-                    </tr>
-                    <tr>
-                        <td>Análisis principal</td>
-                        <td>Técnico (gráficos)</td>
-                        <td>Fundamental (empresas)</td>
-                    </tr>
-                    <tr>
-                        <td>Estrés</td>
-                        <td>Muy alto</td>
-                        <td>Bajo</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion2">
-            <h2>2. Comparativa de resultados reales</h2>
-
-            <div class="callout warning">
-                <strong>Dato impactante:</strong> Estudios muestran que entre el 80-95% de traders minoristas pierden
-                dinero. Solo el 1-5% obtiene beneficios consistentes.
-            </div>
-
-            <h3>Resultados del Trading:</h3>
-            <ul>
-                <li>90% de traders pierden dinero en el primer año</li>
-                <li>Solo el 1% gana más que un inversor pasivo</li>
-                <li>Comisiones y spreads consumen gran parte de ganancias</li>
-                <li>Impuestos más altos (ganancias a corto plazo)</li>
-            </ul>
-
-            <h3>Resultados de Inversión a Largo Plazo:</h3>
-            <ul>
-                <li>S&P 500 ha generado ~10% anual durante 100 años</li>
-                <li>Warren Buffett ha batido al mercado con inversión a largo plazo</li>
-                <li>Menor carga fiscal (ganancias a largo plazo)</li>
-                <li>Beneficio del interés compuesto sin interrupciones</li>
-            </ul>
-
-            <div class="highlight-box">
-                <strong>Ejemplo real:</strong> 10.000€ invertidos en el S&P 500 en 1990 valdrían ~200.000€ hoy (solo
-                mantener). Un trader promedio habría perdido dinero en comisiones y malas operaciones.
-            </div>
-        </section>
-
-        <section id="seccion3">
-            <h2>3. Ventajas y desventajas de cada enfoque</h2>
-
-            <h3>Trading</h3>
-            <div class="highlight-box">
-                <strong>Ventajas:</strong>
-                <ul>
-                    <li>Potencial de ganancias rápidas (si tienes éxito)</li>
-                    <li>No necesitas esperar años para ver resultados</li>
-                    <li>Puedes beneficiarte de mercados bajistas</li>
-                    <li>Emocionante y dinámico</li>
-                </ul>
-            </div>
-
-            <div class="callout warning">
-                <strong>Desventajas:</strong>
-                <ul>
-                    <li>Altísima probabilidad de perder dinero</li>
-                    <li>Requiere dedicación de tiempo completo</li>
-                    <li>Estrés psicológico extremo</li>
-                    <li>Comisiones y spreads elevados</li>
-                    <li>Necesitas capital significativo para vivir de ello</li>
-                </ul>
-            </div>
-
-            <h3>Inversión a Largo Plazo</h3>
-            <div class="highlight-box">
-                <strong>Ventajas:</strong>
-                <ul>
-                    <li>Históricamente rentable (7-10% anual)</li>
-                    <li>Requiere mínimo tiempo y esfuerzo</li>
-                    <li>Bajo estrés psicológico</li>
-                    <li>Comisiones mínimas (fondos indexados)</li>
-                    <li>Ventajas fiscales a largo plazo</li>
-                </ul>
-            </div>
-
-            <div class="callout warning">
-                <strong>Desventajas:</strong>
-                <ul>
-                    <li>Requiere paciencia (años para ver resultados)</li>
-                    <li>No hay emoción del trading</li>
-                    <li>Debes soportar caídas del mercado sin vender</li>
-                    <li>No "batirás al mercado" (pero tampoco lo necesitas)</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion4">
-            <h2>4. ¿Cuál deberías elegir?</h2>
-
-            <div class="highlight-box">
-                <strong>Elige Trading si:</strong>
-                <ul>
-                    <li>Tienes capital que puedes permitirte perder completamente</li>
-                    <li>Puedes dedicar 6-8 horas diarias a estudiar mercados</li>
-                    <li>Tienes disciplina férrea y control emocional excepcional</li>
-                    <li>Entiendes que las probabilidades están en tu contra</li>
-                    <li>Lo consideras más un hobby caro que una inversión</li>
-                </ul>
-            </div>
-
-            <div class="highlight-box">
-                <strong>Elige Inversión a Largo Plazo si:</strong>
-                <ul>
-                    <li>Quieres construir riqueza de forma consistente</li>
-                    <li>Tienes un trabajo y no puedes dedicar tiempo al trading</li>
-                    <li>Prefieres dormir tranquilo por las noches</li>
-                    <li>Entiendes el poder del interés compuesto</li>
-                    <li>Buscas resultados probados históricamente</li>
-                </ul>
-            </div>
-
-            <div class="callout warning">
-                <strong>Recomendación honesta:</strong> Para el 99% de las personas, la inversión a largo plazo en
-                fondos indexados es la mejor opción. El trading es extremadamente difícil y la mayoría pierde dinero.
-            </div>
-
-            <h3>¿Existe un punto medio?</h3>
-            <p>
-                Sí: puedes dedicar el 90-95% de tu cartera a inversión pasiva a largo plazo, y usar el 5-10% para
-                "experimentar" con trading si realmente te interesa. Así limitas el riesgo mientras aprendes.
-            </p>
-        </section>
-
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
-
-            <details>
-                <summary>¿Puedo vivir del trading?</summary>
-                <p>Técnicamente sí, pero es extremadamente difícil. Necesitarías capital significativo (100.000€+),
-                    años de experiencia, y pertenecer al 1% que tiene éxito consistente.</p>
-            </details>
-
-            <details>
-                <summary>¿El trading es una estafa?</summary>
-                <p>No es una estafa, pero muchos cursos y "gurús" del trading sí lo son. Los brokers legítimos existen,
-                    pero ganar dinero consistentemente es extremadamente difícil.</p>
-            </details>
-
-            <details>
-                <summary>¿Warren Buffett hace trading?</summary>
-                <p>No. Buffett es famoso por su filosofía de "comprar y mantener" durante décadas. Él mismo recomienda
-                    fondos indexados para inversores normales.</p>
-            </details>
-        </section>
-
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> El trading conlleva riesgo de pérdida total del capital. Este artículo es
-            educativo, no asesoramiento de inversión.
-        </div>
-
+        </article>
     </main>
 
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- JS -->
     <script src="article-interactive.js"></script>
+    <script>
+        // Animación extra para las barras de carrera al cargar
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const racers = document.querySelectorAll('.race-car');
+                racers.forEach(racer => {
+                    // Forzar reflow para reiniciar animación si fuera necesario
+                    racer.style.width = racer.style.width;
+                });
+            }, 500);
+        });
+
+        // Gráfico de Supervivencia
+        createLineChart('traderSurvivalChart',
+            ['Mes 1', 'Mes 3', 'Mes 6', 'Mes 12', 'Mes 24', 'Mes 36'],
+            [
+                {
+                    label: '% Traders Activos',
+                    data: [100, 60, 40, 20, 10, 5],
+                    borderColor: '#f44336',
+                    backgroundColor: 'rgba(244, 67, 54, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }
+            ],
+            {
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: '% Supervivencia'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'La "Tasa de Mortalidad" del Trader'
+                    }
+                }
+            }
+        );
+
+        // Gráfico Comparativo Rendimiento
+        createLineChart('performanceComparisonChart',
+            ['Año 1', 'Año 2', 'Año 3', 'Año 4', 'Año 5', 'Año 6', 'Año 7', 'Año 8', 'Año 9', 'Año 10'],
+            [
+                {
+                    label: 'Inversión Pasiva (S&P 500)',
+                    data: [10, 21, 33, 46, 61, 77, 95, 114, 136, 159], // ~10% anual compuesto
+                    borderColor: '#00c853',
+                    backgroundColor: 'rgba(0, 200, 83, 0.05)',
+                    tension: 0.4,
+                    fill: true
+                },
+                {
+                    label: 'Trader Promedio (Realidad)',
+                    data: [-5, -10, -15, -100, null, null, null, null, null, null], // Pierde y abandona
+                    borderColor: '#f44336',
+                    borderDash: [5, 5],
+                    tension: 0.1,
+                    fill: false
+                }
+            ],
+            {
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: '% Retorno Acumulado'
+                        }
+                    }
+                }
+            }
+        );
+    </script>
 
 </body>
 

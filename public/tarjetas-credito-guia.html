@@ -2,10 +2,11 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,268 +16,629 @@
         gtag('config', 'G-3FNCYG6XM1');
     </script>
 
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Guía completa sobre tarjetas de crédito: ventajas, peligros y cómo usarlas inteligentemente para mejorar tus finanzas." />
-    <title>Tarjetas de crédito: Ventajas y peligros – AV Finanzas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas de crédito: Ventajas y peligros | AV Finanzas</title>
 
-    <link rel="stylesheet" href="article.css">
+    <meta name="description"
+        content="Guía completa sobre tarjetas de crédito: ventajas, peligros y cómo usarlas inteligentemente. Descubre cómo evitar la trampa de los intereses del 20% TAE.">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="adsense.css">
-        
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
 </head>
 
 <body>
-    <header class="article-header">
-        <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="economia.html">Finanzas Personales</a> >
-            <span>Tarjetas de crédito</span>
-        </nav>
 
-        <div class="article-hero">
-            <img src="behnam-norouzi-TQHgxyX1d04-unsplash.jpg" alt="Tarjetas de crédito">
-            <div class="hero-text">
-                <h1>Tarjetas de crédito: Tu mejor aliado o tu peor enemigo</h1>
-                <p class="article-subtitle">Descubre cómo usar tarjetas de crédito inteligentemente para obtener
-                    beneficios sin caer en la trampa de la deuda.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
-            </div>
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="AV Finanzas - Portal de información financiera">
         </div>
+
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+
+            <a href="index.html" class="cta-button">Volver al inicio</a>
+        </nav>
     </header>
 
-    <main class="article-container">
+    <!-- Barra de progreso -->
+    <div class="reading-progress" id="readingProgress"></div>
 
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
+    <main class="article-layout">
 
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>Las tarjetas de crédito ofrecen recompensas, protección y conveniencia, pero los intereses pueden
-                destruir tus finanzas. La clave: pagar el saldo completo cada mes sin excepción.</p>
-        </details>
+        <!-- Migas de pan -->
+        <nav class="breadcrumb">
+            <a href="index.html">Inicio</a> ›
+            <a href="#">Finanzas Personales</a> ›
+            <span>Tarjetas de Crédito</span>
+        </nav>
 
-        <div class="toc">
-            <h2>Contenido</h2>
-            <ul>
-                <li><a href="#seccion1">1. Cómo funcionan las tarjetas de crédito</a></li>
-                <li><a href="#seccion2">2. Ventajas de usar tarjetas de crédito</a></li>
-                <li><a href="#seccion3">3. Peligros y trampas comunes</a></li>
-                <li><a href="#seccion4">4. Reglas de oro para usar tarjetas</a></li>
-            </ul>
-        </div>
+        <!-- HERO -->
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Finanzas Personales</span>
 
-        <section id="seccion1">
-            <h2>1. Cómo funcionan las tarjetas de crédito</h2>
-            <p>
-                Una tarjeta de crédito es un préstamo renovable. El banco te da un límite de crédito (ej: 3.000€) y tú
-                puedes gastar hasta ese límite. Cada mes tienes dos opciones:
-            </p>
+                <h1>Tarjetas de Crédito: Herramienta poderosa o trampa financiera</h1>
 
-            <ul>
-                <li><strong>Pagar el saldo completo:</strong> No pagas intereses (IDEAL)</li>
-                <li><strong>Pagar el mínimo o parcial:</strong> Pagas intereses sobre el resto (PELIGROSO)</li>
-            </ul>
+                <p class="article-subtitle">
+                    Descubre cómo usar tarjetas de crédito inteligentemente para obtener recompensas y protección,
+                    o cómo pueden destruir tus finanzas con intereses del 20% TAE si las usas mal.
+                </p>
 
-            <div class="highlight-box">
-                <strong>Ejemplo de intereses:</strong> Si debes 1.000€ y solo pagas el mínimo (25€), con un TAE del
-                20%, tardarás 5 años en pagar y habrás pagado ~600€ extra en intereses.
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Deuda</th>
-                        <th>Pago mínimo mensual</th>
-                        <th>Tiempo para pagar</th>
-                        <th>Intereses totales (20% TAE)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>500€</td>
-                        <td>15€</td>
-                        <td>4 años</td>
-                        <td>~220€</td>
-                    </tr>
-                    <tr>
-                        <td>1.000€</td>
-                        <td>25€</td>
-                        <td>5 años</td>
-                        <td>~600€</td>
-                    </tr>
-                    <tr>
-                        <td>3.000€</td>
-                        <td>75€</td>
-                        <td>6+ años</td>
-                        <td>~2.500€</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion2">
-            <h2>2. Ventajas de usar tarjetas de crédito (si las usas bien)</h2>
-
-            <h3>Recompensas y Cashback</h3>
-            <p>
-                Muchas tarjetas ofrecen entre 1-5% de cashback o puntos canjeables. Si gastas 1.000€/mes y pagas todo,
-                puedes ganar 10-50€ mensuales gratis.
-            </p>
-
-            <h3>Protección de Compras</h3>
-            <ul>
-                <li>Seguro contra fraude (no eres responsable de cargos fraudulentos)</li>
-                <li>Extensión de garantía en productos</li>
-                <li>Protección de precio (reembolso si el precio baja)</li>
-                <li>Seguro de viaje incluido en algunas tarjetas</li>
-            </ul>
-
-            <h3>Construcción de Historial Crediticio</h3>
-            <p>
-                Usar responsablemente una tarjeta mejora tu score crediticio, lo que te ayuda a conseguir mejores
-                condiciones en hipotecas y préstamos futuros.
-            </p>
-
-            <h3>Flexibilidad y Conveniencia</h3>
-            <ul>
-                <li>Compras online seguras</li>
-                <li>Aceptadas mundialmente</li>
-                <li>Tracking automático de gastos</li>
-                <li>Periodo de gracia de ~30 días sin intereses</li>
-            </ul>
-
-            <div class="highlight-box">
-                <strong>Dato clave:</strong> Si pagas el saldo completo cada mes, es como tener un préstamo gratis de
-                30 días mientras tu dinero genera intereses en una cuenta de ahorro.
+                <div class="article-meta-row">
+                    <span>Actualizado: Noviembre 2025</span>
+                    <span>·</span>
+                    <span>Tiempo de lectura: 10 min</span>
+                </div>
             </div>
         </section>
 
-        <section id="seccion3">
-            <h2>3. Peligros y trampas comunes</h2>
-
-            <div class="callout warning">
-                <strong>Advertencia:</strong> Los intereses de tarjetas de crédito suelen estar entre 15-25% TAE, mucho
-                más altos que cualquier préstamo personal.
+        <!-- Comparación: Uso inteligente vs peligroso -->
+        <div class="comparison-widget fade-in-scroll">
+            <div class="comparison-side">
+                <div class="comparison-label">Uso Inteligente</div>
+                <div class="comparison-value">0%</div>
+                <div style="font-size: 14px; color: #888; margin-top: 5px;">Intereses pagados</div>
             </div>
-
-            <h3>Trampa #1: El pago mínimo</h3>
-            <p>
-                Pagar solo el mínimo te mantiene endeudado durante años. Es la forma en que los bancos ganan dinero con
-                tarjetas.
-            </p>
-
-            <h3>Trampa #2: Compras impulsivas</h3>
-            <p>
-                Estudios muestran que las personas gastan 12-18% más cuando usan tarjetas vs efectivo. El "dinero
-                plástico" se siente menos real.
-            </p>
-
-            <h3>Trampa #3: Comisiones ocultas</h3>
-            <ul>
-                <li>Comisión por retirada de efectivo: 3-5% + intereses desde el día 1</li>
-                <li>Comisión por pago tardío: 25-40€</li>
-                <li>Comisión por exceder límite: 30-50€</li>
-                <li>Comisión de cambio de divisa: 2-3%</li>
-            </ul>
-
-            <h3>Trampa #4: Ofertas 0% TAE</h3>
-            <p>
-                Las ofertas de "0% durante 12 meses" son útiles, pero si no pagas todo antes de que termine el periodo,
-                los intereses se aplican retroactivamente sobre el saldo original.
-            </p>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
+            <div class="comparison-divider">vs</div>
+            <div class="comparison-side">
+                <div class="comparison-label">Pago Mínimo</div>
+                <div class="comparison-value">20%</div>
+                <div style="font-size: 14px; color: #f44336; margin-top: 5px; font-weight: 700;">TAE típico</div>
+            </div>
         </div>
 
-        <section id="seccion4">
-            <h2>4. Reglas de oro para usar tarjetas de crédito</h2>
-
-            <div class="highlight-box">
-                <strong>Regla #1:</strong> Paga el saldo completo cada mes, sin excepción. Si no puedes, no lo compres.
+        <!-- Estadísticas de tarjetas de crédito -->
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box">
+                <span class="stat-number" data-count="20" data-suffix="%">0%</span>
+                <span class="stat-label">TAE típico en España</span>
             </div>
-
-            <div class="highlight-box">
-                <strong>Regla #2:</strong> Trata tu tarjeta de crédito como si fuera débito. Solo gasta dinero que ya
-                tienes.
+            <div class="stat-box">
+                <span class="stat-number" data-count="5">0</span>
+                <span class="stat-label">Años para pagar €1,000</span>
             </div>
-
-            <div class="highlight-box">
-                <strong>Regla #3:</strong> Nunca retires efectivo con tarjeta de crédito. Las comisiones e intereses
-                son brutales.
+            <div class="stat-box">
+                <span class="stat-number" data-count="600" data-suffix="€">0€</span>
+                <span class="stat-label">Intereses en pago mínimo</span>
             </div>
-
-            <div class="highlight-box">
-                <strong>Regla #4:</strong> Mantén tu utilización de crédito por debajo del 30%. Si tu límite es 3.000€,
-                no gastes más de 900€.
+            <div class="stat-box">
+                <span class="stat-number" data-count="30">0</span>
+                <span class="stat-label">Días sin intereses</span>
             </div>
+        </div>
 
-            <div class="highlight-box">
-                <strong>Regla #5:</strong> Configura pagos automáticos del saldo completo. Elimina el riesgo de olvidos.
+        <!-- Resumen rápido -->
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen rápido</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>Las tarjetas de crédito ofrecen recompensas y protección si pagas el saldo completo cada mes.
+                    </li>
+                    <li>Los intereses típicos son del 20% TAE - mucho más altos que cualquier préstamo personal.</li>
+                    <li>Pagar solo el mínimo puede convertir €1,000 en €1,600 pagados en 5 años.</li>
+                    <li>Regla de oro: trata tu tarjeta de crédito como si fuera de débito.</li>
+                    <li>Nunca retires efectivo con tarjeta de crédito - las comisiones son brutales.</li>
+                </ul>
             </div>
+        </section>
 
-            <h3>Estrategia avanzada: Maximizar recompensas</h3>
+        <!-- Anuncio -->
+        <div class="ad-space ad-in-article"></div>
+
+        <!-- TOC -->
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
             <ol>
-                <li>Usa tarjeta de crédito para TODOS los gastos (que ya ibas a hacer)</li>
-                <li>Paga el saldo completo cada mes automáticamente</li>
-                <li>Acumula cashback o puntos</li>
-                <li>Nunca compres algo solo por las recompensas</li>
+                <li><a href="#seccion1">1. Cómo funcionan las tarjetas de crédito</a></li>
+                <li><a href="#seccion2">2. Ventajas de usar tarjetas</a></li>
+                <li><a href="#seccion3">3. Peligros y trampas comunes</a></li>
+                <li><a href="#seccion4">4. Reglas de oro</a></li>
+                <li><a href="#faq">5. Preguntas frecuentes</a></li>
             </ol>
+        </aside>
 
-            <div class="callout warning">
-                <strong>Importante:</strong> Si tienes deuda de tarjeta de crédito actualmente, tu prioridad #1 es
-                pagarla. Considera transferirla a una tarjeta con 0% TAE temporal mientras la liquidas.
+        <!-- CONTENIDO -->
+        <article class="article-content">
+
+            <!-- SECCIÓN 1 -->
+            <section id="seccion1">
+                <h2>1. Cómo funcionan las tarjetas de crédito</h2>
+                <p>
+                    Una tarjeta de crédito es un préstamo renovable. El banco te da un límite de crédito (por ejemplo,
+                    €3,000) y tú puedes gastar hasta ese límite. Cada mes tienes dos opciones que determinarán si
+                    la tarjeta es tu aliada o tu enemiga.
+                </p>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>✅ Opción Inteligente</h3>
+                        <p><strong>Pagar el saldo completo</strong></p>
+                        <ul>
+                            <li>No pagas intereses (0%)</li>
+                            <li>Disfrutas de ~30 días de crédito gratis</li>
+                            <li>Acumulas recompensas y cashback</li>
+                            <li>Mejoras tu historial crediticio</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Coste total</span>
+                                <span>€0 intereses</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="0"
+                                    style="width: 0%; background: linear-gradient(90deg, #00c853, #4caf50);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>⚠️ Opción Peligrosa</h3>
+                        <p><strong>Pagar el mínimo o parcial</strong></p>
+                        <ul>
+                            <li>Pagas intereses del 15-25% TAE</li>
+                            <li>La deuda crece exponencialmente</li>
+                            <li>Puedes tardar años en pagar</li>
+                            <li>Pagas el doble o triple del precio original</li>
+                        </ul>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Coste total</span>
+                                <span>+60% en intereses</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="60"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff5722, #f44336);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout callout-warning">
+                    <strong>Ejemplo real del coste de pagar solo el mínimo:</strong><br>
+                    Deuda de €1,000 con TAE del 20%. Pagando solo el mínimo (€25/mes):
+                    <ul>
+                        <li>Tiempo para pagar: <strong>5 años</strong></li>
+                        <li>Intereses totales: <strong>~€600</strong></li>
+                        <li>Total pagado: <strong>€1,600</strong> (60% más del precio original)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Gráfico de crecimiento de deuda -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Evolución de Deuda: Pago Completo vs Pago Mínimo (€1,000 inicial, 20% TAE)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="debtGrowthChart"></canvas>
+                </div>
             </div>
-        </section>
 
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
+            <!-- SECCIÓN 2 -->
+            <section id="seccion2">
+                <h2>2. Ventajas de usar tarjetas de crédito (si las usas bien)</h2>
+                <p>
+                    Cuando se usan responsablemente (pagando el saldo completo cada mes), las tarjetas de crédito
+                    ofrecen beneficios significativos que las tarjetas de débito no tienen.
+                </p>
 
-            <details>
-                <summary>¿Cuántas tarjetas de crédito debería tener?</summary>
-                <p>Para la mayoría de personas, 1-2 tarjetas son suficientes. Una para uso diario con buen cashback, y
-                    opcionalmente otra para emergencias o viajes.</p>
-            </details>
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Ventaja 1</div>
+                        <div class="timeline-content">
+                            <strong>Recompensas y Cashback</strong><br>
+                            Muchas tarjetas ofrecen 1-5% de cashback o puntos canjeables. Si gastas €1,000/mes
+                            y pagas todo, puedes ganar €10-50 mensuales gratis (€120-600/año).
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Ventaja 2</div>
+                        <div class="timeline-content">
+                            <strong>Protección contra fraude</strong><br>
+                            No eres responsable de cargos fraudulentos. Con débito, el dinero sale inmediatamente
+                            de tu cuenta y puede tardar semanas en recuperarse.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Ventaja 3</div>
+                        <div class="timeline-content">
+                            <strong>Extensión de garantía</strong><br>
+                            Muchas tarjetas duplican automáticamente la garantía del fabricante en productos
+                            electrónicos y electrodomésticos.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Ventaja 4</div>
+                        <div class="timeline-content">
+                            <strong>Construcción de historial crediticio</strong><br>
+                            Usar responsablemente una tarjeta mejora tu score crediticio, ayudándote a conseguir
+                            mejores condiciones en hipotecas y préstamos futuros.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Ventaja 5</div>
+                        <div class="timeline-content">
+                            <strong>Periodo de gracia de ~30 días</strong><br>
+                            Es como tener un préstamo gratis de 30 días mientras tu dinero genera intereses
+                            en una cuenta de ahorro.
+                        </div>
+                    </div>
+                </div>
 
-            <details>
-                <summary>¿Cancelar una tarjeta afecta mi score crediticio?</summary>
-                <p>Sí, puede afectarlo negativamente al reducir tu historial crediticio y aumentar tu ratio de
-                    utilización. Si no tiene cuota anual, mejor mantenerla abierta.</p>
-            </details>
+                <div class="highlight-box">
+                    <h3>Ejemplo de uso inteligente</h3>
+                    <p>
+                        María gasta €1,200/mes en gastos normales (supermercado, gasolina, facturas). Usa su
+                        tarjeta con 2% cashback para TODO y paga el saldo completo automáticamente cada mes.
+                    </p>
+                    <ul>
+                        <li>Cashback anual: €1,200 × 12 × 2% = <strong>€288 gratis</strong></li>
+                        <li>Intereses pagados: <strong>€0</strong></li>
+                        <li>Protección en todas sus compras</li>
+                        <li>Historial crediticio excelente</li>
+                    </ul>
+                </div>
+            </section>
 
-            <details>
-                <summary>¿Qué hago si tengo deuda de tarjeta que no puedo pagar?</summary>
-                <p>Opciones: 1) Transferir a tarjeta 0% TAE, 2) Préstamo personal (menor interés), 3) Hablar con el
-                    banco para plan de pagos, 4) Buscar asesoramiento financiero profesional.</p>
-            </details>
-        </section>
+            <!-- SECCIÓN 3 -->
+            <section id="seccion3">
+                <h2>3. Peligros y trampas comunes</h2>
+                <p>
+                    Las tarjetas de crédito pueden destruir tus finanzas si caes en estas trampas comunes.
+                    Los bancos ganan miles de millones con usuarios que no entienden estos peligros.
+                </p>
 
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> Este artículo es educativo. Las tarjetas de crédito pueden ser herramientas
-            útiles o destructivas según cómo se usen. Usa con responsabilidad.
-        </div>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>🚨 Trampa #1: El pago mínimo</h3>
+                        <p>
+                            Pagar solo el mínimo te mantiene endeudado durante años. Es la forma principal en que
+                            los bancos ganan dinero con tarjetas de crédito.
+                        </p>
+                        <div
+                            style="margin-top: 10px; padding: 10px; background: rgba(244, 67, 54, 0.1); border-radius: 8px;">
+                            <strong>Realidad:</strong> €3,000 de deuda pagando mínimo = 6+ años y ~€2,500 en intereses
+                        </div>
+                    </div>
 
+                    <div class="card-info">
+                        <h3>🚨 Trampa #2: Compras impulsivas</h3>
+                        <p>
+                            Estudios muestran que las personas gastan 12-18% más cuando usan tarjetas vs efectivo.
+                            El "dinero plástico" se siente menos real.
+                        </p>
+                        <div
+                            style="margin-top: 10px; padding: 10px; background: rgba(244, 67, 54, 0.1); border-radius: 8px;">
+                            <strong>Solución:</strong> Trata la tarjeta como débito - solo gasta dinero que ya tienes
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🚨 Trampa #3: Retirada de efectivo</h3>
+                        <p>
+                            Comisión del 3-5% + intereses desde el día 1 (sin periodo de gracia). Una retirada de
+                            €200 puede costarte €10-15 instantáneamente.
+                        </p>
+                        <div
+                            style="margin-top: 10px; padding: 10px; background: rgba(244, 67, 54, 0.1); border-radius: 8px;">
+                            <strong>Regla:</strong> NUNCA retires efectivo con tarjeta de crédito
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🚨 Trampa #4: Ofertas 0% TAE</h3>
+                        <p>
+                            Las ofertas de "0% durante 12 meses" son útiles, pero si no pagas todo antes de que
+                            termine, los intereses se aplican retroactivamente.
+                        </p>
+                        <div
+                            style="margin-top: 10px; padding: 10px; background: rgba(244, 67, 54, 0.1); border-radius: 8px;">
+                            <strong>Cuidado:</strong> Marca en calendario la fecha de fin y paga ANTES
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Comisiones ocultas que debes conocer:</h3>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>💸 Comisión por pago tardío</h3>
+                        <p><strong>€25-40</strong> por pago fuera de plazo</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Impacto</span>
+                                <span>Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="80"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff5722, #f44336);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>💸 Comisión por exceder límite</h3>
+                        <p><strong>€30-50</strong> si gastas más del límite</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Impacto</span>
+                                <span>Alto</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="75"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff9800, #ff5722);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>💸 Comisión de cambio de divisa</h3>
+                        <p><strong>2-3%</strong> en compras extranjeras</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Impacto</span>
+                                <span>Medio</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="50"
+                                    style="width: 0%; background: linear-gradient(90deg, #ffc107, #ff9800);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>💸 Comisión anual</h3>
+                        <p><strong>€0-150</strong> según la tarjeta</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Impacto</span>
+                                <span>Variable</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="40"
+                                    style="width: 0%; background: linear-gradient(90deg, #4caf50, #ffc107);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico comparativo de estrategias de pago -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Comparación de Estrategias de Pago (€3,000 deuda, 20% TAE)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="paymentStrategiesChart"></canvas>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 4 -->
+            <section id="seccion4">
+                <h2>4. Reglas de oro para usar tarjetas de crédito</h2>
+                <p>
+                    Sigue estas reglas sin excepción y las tarjetas de crédito serán tu aliada. Rómpelas y
+                    pueden arruinar tus finanzas.
+                </p>
+
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Regla #1</div>
+                        <div class="timeline-content">
+                            <strong>Paga el saldo completo cada mes, sin excepción</strong><br>
+                            Si no puedes pagar algo al final del mes, no lo compres con la tarjeta. Esta regla
+                            sola te ahorrará miles de euros en intereses.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Regla #2</div>
+                        <div class="timeline-content">
+                            <strong>Trata tu tarjeta de crédito como si fuera de débito</strong><br>
+                            Solo gasta dinero que ya tienes en tu cuenta bancaria. La tarjeta es un medio de pago,
+                            no dinero extra.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Regla #3</div>
+                        <div class="timeline-content">
+                            <strong>Nunca retires efectivo con tarjeta de crédito</strong><br>
+                            Las comisiones (3-5%) e intereses desde el día 1 hacen que sea extremadamente caro.
+                            Usa débito o cajero de tu banco.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Regla #4</div>
+                        <div class="timeline-content">
+                            <strong>Mantén utilización de crédito <30%< /strong><br>
+                                    Si tu límite es €3,000, no gastes más de €900. Esto mejora tu score crediticio y
+                                    te da margen para emergencias.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Regla #5</div>
+                        <div class="timeline-content">
+                            <strong>Configura pago automático del saldo completo</strong><br>
+                            Elimina el riesgo de olvidos y comisiones por pago tardío. Asegúrate de tener
+                            suficiente saldo en tu cuenta.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout callout-success">
+                    <strong>Estrategia avanzada para maximizar recompensas:</strong>
+                    <ol>
+                        <li>Usa tarjeta de crédito para TODOS los gastos que ya ibas a hacer</li>
+                        <li>Configura pago automático del saldo completo cada mes</li>
+                        <li>Acumula cashback o puntos (€120-600/año en gastos normales)</li>
+                        <li>Nunca compres algo solo por las recompensas</li>
+                        <li>Revisa extracto mensualmente para detectar cargos incorrectos</li>
+                    </ol>
+                </div>
+
+                <div class="callout callout-warning">
+                    <strong>Si tienes deuda de tarjeta actualmente:</strong><br>
+                    Tu prioridad #1 es pagarla. Opciones:
+                    <ul>
+                        <li><strong>Transferencia a 0% TAE:</strong> Mueve la deuda a tarjeta con oferta 0% temporal
+                        </li>
+                        <li><strong>Préstamo personal:</strong> Interés menor (8-12%) que tarjeta (20%)</li>
+                        <li><strong>Método avalancha:</strong> Paga primero la deuda con mayor interés</li>
+                        <li><strong>Habla con el banco:</strong> Pueden ofrecerte plan de pagos con menor interés</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq">
+                <h2>5. Preguntas frecuentes</h2>
+
+                <details class="faq-item">
+                    <summary>¿Cuántas tarjetas de crédito debería tener?</summary>
+                    <p>
+                        Para la mayoría de personas, 1-2 tarjetas son suficientes. Una para uso diario con buen
+                        cashback, y opcionalmente otra para emergencias o viajes con buenos seguros. Más tarjetas
+                        = más riesgo de olvidar pagos y acumular deuda.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cancelar una tarjeta afecta mi score crediticio?</summary>
+                    <p>
+                        Sí, puede afectarlo negativamente de dos formas: (1) reduce tu historial crediticio total,
+                        y (2) aumenta tu ratio de utilización de crédito. Si la tarjeta no tiene cuota anual,
+                        mejor mantenerla abierta y usarla ocasionalmente.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué hago si tengo deuda de tarjeta que no puedo pagar?</summary>
+                    <p>
+                        <strong>Opciones ordenadas por preferencia:</strong><br>
+                        1. Transferir a tarjeta con 0% TAE temporal (12-18 meses)<br>
+                        2. Préstamo personal consolidado (interés 8-12% vs 20%)<br>
+                        3. Hablar con el banco para plan de pagos reducido<br>
+                        4. Buscar asesoramiento financiero profesional<br>
+                        <strong>Importante:</strong> Deja de usar la tarjeta hasta pagar la deuda.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Es mejor tarjeta de crédito o débito?</summary>
+                    <p>
+                        <strong>Crédito es mejor SI pagas el saldo completo cada mes</strong> porque ofrece:
+                        cashback, protección contra fraude, extensión de garantía, y construcción de historial
+                        crediticio. <strong>Débito es mejor SI tienes problemas de control de gastos</strong>
+                        porque solo puedes gastar lo que tienes.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué es el periodo de gracia?</summary>
+                    <p>
+                        Es el tiempo entre la compra y la fecha de pago sin generar intereses (típicamente 20-30 días).
+                        Si pagas el saldo completo antes de la fecha límite, no pagas intereses. Si pagas parcial
+                        o mínimo, pierdes el periodo de gracia y empiezas a pagar intereses inmediatamente en
+                        nuevas compras.
+                    </p>
+                </details>
+
+            </section>
+
+            <p class="disclaimer">
+                Este artículo es educativo. Las tarjetas de crédito pueden ser herramientas útiles o destructivas
+                según cómo se usen. La información sobre TAE y comisiones es orientativa y puede variar según
+                entidad. Consulta siempre las condiciones específicas de tu tarjeta.
+            </p>
+
+        </article>
     </main>
 
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- JS -->
     <script src="article-interactive.js"></script>
+    <script>
+        // Gráfico de crecimiento de deuda
+        createLineChart('debtGrowthChart',
+            ['Mes 0', '6', '12', '18', '24', '30', '36', '42', '48', '54', '60'],
+            [
+                {
+                    label: 'Pago Completo Mensual',
+                    data: [1000, 833, 667, 500, 333, 167, 0, 0, 0, 0, 0],
+                    borderColor: '#00c853',
+                    backgroundColor: 'rgba(0, 200, 83, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                },
+                {
+                    label: 'Pago Mínimo (€25/mes)',
+                    data: [1000, 990, 978, 965, 950, 933, 915, 895, 873, 849, 823],
+                    borderColor: '#f44336',
+                    backgroundColor: 'rgba(244, 67, 54, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }
+            ],
+            {
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Deuda restante (€)'
+                        }
+                    }
+                }
+            }
+        );
+
+        // Gráfico de estrategias de pago
+        createBarChart('paymentStrategiesChart',
+            ['Pago Completo\n(€500/mes)', 'Pago Alto\n(€200/mes)', 'Pago Medio\n(€100/mes)', 'Pago Mínimo\n(€75/mes)'],
+            [
+                {
+                    label: 'Meses para pagar',
+                    data: [6, 18, 42, 72],
+                    backgroundColor: '#2196f3'
+                },
+                {
+                    label: 'Intereses totales (€)',
+                    data: [0, 285, 1150, 2380],
+                    backgroundColor: '#f44336'
+                }
+            ]
+        );
+    </script>
 
 </body>
 

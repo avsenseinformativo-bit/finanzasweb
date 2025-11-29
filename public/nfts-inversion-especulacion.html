@@ -2,10 +2,11 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,218 +16,501 @@
         gtag('config', 'G-3FNCYG6XM1');
     </script>
 
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Análisis completo sobre NFTs: ¿son una inversión legítima o pura especulación? Descubre los riesgos y oportunidades." />
-    <title>NFTs: ¿Inversión o especulación? – AV Finanzas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFTs: ¿Inversión o especulación? | AV Finanzas</title>
 
-    <link rel="stylesheet" href="article.css">
+    <meta name="description"
+        content="Análisis completo sobre NFTs: ¿son una inversión legítima o pura especulación? Descubre los riesgos y oportunidades del mercado NFT.">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="adsense.css">
-        
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
 </head>
 
 <body>
-    <header class="article-header">
-        <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="criptomonedas.html">Criptomonedas</a> >
-            <span>NFTs</span>
-        </nav>
 
-        <div class="article-hero">
-            <img src="markus-winkler-XhprfVx2gKA-unsplash.jpg" alt="NFTs y arte digital" loading="lazy">
-            <div class="hero-text">
-                <h1>NFTs: ¿Inversión legítima o burbuja especulativa?</h1>
-                <p class="article-subtitle">Un análisis objetivo sobre los tokens no fungibles, sus casos de uso reales
-                    y los riesgos que debes conocer.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
-            </div>
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="AV Finanzas - Portal de información financiera">
         </div>
+
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+
+            <a href="index.html" class="cta-button">Volver al inicio</a>
+        </nav>
     </header>
 
-    <main class="article-container">
+    <!-- Barra de progreso -->
+    <div class="reading-progress" id="readingProgress"></div>
 
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
+    <main class="article-layout">
+
+        <!-- Migas de pan -->
+        <nav class="breadcrumb">
+            <a href="index.html">Inicio</a> ›
+            <a href="#">Criptomonedas</a> ›
+            <span>NFTs: ¿Inversión o especulación?</span>
+        </nav>
+
+        <!-- HERO -->
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Criptomonedas</span>
+
+                <h1>NFTs: ¿Inversión legítima o especulación pura?</h1>
+
+                <p class="article-subtitle">
+                    Análisis profundo del mercado NFT: casos de uso reales, riesgos extremos y la dura realidad
+                    detrás del hype que ha dejado al 95% de los NFTs sin valor.
+                </p>
+
+                <div class="article-meta-row">
+                    <span>Actualizado: Noviembre 2025</span>
+                    <span>·</span>
+                    <span>Tiempo de lectura: 8 min</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparación de mercado -->
+        <div class="comparison-widget fade-in-scroll">
+            <div class="comparison-side">
+                <div class="comparison-label">Pico 2021</div>
+                <div class="comparison-value">$25B</div>
+                <div style="font-size: 14px; color: #888; margin-top: 5px;">Volumen mensual</div>
+            </div>
+            <div class="comparison-divider">→</div>
+            <div class="comparison-side">
+                <div class="comparison-label">Actualidad 2025</div>
+                <div class="comparison-value">$750M</div>
+                <div style="font-size: 14px; color: #f44336; margin-top: 5px; font-weight: 700;">-97% caída</div>
+            </div>
         </div>
 
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>Los NFTs tienen casos de uso legítimos en arte digital, gaming y propiedad intelectual, pero el mercado
-                está plagado de especulación. La mayoría de NFTs pierden valor rápidamente.</p>
-        </details>
+        <!-- Estadísticas NFT -->
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box">
+                <span class="stat-number" data-count="95" data-suffix="%">0%</span>
+                <span class="stat-label">NFTs sin valor</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="97" data-suffix="%">0%</span>
+                <span class="stat-label">Caída en volumen</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="23" data-suffix="B">0B</span>
+                <span class="stat-label">Pérdidas totales</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="5" data-suffix="%">0%</span>
+                <span class="stat-label">Proyectos viables</span>
+            </div>
+        </div>
 
-        <div class="toc">
-            <h2>Contenido</h2>
-            <ul>
+        <!-- Resumen rápido -->
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen rápido</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>Los NFTs tienen casos de uso legítimos en arte digital, gaming y propiedad intelectual.</li>
+                    <li>El 95% de NFTs creados en 2021-2022 ahora valen $0, según datos de mercado.</li>
+                    <li>El volumen de trading cayó un 97% desde el pico de 2021.</li>
+                    <li>La mayoría de proyectos fueron especulativos o directamente estafas ("rug pulls").</li>
+                    <li>Solo el 5% de proyectos NFT mantienen utilidad y valor real.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Anuncio -->
+        <div class="ad-space ad-in-article"></div>
+
+        <!-- TOC -->
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
                 <li><a href="#seccion1">1. ¿Qué son los NFTs?</a></li>
                 <li><a href="#seccion2">2. Casos de uso legítimos</a></li>
                 <li><a href="#seccion3">3. La realidad del mercado NFT</a></li>
                 <li><a href="#seccion4">4. ¿Deberías invertir en NFTs?</a></li>
-            </ul>
-        </div>
-
-        <section id="seccion1">
-            <h2>1. ¿Qué son los NFTs?</h2>
-            <p>
-                NFT significa "Non-Fungible Token" (Token No Fungible). A diferencia de Bitcoin o el euro, que son
-                intercambiables entre sí, cada NFT es único y no puede ser reemplazado por otro idéntico.
-            </p>
-
-            <div class="highlight-box">
-                <strong>Analogía simple:</strong> Un billete de 10€ es fungible (cualquier billete de 10€ vale lo
-                mismo). La Mona Lisa es no fungible (es única e irremplazable).
-            </div>
-
-            <p>
-                Los NFTs se registran en blockchain, lo que garantiza la autenticidad y propiedad del activo digital.
-                Puedes poseer un NFT de una imagen, video, música, o incluso un tweet.
-            </p>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion2">
-            <h2>2. Casos de uso legítimos</h2>
-            <p>Más allá del hype, los NFTs tienen aplicaciones reales:</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Sector</th>
-                        <th>Aplicación</th>
-                        <th>Valor real</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Arte Digital</td>
-                        <td>Certificado de autenticidad</td>
-                        <td>Alto - permite a artistas monetizar obra digital</td>
-                    </tr>
-                    <tr>
-                        <td>Gaming</td>
-                        <td>Objetos in-game transferibles</td>
-                        <td>Medio - propiedad real de items virtuales</td>
-                    </tr>
-                    <tr>
-                        <td>Música</td>
-                        <td>Derechos de autor y regalías</td>
-                        <td>Alto - nueva forma de financiación para artistas</td>
-                    </tr>
-                    <tr>
-                        <td>Inmobiliario</td>
-                        <td>Escrituras digitales</td>
-                        <td>Potencial - simplifica transacciones</td>
-                    </tr>
-                    <tr>
-                        <td>Coleccionables</td>
-                        <td>Trading cards digitales</td>
-                        <td>Bajo - principalmente especulativo</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="seccion3">
-            <h2>3. La realidad del mercado NFT</h2>
-            <p>
-                A pesar del potencial, el mercado NFT ha mostrado señales preocupantes:
-            </p>
-
-            <div class="callout warning">
-                <strong>Datos duros:</strong>
-                <ul>
-                    <li>El 95% de NFTs creados en 2021-2022 ahora valen $0</li>
-                    <li>El volumen de trading cayó un 97% desde el pico de 2021</li>
-                    <li>Muchos proyectos resultaron ser "rug pulls" (estafas)</li>
-                </ul>
-            </div>
-
-            <h3>Problemas comunes:</h3>
-            <ul>
-                <li><strong>Falta de liquidez:</strong> Difícil vender cuando quieres</li>
-                <li><strong>Manipulación de precios:</strong> "Wash trading" artificial</li>
-                <li><strong>Derechos confusos:</strong> Comprar un NFT no siempre da derechos comerciales</li>
-                <li><strong>Dependencia de plataformas:</strong> Si la plataforma cierra, ¿qué pasa con tu NFT?</li>
-            </ul>
-        </section>
-
-        <!-- AdSense: Espacio publicitario -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion4">
-            <h2>4. ¿Deberías invertir en NFTs?</h2>
-            <p>
-                La respuesta honesta: probablemente no, a menos que entiendas profundamente el espacio y puedas
-                permitirte perder el 100% de tu inversión.
-            </p>
-
-            <div class="highlight-box">
-                <strong>Regla de oro:</strong> Solo "invierte" en NFTs dinero que estés dispuesto a perder
-                completamente. Considéralo más como coleccionismo que como inversión.
-            </div>
-
-            <h3>Si aún así quieres participar:</h3>
-            <ol>
-                <li>Nunca inviertas más del 1-2% de tu patrimonio</li>
-                <li>Investiga exhaustivamente el proyecto y equipo</li>
-                <li>Entiende qué derechos estás comprando realmente</li>
-                <li>Verifica la autenticidad del creador</li>
-                <li>Ten una estrategia de salida clara</li>
+                <li><a href="#faq">5. Preguntas frecuentes</a></li>
             </ol>
+        </aside>
 
-            <div class="callout warning">
-                <strong>Advertencia:</strong> El FOMO (Fear Of Missing Out) ha arruinado a muchos inversores en NFTs.
-                No compres solo porque "todo el mundo lo hace".
+        <!-- CONTENIDO -->
+        <article class="article-content">
+
+            <!-- SECCIÓN 1 -->
+            <section id="seccion1">
+                <h2>1. ¿Qué son los NFTs?</h2>
+                <p>
+                    NFT significa "Non-Fungible Token" (Token No Fungible). A diferencia de Bitcoin o el euro, que son
+                    intercambiables entre sí, cada NFT es único y no puede ser reemplazado por otro idéntico.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Analogía simple</h3>
+                    <p>
+                        Un billete de 10€ es fungible (cualquier billete de 10€ vale lo mismo). La Mona Lisa es no
+                        fungible (es única e irremplazable). Los NFTs funcionan como certificados digitales de
+                        autenticidad registrados en blockchain.
+                    </p>
+                </div>
+
+                <p>
+                    Los NFTs se registran en blockchain, lo que garantiza la autenticidad y propiedad del activo
+                    digital.
+                    Puedes poseer un NFT de una imagen, video, música, o incluso un tweet. Sin embargo, poseer el NFT
+                    no siempre significa poseer los derechos de autor del contenido.
+                </p>
+            </section>
+
+            <!-- Gráfico de evolución del mercado -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Evolución del Volumen de Trading NFT (2021-2025)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="nftVolumeChart"></canvas>
+                </div>
             </div>
-        </section>
 
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
+            <!-- SECCIÓN 2 -->
+            <section id="seccion2">
+                <h2>2. Casos de uso legítimos</h2>
+                <p>Más allá del hype, los NFTs tienen aplicaciones reales en varios sectores:</p>
 
-            <details>
-                <summary>¿Puedo hacer una captura de pantalla de un NFT?</summary>
-                <p>Sí, pero no poseerás el NFT original. Es como fotografiar la Mona Lisa: tienes una imagen, pero no
-                    la obra auténtica.</p>
-            </details>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>🎨 Arte Digital</h3>
+                        <p>
+                            Permite a artistas digitales monetizar su trabajo con certificados de autenticidad
+                            verificables. Artistas como Beeple han vendido obras por millones, aunque estos casos
+                            son excepcionales.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Viabilidad</span>
+                                <span>Alta</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="85"
+                                    style="width: 0%; background: linear-gradient(90deg, #00c853, #4caf50);"></div>
+                            </div>
+                        </div>
+                    </div>
 
-            <details>
-                <summary>¿Los NFTs son malos para el medio ambiente?</summary>
-                <p>Depende de la blockchain. Ethereum (post-Merge) y otras blockchains modernas usan mucha menos
-                    energía que antes.</p>
-            </details>
+                    <div class="card-info">
+                        <h3>🎮 Gaming</h3>
+                        <p>
+                            Objetos in-game transferibles que los jugadores realmente poseen. Permite economías
+                            de juego más abiertas, aunque la adopción masiva aún es limitada.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Viabilidad</span>
+                                <span>Media</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="60"
+                                    style="width: 0%; background: linear-gradient(90deg, #ffc107, #ff9800);"></div>
+                            </div>
+                        </div>
+                    </div>
 
-            <details>
-                <summary>¿Volverán a subir los precios de NFTs?</summary>
-                <p>Nadie lo sabe. Algunos proyectos con utilidad real pueden mantener valor, pero la mayoría
-                    probablemente no se recuperará.</p>
-            </details>
-        </section>
+                    <div class="card-info">
+                        <h3>🎵 Música</h3>
+                        <p>
+                            Nueva forma de financiación para artistas mediante derechos de autor tokenizados
+                            y regalías automáticas. Casos de éxito aún son minoritarios.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Viabilidad</span>
+                                <span>Alta</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="75"
+                                    style="width: 0%; background: linear-gradient(90deg, #00c853, #4caf50);"></div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> Los NFTs son activos de altísimo riesgo. Este artículo es educativo, no
-            asesoramiento de inversión.
-        </div>
+                    <div class="card-info">
+                        <h3>🏠 Inmobiliario</h3>
+                        <p>
+                            Escrituras digitales que podrían simplificar transacciones inmobiliarias. Aún en fase
+                            muy experimental con barreras legales significativas.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Viabilidad</span>
+                                <span>Potencial</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="40"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff9800, #ff5722);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <!-- Timeline de evolución NFT -->
+            <div class="timeline fade-in-scroll">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <strong>Boom especulativo</strong> - Volumen mensual alcanza $25B. Proyectos como Bored Ape
+                        Yacht Club se venden por millones.
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <strong>Inicio de la caída</strong> - El mercado cripto colapsa. Volumen NFT cae un 80%.
+                        Múltiples proyectos abandonados.
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <strong>Realidad post-hype</strong> - El 95% de NFTs pierden todo su valor. Solo proyectos
+                        con utilidad real sobreviven.
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <strong>Mercado maduro</strong> - Volumen estabilizado en $750M mensuales. Enfoque en
+                        casos de uso reales, no especulación.
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3 -->
+            <section id="seccion3">
+                <h2>3. La realidad del mercado NFT</h2>
+                <p>
+                    A pesar del potencial, el mercado NFT ha mostrado señales extremadamente preocupantes que
+                    todo inversor debe conocer antes de participar.
+                </p>
+
+                <div class="callout callout-warning">
+                    <strong>Datos duros del mercado:</strong>
+                    <ul>
+                        <li>El 95% de NFTs creados en 2021-2022 ahora valen $0</li>
+                        <li>El volumen de trading cayó un 97% desde el pico de 2021</li>
+                        <li>Más de $23 mil millones en pérdidas acumuladas por inversores</li>
+                        <li>Muchos proyectos resultaron ser "rug pulls" (estafas planificadas)</li>
+                    </ul>
+                </div>
+
+                <h3>Problemas estructurales del mercado NFT:</h3>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>🔴 Falta de liquidez</h3>
+                        <p>
+                            A diferencia de acciones o criptomonedas, vender un NFT cuando quieres es extremadamente
+                            difícil. Puedes tener un NFT "valorado" en $10,000 pero no encontrar comprador.
+                        </p>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🔴 Manipulación de precios</h3>
+                        <p>
+                            El "wash trading" (comprar y vender a ti mismo) es rampante. Muchos precios "récord"
+                            son artificiales para crear FOMO y atraer compradores reales.
+                        </p>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🔴 Derechos confusos</h3>
+                        <p>
+                            Comprar un NFT no siempre da derechos comerciales sobre la imagen. Muchos compradores
+                            descubren tarde que solo poseen un "recibo" digital.
+                        </p>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>🔴 Dependencia de plataformas</h3>
+                        <p>
+                            Si la plataforma que aloja la imagen cierra, tu NFT puede quedar como un enlace roto.
+                            La "descentralización" a menudo es una ilusión.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico de distribución de valor -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Distribución de Valor en el Mercado NFT</h3>
+                <div class="chart-wrapper">
+                    <canvas id="nftValueDistribution"></canvas>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 4 -->
+            <section id="seccion4">
+                <h2>4. ¿Deberías invertir en NFTs?</h2>
+                <p>
+                    La respuesta honesta: <strong>probablemente no</strong>, a menos que entiendas profundamente
+                    el espacio y puedas permitirte perder el 100% de tu inversión.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Regla de oro para NFTs</h3>
+                    <p>
+                        Solo "invierte" en NFTs dinero que estés dispuesto a perder completamente. Considéralo más
+                        como coleccionismo o entretenimiento que como inversión seria. Nunca más del 1-2% de tu
+                        patrimonio total.
+                    </p>
+                </div>
+
+                <h3>Si aún así quieres participar:</h3>
+
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>✅ Haz tu investigación</h3>
+                        <ul>
+                            <li>Investiga exhaustivamente el proyecto y equipo</li>
+                            <li>Verifica la autenticidad del creador</li>
+                            <li>Entiende qué derechos estás comprando realmente</li>
+                            <li>Revisa el historial de transacciones (watch out para wash trading)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>✅ Gestiona el riesgo</h3>
+                        <ul>
+                            <li>Nunca inviertas más del 1-2% de tu patrimonio</li>
+                            <li>Ten una estrategia de salida clara</li>
+                            <li>No compres por FOMO (Fear Of Missing Out)</li>
+                            <li>Asume que perderás el 100% del capital</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout callout-warning">
+                    <strong>Advertencia crítica:</strong> El FOMO (Fear Of Missing Out) ha arruinado a miles de
+                    inversores en NFTs. No compres solo porque "todo el mundo lo hace" o porque ves precios subiendo.
+                    La mayoría de esas subidas son artificiales.
+                </div>
+
+                <p class="disclaimer">
+                    Este análisis es solo informativo. Los NFTs son activos de altísimo riesgo. No constituye
+                    asesoramiento de inversión. Consulta con un asesor financiero antes de invertir.
+                </p>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq">
+                <h2>5. Preguntas frecuentes</h2>
+
+                <details class="faq-item">
+                    <summary>¿Puedo hacer una captura de pantalla de un NFT?</summary>
+                    <p>
+                        Sí, técnicamente puedes. Pero no poseerás el NFT original registrado en blockchain. Es como
+                        fotografiar la Mona Lisa: tienes una imagen, pero no la obra auténtica ni los derechos
+                        asociados.
+                        Sin embargo, esto plantea preguntas válidas sobre el valor real de poseer el "original" digital.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Los NFTs son malos para el medio ambiente?</summary>
+                    <p>
+                        Depende de la blockchain. Ethereum (post-Merge en 2022) redujo su consumo energético en un
+                        99.95%.
+                        Otras blockchains modernas como Polygon o Solana usan mucha menos energía que Bitcoin. El
+                        impacto
+                        ambiental ya no es el problema principal de los NFTs.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Volverán a subir los precios de NFTs?</summary>
+                    <p>
+                        Nadie lo sabe con certeza. Algunos proyectos con utilidad real y comunidades fuertes pueden
+                        mantener o aumentar valor. Pero la mayoría de NFTs especulativos probablemente no se recuperará.
+                        El mercado ha madurado y el enfoque ahora está en utilidad, no en especulación pura.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué diferencia hay entre un NFT caro y uno barato?</summary>
+                    <p>
+                        Principalmente: marca, comunidad y utilidad. Los NFTs caros suelen tener equipos reconocidos,
+                        comunidades activas y beneficios adicionales (acceso a eventos, derechos comerciales, etc.).
+                        Los baratos suelen ser copias sin valor real. Pero precio alto no garantiza valor futuro.
+                    </p>
+                </details>
+
+            </section>
+
+        </article>
     </main>
 
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- JS -->
     <script src="article-interactive.js"></script>
+    <script>
+        // Gráfico de volumen NFT
+        createLineChart('nftVolumeChart',
+            ['Ene 21', 'Abr 21', 'Jul 21', 'Oct 21', 'Ene 22', 'Abr 22', 'Jul 22', 'Oct 22', 'Ene 23', 'Abr 23', 'Jul 23', 'Oct 23', 'Ene 24', 'Abr 24', 'Jul 24', 'Oct 24', 'Ene 25'],
+            [
+                {
+                    label: 'Volumen Mensual (Miles de millones $)',
+                    data: [0.5, 2.1, 5.8, 12.5, 25.0, 18.2, 8.5, 3.2, 1.8, 1.2, 0.9, 0.8, 0.75, 0.72, 0.76, 0.74, 0.75],
+                    borderColor: '#9c27b0',
+                    backgroundColor: 'rgba(156, 39, 176, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }
+            ]
+        );
+
+        // Gráfico de distribución de valor
+        createDoughnutChart('nftValueDistribution',
+            ['NFTs sin valor ($0)', 'Valor bajo (<$100)', 'Valor medio ($100-$1k)', 'Valor alto ($1k-$10k)', 'Valor premium (>$10k)'],
+            [95, 3, 1.5, 0.4, 0.1],
+            ['#f44336', '#ff9800', '#ffc107', '#4caf50', '#00c853']
+        );
+    </script>
 
 </body>
 

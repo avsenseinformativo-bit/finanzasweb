@@ -2,10 +2,11 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,211 +16,609 @@
         gtag('config', 'G-3FNCYG6XM1');
     </script>
 
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo invertir en fondos indexados | AV Finanzas</title>
+
     <meta name="description"
-        content="Guía completa sobre cómo invertir en fondos indexados. Aprende qué son, sus ventajas y cómo empezar a invertir de forma inteligente." />
-    <title>Cómo invertir en fondos indexados – AV Finanzas</title>
+        content="Guía completa sobre cómo invertir en fondos indexados. Aprende qué son, sus ventajas, cómo elegir el mejor y cómo empezar a invertir de forma inteligente.">
 
-    <!-- CSS general de artículos -->
-    <link rel="stylesheet" href="article.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="adsense.css">
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
-    </head>
+</head>
 
 <body>
-    <header class="article-header">
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="AV Finanzas - Portal de información financiera">
+        </div>
+
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+
+            <a href="index.html" class="cta-button">Volver al inicio</a>
+        </nav>
+    </header>
+
+    <!-- Barra de progreso -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <main class="article-layout">
+
+        <!-- Migas de pan -->
         <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="mercados.html">Mercados</a> >
+            <a href="index.html">Inicio</a> ›
+            <a href="#">Inversiones</a> ›
             <span>Fondos Indexados</span>
         </nav>
 
-        <div class="article-hero">
-            <img src="joachim-schnurle-FTXd6rEON5w-unsplash.jpg" alt="Fondos indexados y gráficos de inversión">
-            <div class="hero-text">
-                <h1>Cómo invertir en fondos indexados: La estrategia de Warren Buffett</h1>
-                <p class="article-subtitle">Descubre por qué los fondos indexados son la opción favorita de inversores
-                    inteligentes y cómo puedes empezar hoy mismo.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
+        <!-- HERO -->
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Inversiones</span>
+
+                <h1>Fondos Indexados: La forma más inteligente de invertir a largo plazo</h1>
+
+                <p class="article-subtitle">
+                    Descubre por qué Warren Buffett recomienda fondos indexados, cómo funcionan y por qué
+                    superan a la mayoría de gestores activos con comisiones 10 veces menores.
+                </p>
+
+                <div class="article-meta-row">
+                    <span>Actualizado: Noviembre 2025</span>
+                    <span>·</span>
+                    <span>Tiempo de lectura: 9 min</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparación: Fondos Activos vs Indexados -->
+        <div class="comparison-widget fade-in-scroll">
+            <div class="comparison-side">
+                <div class="comparison-label">Fondos Activos</div>
+                <div class="comparison-value">1.5-2%</div>
+                <div style="font-size: 14px; color: #888; margin-top: 5px;">Comisiones anuales</div>
+            </div>
+            <div class="comparison-divider">vs</div>
+            <div class="comparison-side">
+                <div class="comparison-label">Fondos Indexados</div>
+                <div class="comparison-value">0.1-0.3%</div>
+                <div style="font-size: 14px; color: #00c853; margin-top: 5px; font-weight: 700;">10x más barato</div>
             </div>
         </div>
-    </header>
 
-    <main class="article-container">
-
-        <!-- AdSense: Anuncio superior -->
-        <div class="ad-container ad-horizontal">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
+        <!-- Estadísticas de fondos indexados -->
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box">
+                <span class="stat-number" data-count="10" data-suffix="%">0%</span>
+                <span class="stat-label">Rentabilidad histórica S&P 500</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="85" data-suffix="%">0%</span>
+                <span class="stat-label">Gestores que NO baten al índice</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="0.15" data-suffix="%">0%</span>
+                <span class="stat-label">Comisión típica</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-count="500">0</span>
+                <span class="stat-label">Empresas en S&P 500</span>
+            </div>
         </div>
 
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>Los fondos indexados replican índices bursátiles como el S&P 500, ofreciendo diversificación automática,
-                bajas comisiones y rendimientos consistentes a largo plazo.</p>
-        </details>
+        <!-- Resumen rápido -->
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen rápido</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>Los fondos indexados replican índices bursátiles con comisiones ultra-bajas (0.1-0.3%).</li>
+                    <li>El 85% de gestores activos NO superan al S&P 500 a largo plazo.</li>
+                    <li>Warren Buffett recomienda fondos indexados para la mayoría de inversores.</li>
+                    <li>Ofrecen diversificación automática en cientos o miles de empresas.</li>
+                    <li>Ideales para inversión a largo plazo con estrategia buy & hold.</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="toc">
-            <h2>Contenido</h2>
-            <ul>
+        <!-- Anuncio -->
+        <div class="ad-space ad-in-article"></div>
+
+        <!-- TOC -->
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
                 <li><a href="#seccion1">1. ¿Qué son los fondos indexados?</a></li>
                 <li><a href="#seccion2">2. Ventajas de los fondos indexados</a></li>
                 <li><a href="#seccion3">3. Cómo elegir un fondo indexado</a></li>
                 <li><a href="#seccion4">4. Cómo empezar a invertir</a></li>
-            </ul>
-        </div>
-
-        <section id="seccion1">
-            <h2>1. ¿Qué son los fondos indexados?</h2>
-            <p>
-                Un fondo indexado es un tipo de fondo de inversión que replica el comportamiento de un índice
-                bursátil específico, como el S&P 500, el IBEX 35 o el MSCI World. En lugar de intentar "batir al
-                mercado", estos fondos simplemente lo copian.
-            </p>
-
-            <div class="highlight-box">
-                <strong>Dato clave:</strong> Warren Buffett, uno de los inversores más exitosos del mundo, recomienda
-                fondos indexados del S&P 500 para la mayoría de los inversores.
-            </div>
-
-            <p>
-                La filosofía es simple: si no puedes vencer al mercado de forma consistente (y la mayoría de gestores
-                profesionales no pueden), únete a él.
-            </p>
-        </section>
-
-        <!-- AdSense: Anuncio mitad de artículo -->
-        <div class="ad-container ad-responsive">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion2">
-            <h2>2. Ventajas de los fondos indexados</h2>
-            <p>
-                Los fondos indexados ofrecen múltiples beneficios que los hacen ideales para inversores de todos los
-                niveles:
-            </p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Ventaja</th>
-                        <th>Descripción</th>
-                        <th>Impacto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Bajas comisiones</td>
-                        <td>0.05% - 0.20% anual típicamente</td>
-                        <td>Más dinero en tu bolsillo</td>
-                    </tr>
-                    <tr>
-                        <td>Diversificación</td>
-                        <td>Cientos o miles de empresas</td>
-                        <td>Menor riesgo</td>
-                    </tr>
-                    <tr>
-                        <td>Simplicidad</td>
-                        <td>No requiere análisis constante</td>
-                        <td>Ahorro de tiempo</td>
-                    </tr>
-                    <tr>
-                        <td>Transparencia</td>
-                        <td>Sabes exactamente qué posees</td>
-                        <td>Mayor confianza</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="callout warning">
-                <strong>Importante:</strong> Las comisiones importan. Una diferencia del 1% anual puede costarte
-                cientos de miles de euros a lo largo de 30 años debido al interés compuesto.
-            </div>
-        </section>
-
-        <section id="seccion3">
-            <h2>3. Cómo elegir un fondo indexado</h2>
-            <p>No todos los fondos indexados son iguales. Aquí están los factores clave a considerar:</p>
-
-            <ul>
-                <li><strong>Índice que replica:</strong> S&P 500 (EE.UU.), MSCI World (global), IBEX 35 (España)</li>
-                <li><strong>TER (Total Expense Ratio):</strong> Busca fondos con TER inferior al 0.20%</li>
-                <li><strong>Tracking error:</strong> Qué tan bien replica el índice (menor es mejor)</li>
-                <li><strong>Tamaño del fondo:</strong> Fondos más grandes suelen tener mejores costes</li>
-            </ul>
-
-            <div class="highlight-box">
-                <strong>Recomendación:</strong> Para principiantes, un fondo que replique el S&P 500 o el MSCI World
-                es una excelente opción para empezar.
-            </div>
-        </section>
-
-        <!-- AdSense: Anuncio final de artículo -->
-        <div class="ad-container ad-horizontal">
-            <div class="ad-placeholder">Espacio publicitario</div>
-            <!-- Aquí irá el código de AdSense cuando esté aprobado -->
-        </div>
-
-        <section id="seccion4">
-            <h2>4. Cómo empezar a invertir</h2>
-            <p>
-                Invertir en fondos indexados es más fácil de lo que piensas. Sigue estos pasos:
-            </p>
-
-            <ol>
-                <li><strong>Abre una cuenta:</strong> Elige un broker o plataforma (eToro, MyInvestor, Indexa Capital)
-                </li>
-                <li><strong>Selecciona tu fondo:</strong> Busca fondos con bajas comisiones que repliquen índices
-                    amplios</li>
-                <li><strong>Define tu estrategia:</strong> ¿Inversión única o aportaciones mensuales?</li>
-                <li><strong>Automatiza:</strong> Configura aportaciones automáticas mensuales</li>
-                <li><strong>Mantén el rumbo:</strong> No vendas en pánico durante las caídas del mercado</li>
+                <li><a href="#faq">5. Preguntas frecuentes</a></li>
             </ol>
+        </aside>
 
-            <div class="callout warning">
-                <strong>Consejo de oro:</strong> El mejor momento para invertir fue hace 10 años. El segundo mejor
-                momento es ahora. No intentes "cronometrar el mercado".
+        <!-- CONTENIDO -->
+        <article class="article-content">
+
+            <!-- SECCIÓN 1 -->
+            <section id="seccion1">
+                <h2>1. ¿Qué son los fondos indexados?</h2>
+                <p>
+                    Un fondo indexado es un tipo de fondo de inversión que replica el comportamiento de un índice
+                    bursátil específico, como el S&P 500, el IBEX 35 o el MSCI World. En lugar de intentar "batir
+                    al mercado" seleccionando acciones individuales, estos fondos simplemente lo copian.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>La recomendación de Warren Buffett</h3>
+                    <p>
+                        Warren Buffett, uno de los inversores más exitosos del mundo, recomienda fondos indexados
+                        del S&P 500 para la mayoría de los inversores. En su testamento, instruyó que el 90% del
+                        dinero de su esposa se invierta en fondos indexados.
+                    </p>
+                </div>
+
+                <p>
+                    La filosofía es simple: si no puedes vencer al mercado de forma consistente (y la mayoría de
+                    gestores profesionales no pueden), únete a él. Los datos históricos muestran que el 85% de los
+                    gestores activos NO superan al índice S&P 500 en períodos de 15 años.
+                </p>
+            </section>
+
+            <!-- Gráfico de rendimiento histórico -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Rendimiento Histórico: S&P 500 vs Gestión Activa Promedio</h3>
+                <div class="chart-wrapper">
+                    <canvas id="performanceChart"></canvas>
+                </div>
             </div>
-        </section>
 
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
+            <!-- SECCIÓN 2 -->
+            <section id="seccion2">
+                <h2>2. Ventajas de los fondos indexados</h2>
+                <p>
+                    Los fondos indexados ofrecen múltiples beneficios que los hacen ideales para inversores de
+                    todos los niveles, desde principiantes hasta expertos.
+                </p>
 
-            <details>
-                <summary>¿Cuánto dinero necesito para empezar?</summary>
-                <p>Muchas plataformas permiten empezar con tan solo 50-100€. Lo importante es la constancia, no la
-                    cantidad inicial.</p>
-            </details>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info">
+                        <h3>💰 Bajas comisiones</h3>
+                        <p>
+                            Las comisiones típicas son del 0.1-0.3% anual, comparado con 1.5-2% de fondos activos.
+                            Esta diferencia puede costarte cientos de miles de euros a lo largo de 30 años.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Impacto en 30 años</span>
+                                <span>Crítico</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="95"
+                                    style="width: 0%; background: linear-gradient(90deg, #00c853, #4caf50);"></div>
+                            </div>
+                        </div>
+                    </div>
 
-            <details>
-                <summary>¿Son seguros los fondos indexados?</summary>
-                <p>Ninguna inversión está libre de riesgo, pero los fondos indexados diversificados son
-                    considerablemente más seguros que invertir en acciones individuales.</p>
-            </details>
+                    <div class="card-info">
+                        <h3>🌍 Diversificación automática</h3>
+                        <p>
+                            Un solo fondo te da exposición a cientos o miles de empresas. El S&P 500 incluye las
+                            500 mayores empresas de EE.UU., el MSCI World más de 1,500 empresas globales.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Reducción de riesgo</span>
+                                <span>Alta</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="90"
+                                    style="width: 0%; background: linear-gradient(90deg, #2196f3, #03a9f4);"></div>
+                            </div>
+                        </div>
+                    </div>
 
-            <details>
-                <summary>¿Cuánto puedo ganar?</summary>
-                <p>Históricamente, el S&P 500 ha generado un retorno promedio del 10% anual. Sin embargo, rendimientos
-                    pasados no garantizan resultados futuros.</p>
-            </details>
-        </section>
+                    <div class="card-info">
+                        <h3>⏱️ Simplicidad</h3>
+                        <p>
+                            No requiere análisis constante de empresas ni timing del mercado. Inviertes y mantienes
+                            (buy & hold). Perfecto para quienes no tienen tiempo o conocimiento profundo.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Ahorro de tiempo</span>
+                                <span>Máximo</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="100"
+                                    style="width: 0%; background: linear-gradient(90deg, #9c27b0, #e91e63);"></div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> Este artículo es informativo y educativo. No constituye asesoramiento
-            financiero personalizado. Consulta con un profesional antes de invertir.
-        </div>
+                    <div class="card-info">
+                        <h3>📊 Transparencia total</h3>
+                        <p>
+                            Sabes exactamente qué posees en todo momento. Los índices son públicos y el fondo
+                            simplemente los replica. Sin sorpresas ni estrategias opacas.
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-label">
+                                <span>Claridad</span>
+                                <span>Total</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="100"
+                                    style="width: 0%; background: linear-gradient(90deg, #ff9800, #ff5722);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="callout callout-warning">
+                    <strong>Impacto de las comisiones:</strong> Una diferencia del 1% anual en comisiones puede
+                    costarte €200,000+ en 30 años con una inversión de €500/mes. Las comisiones bajas son cruciales
+                    para el éxito a largo plazo.
+                </div>
+            </section>
+
+            <!-- Gráfico de impacto de comisiones -->
+            <div class="chart-container fade-in-scroll">
+                <h3 class="chart-title">Impacto de las Comisiones en 30 Años (€500/mes, 7% retorno)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="feesImpactChart"></canvas>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3 -->
+            <section id="seccion3">
+                <h2>3. Cómo elegir un fondo indexado</h2>
+                <p>No todos los fondos indexados son iguales. Aquí están los factores clave a considerar:</p>
+
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Factor 1</div>
+                        <div class="timeline-content">
+                            <strong>Índice que replica</strong><br>
+                            S&P 500 (EE.UU.), MSCI World (global), IBEX 35 (España), MSCI Emerging Markets
+                            (emergentes). Elige según tu estrategia de diversificación geográfica.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Factor 2</div>
+                        <div class="timeline-content">
+                            <strong>TER (Total Expense Ratio)</strong><br>
+                            Busca fondos con TER inferior al 0.20%. Cuanto más bajo, mejor. Algunos fondos
+                            Vanguard tienen TER de solo 0.07%.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Factor 3</div>
+                        <div class="timeline-content">
+                            <strong>Tracking error</strong><br>
+                            Mide qué tan bien replica el índice. Menor es mejor. Un tracking error bajo (<0.5%) indica
+                                que el fondo sigue fielmente al índice. </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Factor 4</div>
+                            <div class="timeline-content">
+                                <strong>Tamaño del fondo</strong><br>
+                                Fondos más grandes (>€1,000M) suelen tener mejores costes operativos y mayor liquidez.
+                                Evita fondos muy pequeños (<€50M). </div>
+                            </div>
+                        </div>
+
+                        <h3>Principales índices y sus características:</h3>
+
+                        <div class="grid-two fade-in-scroll">
+                            <div class="card-info">
+                                <h3>🇺🇸 S&P 500</h3>
+                                <ul>
+                                    <li><strong>Empresas:</strong> 500 mayores de EE.UU.</li>
+                                    <li><strong>Rentabilidad histórica:</strong> ~10% anual</li>
+                                    <li><strong>Ideal para:</strong> Exposición a EE.UU.</li>
+                                    <li><strong>Riesgo:</strong> Medio (concentrado en un país)</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-info">
+                                <h3>🌍 MSCI World</h3>
+                                <ul>
+                                    <li><strong>Empresas:</strong> 1,500+ de 23 países desarrollados</li>
+                                    <li><strong>Rentabilidad histórica:</strong> ~8% anual</li>
+                                    <li><strong>Ideal para:</strong> Diversificación global</li>
+                                    <li><strong>Riesgo:</strong> Medio-Bajo (muy diversificado)</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-info">
+                                <h3>🇪🇸 IBEX 35</h3>
+                                <ul>
+                                    <li><strong>Empresas:</strong> 35 mayores de España</li>
+                                    <li><strong>Rentabilidad histórica:</strong> ~5% anual</li>
+                                    <li><strong>Ideal para:</strong> Exposición local</li>
+                                    <li><strong>Riesgo:</strong> Alto (concentrado en España)</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-info">
+                                <h3>🌏 MSCI Emerging Markets</h3>
+                                <ul>
+                                    <li><strong>Empresas:</strong> Mercados emergentes (China, India, Brasil)</li>
+                                    <li><strong>Rentabilidad histórica:</strong> ~7% anual</li>
+                                    <li><strong>Ideal para:</strong> Mayor potencial de crecimiento</li>
+                                    <li><strong>Riesgo:</strong> Alto (mayor volatilidad)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box">
+                            <h3>Recomendación para principiantes</h3>
+                            <p>
+                                Un fondo que replique el S&P 500 o el MSCI World es una excelente opción para empezar.
+                                Ofrecen diversificación amplia, historial probado y comisiones muy bajas.
+                            </p>
+                        </div>
+            </section>
+
+            <!-- SECCIÓN 4 -->
+            <section id="seccion4">
+                <h2>4. Cómo empezar a invertir</h2>
+                <p>
+                    Invertir en fondos indexados es más fácil de lo que piensas. Sigue estos pasos para comenzar
+                    tu camino hacia la inversión inteligente.
+                </p>
+
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 1</div>
+                        <div class="timeline-content">
+                            <strong>Abre una cuenta</strong><br>
+                            Elige un broker o plataforma: MyInvestor, Indexa Capital, DeGiro, Interactive Brokers.
+                            Compara comisiones de custodia y compra/venta.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Paso 2</div>
+                        <div class="timeline-content">
+                            <strong>Selecciona tu fondo</strong><br>
+                            Busca fondos con bajas comisiones (TER <0.20%) que repliquen índices amplios. Verifica el
+                                ISIN del fondo antes de comprar. </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Paso 3</div>
+                            <div class="timeline-content">
+                                <strong>Define tu estrategia</strong><br>
+                                ¿Inversión única (lump sum) o aportaciones mensuales (DCA)? El DCA reduce el riesgo de
+                                timing y es ideal para principiantes.
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Paso 4</div>
+                            <div class="timeline-content">
+                                <strong>Automatiza tus aportaciones</strong><br>
+                                Configura aportaciones automáticas mensuales. Esto elimina la tentación de intentar
+                                "cronometrar el mercado" y fomenta la disciplina.
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Paso 5</div>
+                            <div class="timeline-content">
+                                <strong>Mantén el rumbo</strong><br>
+                                No vendas en pánico durante las caídas del mercado. La volatilidad es normal. El éxito
+                                viene de mantener la inversión a largo plazo (10+ años).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="callout callout-success">
+                        <strong>Consejo de oro:</strong> El mejor momento para invertir fue hace 10 años. El segundo
+                        mejor momento es ahora. No intentes "cronometrar el mercado" esperando el momento perfecto.
+                        El tiempo en el mercado es más importante que el timing del mercado.
+                    </div>
+
+                    <h3>Estrategias de inversión:</h3>
+
+                    <div class="grid-two fade-in-scroll">
+                        <div class="card-info">
+                            <h3>📈 Lump Sum (Inversión única)</h3>
+                            <p><strong>Ventajas:</strong></p>
+                            <ul>
+                                <li>Máxima exposición al mercado desde el inicio</li>
+                                <li>Históricamente superior al DCA en 2/3 de los casos</li>
+                                <li>Simplicidad total</li>
+                            </ul>
+                            <p><strong>Desventajas:</strong></p>
+                            <ul>
+                                <li>Riesgo psicológico si compras justo antes de una caída</li>
+                                <li>Requiere capital disponible</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-info">
+                            <h3>💰 DCA (Dollar Cost Averaging)</h3>
+                            <p><strong>Ventajas:</strong></p>
+                            <ul>
+                                <li>Reduce ansiedad y riesgo psicológico</li>
+                                <li>Accesible con cualquier presupuesto</li>
+                                <li>Promedia el precio de compra</li>
+                            </ul>
+                            <p><strong>Desventajas:</strong></p>
+                            <ul>
+                                <li>Menor exposición inicial al mercado</li>
+                                <li>Puede tener menor rentabilidad en mercados alcistas</li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq">
+                <h2>5. Preguntas frecuentes</h2>
+
+                <details class="faq-item">
+                    <summary>¿Cuánto dinero necesito para empezar?</summary>
+                    <p>
+                        Muchas plataformas permiten empezar con tan solo €50-100. Lo importante es la constancia,
+                        no la cantidad inicial. Es mejor invertir €100/mes durante 30 años que €10,000 una sola vez.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Son seguros los fondos indexados?</summary>
+                    <p>
+                        Ninguna inversión está libre de riesgo, pero los fondos indexados diversificados son
+                        considerablemente más seguros que invertir en acciones individuales. El riesgo principal
+                        es la volatilidad del mercado, pero históricamente los mercados siempre se han recuperado
+                        a largo plazo (10+ años).
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cuánto puedo ganar?</summary>
+                    <p>
+                        Históricamente, el S&P 500 ha generado un retorno promedio del 10% anual (antes de inflación).
+                        El MSCI World aproximadamente 8% anual. Sin embargo, rendimientos pasados no garantizan
+                        resultados futuros. Espera volatilidad en el corto plazo pero crecimiento en el largo plazo.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Fondos indexados o ETFs?</summary>
+                    <p>
+                        Ambos replican índices, pero tienen diferencias técnicas. Los ETFs cotizan en bolsa como
+                        acciones (puedes comprar/vender durante el día), mientras que los fondos indexados se
+                        compran/venden al precio de cierre. Para inversión a largo plazo, ambos son excelentes.
+                        Los fondos indexados en España tienen ventaja fiscal (traspasos sin tributar).
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué pasa si el mercado cae?</summary>
+                    <p>
+                        Las caídas son normales y esperables. El S&P 500 ha tenido caídas del 20%+ en múltiples
+                        ocasiones, pero siempre se ha recuperado y alcanzado nuevos máximos. La clave es NO vender
+                        en pánico. Si inviertes a largo plazo (10+ años), las caídas son oportunidades de compra,
+                        no razones para vender.
+                    </p>
+                </details>
+
+            </section>
+
+            <p class="disclaimer">
+                Este artículo es informativo y educativo. No constituye asesoramiento financiero personalizado.
+                Las inversiones conllevan riesgos. Consulta con un profesional antes de invertir. Rentabilidades
+                pasadas no garantizan resultados futuros.
+            </p>
+
+        </article>
     </main>
 
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- JS -->
     <script src="article-interactive.js"></script>
+    <script>
+        // Gráfico de rendimiento histórico
+        createLineChart('performanceChart',
+            ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+            [
+                {
+                    label: 'S&P 500 Index',
+                    data: [100, 112, 136, 130, 171, 203, 261, 213, 262, 328, 360],
+                    borderColor: '#00c853',
+                    backgroundColor: 'rgba(0, 200, 83, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                },
+                {
+                    label: 'Gestión Activa Promedio',
+                    data: [100, 108, 128, 122, 158, 185, 232, 192, 230, 285, 305],
+                    borderColor: '#ff9800',
+                    backgroundColor: 'rgba(255, 152, 0, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }
+            ],
+            {
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Valor de €100 invertidos en 2015'
+                        }
+                    }
+                }
+            }
+        );
+
+        // Gráfico de impacto de comisiones
+        createLineChart('feesImpactChart',
+            ['Año 0', '5', '10', '15', '20', '25', '30'],
+            [
+                {
+                    label: 'Fondo Indexado (0.15% comisión)',
+                    data: [0, 35, 86, 155, 245, 365, 525],
+                    borderColor: '#00c853',
+                    backgroundColor: 'rgba(0, 200, 83, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                },
+                {
+                    label: 'Fondo Activo (1.5% comisión)',
+                    data: [0, 33, 78, 138, 215, 310, 425],
+                    borderColor: '#f44336',
+                    backgroundColor: 'rgba(244, 67, 54, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }
+            ],
+            {
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Capital acumulado (miles €)'
+                        }
+                    }
+                }
+            }
+        );
+    </script>
 
 </body>
 

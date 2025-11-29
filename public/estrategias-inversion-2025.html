@@ -2,200 +2,700 @@
 <html lang="es">
 
 <head>
-<!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847" crossorigin="anonymous"></script>
-
-<!-- Google tag (gtag.js) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4245545296537847"
+        crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FNCYG6XM1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-3FNCYG6XM1');
-    </script>
-
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-3FNCYG6XM1');</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description"
-        content="Descubre las mejores estrategias de inversión para 2025. Análisis de sectores clave y oportunidades emergentes." />
-    <title>Estrategias de Inversión para 2025 – AV Finanzas</title>
-
-    <!-- CSS general de artículos -->
-    <link rel="stylesheet" href="article.css">
+        content="Estrategias de inversión para 2025: análisis completo de tendencias, carteras modelo, activos recomendados y consejos para maximizar rentabilidad." />
+    <title>Estrategias de Inversión 2025: Guía Completa – AV Finanzas</title>
     <link rel="stylesheet" href="style.css">
-        
+    <link rel="stylesheet" href="article.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 
 <body>
-    <header class="article-header">
-        <nav class="breadcrumb">
-            <a href="index.html">Inicio</a> >
-            <a href="mercados.html">Mercados</a> >
-            <span>Estrategias 2025</span>
+    <header class="main-header">
+        <div class="logo"><img src="logo.png" alt="AV Finanzas - Portal de información financiera"></div>
+        <nav class="main-nav">
+            <ul class="left-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Criptomonedas</a></li>
+            </ul>
+            <a href="index.html" class="cta-button">Volver al inicio</a>
         </nav>
-
-        <div class="hero-article">
-            <img src="imagen7.jpg" alt="Estrategias de inversión" loading="lazy">
-            <div class="hero-text">
-                <h1>Estrategias de Inversión para 2025: ¿Dónde poner tu dinero?</h1>
-                <p class="article-subtitle">Analizamos los sectores con mayor potencial y cómo diversificar tu cartera
-                    ante la incertidumbre global.</p>
-                <p class="article-meta">Por Redacción – Actualizado el 27/11/2025</p>
-            </div>
-        </div>
     </header>
-
-    <main class="article-container">
-
-        <!-- Espacio para anuncio superior -->
-        <div class="ad-space">
-            <!-- Google AdSense Placeholder -->
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
-        </div>
-
-        <!-- Resumen plegable -->
-        <details class="article-summary" open>
-            <summary>Resumen del artículo</summary>
-            <p>Este artículo explora las tendencias de inversión para 2025, destacando la tecnología verde, la
-                inteligencia artificial y los mercados emergentes como áreas clave.</p>
-        </details>
-
-        <!-- Índice (TOC) -->
-        <div class="toc">
-            <h2>Contenido</h2>
-            <ul>
-                <li><a href="#seccion1">1. Panorama Económico 2025</a></li>
-                <li><a href="#seccion2">2. Sectores en Crecimiento</a></li>
-                <li><a href="#seccion3">3. Diversificación Inteligente</a></li>
-                <li><a href="#seccion4">4. Conclusión</a></li>
-            </ul>
-        </div>
-
-        <!-- SECCIÓN 1 -->
-        <section id="seccion1">
-            <h2>1. Panorama Económico 2025</h2>
-            <p>
-                El año 2025 se presenta como un periodo de transición. Con la inflación estabilizándose en las
-                principales economías, los inversores buscan oportunidades más allá de la renta fija tradicional.
-            </p>
-
-            <div class="highlight-box">
-                <strong>Idea clave:</strong> La volatilidad seguirá presente, pero las oportunidades a largo plazo en
-                sectores innovadores son prometedoras.
+    <div class="reading-progress" id="readingProgress"></div>
+    <main class="article-layout">
+        <nav class="breadcrumb"><a href="index.html">Inicio</a> › <a href="#">Inversiones</a> › <span>Estrategias
+                2025</span></nav>
+        <section class="article-hero">
+            <div class="article-hero-text">
+                <span class="article-pill">Inversiones</span>
+                <h1>Estrategias de Inversión para 2025: Maximiza tu rentabilidad</h1>
+                <p class="article-subtitle">Descubre las mejores estrategias de inversión para 2025, carteras modelo
+                    según tu perfil de riesgo, tendencias clave del mercado y consejos prácticos para invertir con
+                    éxito.</p>
+                <div class="article-meta-row"><span>Actualizado: Noviembre 2025</span> · <span>15 min lectura</span>
+                </div>
             </div>
         </section>
-
-        <!-- Espacio para anuncio dentro del artículo -->
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
+        <div class="stats-grid fade-in-scroll">
+            <div class="stat-box"><span class="stat-number" data-count="10.5" data-suffix="%">0%</span><span
+                    class="stat-label">Rentabilidad S&P 500 (2024)</span></div>
+            <div class="stat-box"><span class="stat-number" data-count="3.75" data-suffix="%">0%</span><span
+                    class="stat-label">Tipos de interés BCE</span></div>
+            <div class="stat-box"><span class="stat-number" data-count="28" data-suffix="%">0%</span><span
+                    class="stat-label">Peso Tech en S&P 500</span></div>
+            <div class="stat-box"><span class="stat-number" data-count="7">0</span><span class="stat-label">Tipos de
+                    activos clave</span></div>
         </div>
-
-        <!-- SECCIÓN 2 -->
-        <section id="seccion2">
-            <h2>2. Sectores en Crecimiento</h2>
-            <p>
-                Tres sectores destacan por encima del resto:
-            </p>
-            <ul>
-                <li><strong>Inteligencia Artificial:</strong> Ya no es una promesa, es una realidad que transforma
-                    industrias.</li>
-                <li><strong>Energías Renovables:</strong> La transición energética sigue atrayendo capital masivo.</li>
-                <li><strong>Salud y Biotecnología:</strong> El envejecimiento poblacional impulsa la demanda de nuevos
-                    tratamientos.</li>
-            </ul>
-
-            <!-- Callout -->
-            <div class="callout warning">
-                <strong>Atención:</strong> Invertir en sectores tecnológicos conlleva riesgos. Es vital investigar cada
-                empresa individualmente.
+        <div class="comparison-widget fade-in-scroll">
+            <div class="comparison-side">
+                <div class="comparison-label">Cartera conservadora (60/40)</div>
+                <div class="comparison-value">5-6%</div>
+                <div style="font-size:14px;color:#888;">Rentabilidad esperada anual</div>
+            </div>
+            <div class="comparison-divider">vs</div>
+            <div class="comparison-side">
+                <div class="comparison-label">Cartera agresiva (90/10)</div>
+                <div class="comparison-value">9-11%</div>
+                <div style="font-size:14px;color:#00c853;font-weight:700;">Mayor rentabilidad, mayor riesgo</div>
+            </div>
+        </div>
+        <section class="article-summary">
+            <button id="toggleResumen" class="summary-toggle">Ver resumen ejecutivo</button>
+            <div id="summaryContent" class="summary-content">
+                <ul>
+                    <li>2025 presenta un entorno mixto: tipos de interés bajando gradualmente desde el 4.5% al 3.75%,
+                        inflación controlada en 3.2%.</li>
+                    <li>Diversificación sigue siendo la clave fundamental: nunca pongas todos los huevos en la misma
+                        cesta.</li>
+                    <li>Tendencias principales para 2025: IA generativa, semiconductores, energía limpia, salud digital
+                        y ciberseguridad.</li>
+                    <li>Carteras modelo según perfil: Conservadora (60/40), Moderada (70/30), Agresiva (90/10).</li>
+                    <li>DCA (Dollar Cost Averaging) supera al market timing en el 80% de los casos históricos.</li>
+                    <li>El S&P 500 nunca ha dado pérdidas en periodos de 20+ años, validando la estrategia buy & hold.
+                    </li>
+                </ul>
             </div>
         </section>
-
-        <!-- SECCIÓN 3 -->
-        <section id="seccion3">
-            <h2>3. Diversificación Inteligente</h2>
-            <p>No pongas todos los huevos en la misma cesta. Una cartera equilibrada para 2025 debería incluir:</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Clase de Activo</th>
-                        <th>Asignación Sugerida (Perfil Moderado)</th>
-                        <th>Objetivo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Renta Variable Global</td>
-                        <td>50%</td>
-                        <td>Crecimiento</td>
-                    </tr>
-                    <tr>
-                        <td>Bonos / Renta Fija</td>
-                        <td>30%</td>
-                        <td>Estabilidad</td>
-                    </tr>
-                    <tr>
-                        <td>Alternativos (Oro, Cripto)</td>
-                        <td>10%</td>
-                        <td>Cobertura</td>
-                    </tr>
-                    <tr>
-                        <td>Liquidez</td>
-                        <td>10%</td>
-                        <td>Oportunidades</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Espacio para anuncio -->
-        <div class="ad-space">
-            <div style="background:#f0f0f0; padding:20px; text-align:center; color:#888;">Anuncio Publicitario</div>
-        </div>
-
-        <!-- SECCIÓN 4 -->
-        <section id="seccion4">
-            <h2>4. Conclusión</h2>
-            <p>
-                2025 será un año para inversores pacientes y bien informados. Mantener la disciplina y seguir una
-                estrategia diversificada será la clave del éxito.
-            </p>
-        </section>
-
-        <!-- FAQ -->
-        <section class="faq">
-            <h2>Preguntas frecuentes</h2>
-
-            <details>
-                <summary>¿Es seguro invertir en criptomonedas en 2025?</summary>
-                <p>Las criptomonedas siguen siendo activos volátiles. Se recomienda no asignar más del 5-10% de la
-                    cartera a estos activos.</p>
-            </details>
-
-            <details>
-                <summary>¿Qué ETFs son recomendables?</summary>
-                <p>Los ETFs indexados al S&P 500 o al MSCI World siguen siendo opciones sólidas para la mayoría de los
-                    inversores a largo plazo.</p>
-            </details>
-        </section>
-
-        <!-- Disclaimer -->
-        <div class="legal-box">
-            <strong>Disclaimer:</strong> Este artículo no constituye asesoramiento financiero. La información es
-            educativa. Consulta a un asesor profesional antes de invertir.
-        </div>
-
+        <div class="ad-space ad-in-article"></div>
+        <aside class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
+                <li><a href="#contexto">1. Contexto de mercado 2025</a></li>
+                <li><a href="#tendencias">2. Tendencias de inversión</a></li>
+                <li><a href="#activos">3. Tipos de activos</a></li>
+                <li><a href="#carteras">4. Carteras modelo</a></li>
+                <li><a href="#estrategias">5. Estrategias ganadoras</a></li>
+                <li><a href="#faq">6. Preguntas frecuentes</a></li>
+            </ol>
+        </aside>
+        <article class="article-content">
+            <section id="contexto">
+                <h2>1. Contexto de mercado 2025: El panorama actual</h2>
+                <p>El panorama de inversión en 2025 está marcado por varios factores clave que todo inversor debe
+                    conocer para tomar decisiones informadas. Tras años de volatilidad extrema (2020-2023), el mercado
+                    muestra signos de estabilización con oportunidades interesantes.</p>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info" style="border-top:4px solid #2196f3;">
+                        <h3>📉 Tipos de interés: La gran bajada</h3>
+                        <p><strong>Situación actual:</strong> BCE en 3.75%, bajando desde el máximo de 4.5% en 2023. Fed
+                            en rango similar.</p>
+                        <p><strong>Impacto positivo:</strong> Favorece a acciones (valuaciones más atractivas) y bonos
+                            (precios suben cuando tipos bajan).</p>
+                        <p><strong>Impacto negativo:</strong> Depósitos bancarios ofrecen menos rentabilidad (3-4% vs 5%
+                            en 2023).</p>
+                        <p><strong>Previsión 2025-2026:</strong> Tipos convergerán gradualmente al 2.5-3%, el "nivel
+                            neutral" según bancos centrales.</p>
+                        <p><strong>Qué hacer:</strong> Reducir peso en efectivo/depósitos, aumentar en acciones y bonos
+                            de calidad.</p>
+                    </div>
+                    <div class="card-info" style="border-top:4px solid #00c853;">
+                        <h3>📊 Inflación: Finalmente controlada</h3>
+                        <p><strong>Situación actual:</strong> Inflación en 3.2% (España/Eurozona), bajando desde el
+                            dramático 10% de 2022.</p>
+                        <p><strong>Impacto:</strong> Permite a bancos centrales bajar tipos sin riesgo de
+                            recalentamiento económico.</p>
+                        <p><strong>Objetivo:</strong> Convergencia al 2% objetivo del BCE durante 2025-2026.</p>
+                        <p><strong>Riesgo residual:</strong> Conflictos geopolíticos (Oriente Medio, Ucrania) pueden
+                            presionar precios energía.</p>
+                        <p><strong>Qué hacer:</strong> Mantener activos anti-inflación (acciones, inmobiliario) pero sin
+                            pánico. Lo peor ya pasó.</p>
+                    </div>
+                    <div class="card-info" style="border-top:4px solid #ff9800;">
+                        <h3>🤖 Revolución IA: El motor del crecimiento</h3>
+                        <p><strong>Inversión global 2025:</strong> 185.000 millones $ en IA generativa y aplicaciones
+                            relacionadas.</p>
+                        <p><strong>Impacto en bolsa:</strong> Empresas tech (NVIDIA, Microsoft, Google) lideran el
+                            mercado con crecimientos del 20-50%.</p>
+                        <p><strong>Sectores beneficiados:</strong> Semiconductores (+45%), software (+28%), cloud
+                            computing (+22%).</p>
+                        <p><strong>Riesgo:</strong> Valoraciones elevadas (P/E de 35-65 en líderes). Posible corrección
+                            si expectativas no se cumplen.</p>
+                        <p><strong>Qué hacer:</strong> Exposición moderada (15-25% portfolio) en líderes establecidos,
+                            evitar especulación en startups sin ingresos.</p>
+                    </div>
+                    <div class="card-info" style="border-top:4px solid #9c27b0;">
+                        <h3>🌍 Geopolítica: Estabilidad relativa</h3>
+                        <p><strong>Situación:</strong> Tensiones China-USA moderadas tras acuerdos comerciales
+                            parciales. Conflictos regionales contenidos.</p>
+                        <p><strong>Impacto:</strong> Menor volatilidad que 2022-2023. VIX (índice miedo) en niveles
+                            normales (15-18 vs 30+ en crisis).</p>
+                        <p><strong>Riesgos 2025:</strong> Elecciones USA pueden generar volatilidad temporal. Conflicto
+                            Taiwan-China sigue latente.</p>
+                        <p><strong>Oportunidad:</strong> Mercados emergentes (India, Vietnam, México) ofrecen
+                            valuaciones atractivas con menor riesgo geopolítico.</p>
+                        <p><strong>Qué hacer:</strong> Diversificación geográfica. No solo USA: incluir Europa (25%),
+                            Asia (15%), emergentes (10%).</p>
+                    </div>
+                </div>
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Rendimiento principales índices globales (2024)</h3>
+                    <div class="chart-wrapper"><canvas id="indicesPerformanceChart"></canvas></div>
+                </div>
+                <div class="callout callout-info">
+                    <strong>Conclusión contexto 2025:</strong> Entorno favorable para inversión a largo plazo. Tipos
+                    bajando + inflación controlada + crecimiento económico moderado = receta clásica para mercados
+                    alcistas. Pero cuidado con valoraciones tech (caras) y mantén diversificación.
+                </div>
+            </section>
+            <section id="tendencias">
+                <h2>2. Tendencias de inversión clave para 2025</h2>
+                <p>No todas las tendencias son iguales. Algunas son modas pasajeras (¿recuerdas los NFTs en 2021?),
+                    otras son transformaciones estructurales que durarán décadas. Aquí las tendencias con fundamentos
+                    sólidos para 2025:</p>
+                <div class="table-wrapper fade-in-scroll">
+                    <table class="simple-table">
+                        <thead>
+                            <tr>
+                                <th>Tendencia</th>
+                                <th>Potencial</th>
+                                <th>Riesgo</th>
+                                <th>Horizonte</th>
+                                <th>Cómo invertir</th>
+                                <th>Inversión mínima</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>IA Generativa</strong></td>
+                                <td style="color:#00c853;">Muy alto (20-50%/año)</td>
+                                <td style="color:#ff9800;">Alto (volatilidad)</td>
+                                <td>5-10 años</td>
+                                <td>NVIDIA, Microsoft, Google, ASML</td>
+                                <td>500€ (ETF) / 2.000€ (acciones)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semiconductores</strong></td>
+                                <td style="color:#00c853;">Alto (15-30%/año)</td>
+                                <td style="color:#ffc107;">Medio (cíclico)</td>
+                                <td>3-7 años</td>
+                                <td>TSMC, AMD, Intel, ETF SMH</td>
+                                <td>500€ (ETF) / 1.500€ (acciones)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Energía Limpia</strong></td>
+                                <td style="color:#4caf50;">Medio-Alto (10-20%/año)</td>
+                                <td style="color:#ffc107;">Medio (regulación)</td>
+                                <td>10+ años</td>
+                                <td>ETFs: ICLN, TAN, QCLN</td>
+                                <td>300€ (ETF)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Salud Digital</strong></td>
+                                <td style="color:#4caf50;">Medio-Alto (12-18%/año)</td>
+                                <td style="color:#ffc107;">Medio (adopción)</td>
+                                <td>5-10 años</td>
+                                <td>Teladoc, Veeva Systems, ETF EDOC</td>
+                                <td>500€ (ETF) / 1.000€ (acciones)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ciberseguridad</strong></td>
+                                <td style="color:#4caf50;">Medio (10-15%/año)</td>
+                                <td style="color:#4caf50;">Bajo (defensivo)</td>
+                                <td>5+ años</td>
+                                <td>CrowdStrike, Palo Alto, ETF HACK</td>
+                                <td>400€ (ETF) / 1.200€ (acciones)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vehículos Eléctricos</strong></td>
+                                <td style="color:#ffc107;">Medio (8-15%/año)</td>
+                                <td style="color:#ff9800;">Alto (competencia)</td>
+                                <td>5-10 años</td>
+                                <td>Tesla, BYD, ETF DRIV</td>
+                                <td>400€ (ETF) / 2.000€ (Tesla)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info" style="background: linear-gradient(135deg, #e3f2fd 0%, #fff 100%);">
+                        <h3>💡 Tendencia destacada: IA Generativa</h3>
+                        <p><strong>Por qué es importante:</strong> ChatGPT alcanzó 100M usuarios en 2 meses (vs 2.5 años
+                            Instagram). Adopción empresarial explosiva.</p>
+                        <p><strong>Ganadores claros:</strong></p>
+                        <ul>
+                            <li><strong>NVIDIA:</strong> Monopolio GPUs (90% cuota). P/E 65 pero crece 88%/año.</li>
+                            <li><strong>Microsoft:</strong> Copilot integrado en Office (400M usuarios). Inversión $13B
+                                en OpenAI.</li>
+                            <li><strong>Google:</strong> Gemini compite con GPT-4. Infraestructura cloud líder.</li>
+                        </ul>
+                        <p><strong>Riesgo:</strong> Valoraciones muy altas. Si IA no cumple expectativas → corrección
+                            -30-50%.</p>
+                        <p><strong>Estrategia:</strong> Máximo 20% portfolio. Preferir líderes establecidos vs startups.
+                        </p>
+                    </div>
+                    <div class="card-info" style="background: linear-gradient(135deg, #fff3e0 0%, #fff 100%);">
+                        <h3>⚡ Tendencia sólida: Energía Limpia</h3>
+                        <p><strong>Por qué es importante:</strong> UE obliga 42% energía renovable para 2030. USA
+                            invierte $369B (Inflation Reduction Act).</p>
+                        <p><strong>Subsectores:</strong></p>
+                        <ul>
+                            <li><strong>Solar:</strong> Costes cayeron 90% en 10 años. Paridad con fósiles alcanzada.
+                            </li>
+                            <li><strong>Eólica:</strong> Offshore crece 20%/año. Proyectos gigantes en Mar del Norte.
+                            </li>
+                            <li><strong>Baterías:</strong> Clave para almacenamiento. Litio, cobalto, níquel en demanda.
+                            </li>
+                        </ul>
+                        <p><strong>Cómo invertir:</strong> ETF ICLN (diversificado) o TAN (solar puro).</p>
+                        <p><strong>Horizonte:</strong> 10+ años. Volatilidad corto plazo pero tendencia clara largo
+                            plazo.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="activos">
+                <h2>3. Tipos de activos: Dónde invertir en 2025</h2>
+                <p>Cada activo tiene características únicas de rentabilidad, riesgo y liquidez. La clave está en
+                    combinarlos según tu perfil y objetivos:</p>
+                <div class="table-wrapper fade-in-scroll">
+                    <table class="simple-table">
+                        <thead>
+                            <tr>
+                                <th>Activo</th>
+                                <th>Rentabilidad esperada 2025</th>
+                                <th>Riesgo (volatilidad)</th>
+                                <th>Liquidez</th>
+                                <th>Inversión mínima</th>
+                                <th>Recomendación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Acciones USA (S&P 500)</strong></td>
+                                <td style="color:#00c853;">8-10% anual</td>
+                                <td style="color:#ff9800;">Alto (±20%)</td>
+                                <td style="color:#00c853;">Alta (venta instantánea)</td>
+                                <td>100€ (ETF VOO)</td>
+                                <td style="color:#00c853;">⭐⭐⭐⭐⭐ Core portfolio</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Acciones Europa (Euro Stoxx)</strong></td>
+                                <td style="color:#4caf50;">6-8% anual</td>
+                                <td style="color:#ff9800;">Alto (±18%)</td>
+                                <td style="color:#00c853;">Alta</td>
+                                <td>100€ (ETF)</td>
+                                <td style="color:#4caf50;">⭐⭐⭐⭐ Diversificación</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bonos corporativos (Investment Grade)</strong></td>
+                                <td style="color:#ffc107;">4-5% anual</td>
+                                <td style="color:#4caf50;">Bajo (±5%)</td>
+                                <td style="color:#ffc107;">Media</td>
+                                <td>1.000€</td>
+                                <td style="color:#4caf50;">⭐⭐⭐⭐ Estabilidad</td>
+                            </tr>
+                            <tr>
+                                <td><strong>REITs (Inmobiliario cotizado)</strong></td>
+                                <td style="color:#4caf50;">6-8% anual (dividendos + revalorización)</td>
+                                <td style="color:#ffc107;">Medio (±12%)</td>
+                                <td style="color:#00c853;">Alta</td>
+                                <td>100€ (ETF VNQ)</td>
+                                <td style="color:#4caf50;">⭐⭐⭐⭐ Ingresos pasivos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Oro (ETF físico)</strong></td>
+                                <td style="color:#ffc107;">3-5% anual</td>
+                                <td style="color:#4caf50;">Bajo (±10%)</td>
+                                <td style="color:#00c853;">Alta</td>
+                                <td>50€ (ETF GLD)</td>
+                                <td style="color:#ffc107;">⭐⭐⭐ Refugio (5-10% max)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Criptomonedas (Bitcoin, Ethereum)</strong></td>
+                                <td style="color:#00c853;">15%+ anual (muy volátil)</td>
+                                <td style="color:#f44336;">Muy alto (±50%)</td>
+                                <td style="color:#00c853;">Alta</td>
+                                <td>10€</td>
+                                <td style="color:#ff9800;">⭐⭐ Especulativo (5% max)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Depósitos bancarios</strong></td>
+                                <td style="color:#ff9800;">3-4% anual (bajando)</td>
+                                <td style="color:#00c853;">Muy bajo (0%)</td>
+                                <td style="color:#00c853;">Alta</td>
+                                <td>1.000€</td>
+                                <td style="color:#ffc107;">⭐⭐⭐ Temporal (fondo emergencia)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cuenta corriente</strong></td>
+                                <td style="color:#f44336;">0% (pierdes vs inflación)</td>
+                                <td style="color:#00c853;">Muy bajo (0%)</td>
+                                <td style="color:#00c853;">Alta</td>
+                                <td>0€</td>
+                                <td style="color:#f44336;">❌ Solo gastos mensuales</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Rentabilidad vs Riesgo por tipo de activo</h3>
+                    <div class="chart-wrapper"><canvas id="riskReturnChart"></canvas></div>
+                </div>
+                <div class="callout callout-success">
+                    <strong>Regla de oro de diversificación:</strong> No pongas más del 30% de tu portfolio en un solo
+                    activo (excepto fondos indexados globales). Si NVIDIA cae -50%, solo pierdes 15% si tenías 30%. Si
+                    tenías 100%, pierdes 50%.
+                </div>
+            </section>
+            <section id="carteras">
+                <h2>4. Carteras modelo según perfil de riesgo</h2>
+                <p>No existe una cartera "perfecta" universal. La mejor cartera es la que se adapta a TU situación:
+                    edad, objetivos, tolerancia al riesgo y horizonte temporal. Aquí tres modelos probados:</p>
+                <div class="timeline fade-in-scroll">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Cartera Conservadora (60/40) - Perfil Defensivo</div>
+                        <div class="timeline-content">
+                            <p><strong>Para quién:</strong> Jubilados, personas cerca de jubilación (55+ años), aversión
+                                alta al riesgo, necesidad de ingresos estables.</p>
+                            <p><strong>Objetivo principal:</strong> Preservar capital y generar ingresos predecibles.
+                                Crecimiento secundario.</p>
+                            <p><strong>Distribución detallada:</strong></p>
+                            <ul>
+                                <li><strong>40% Bonos corporativos investment grade:</strong> Empresas sólidas (Apple,
+                                    Microsoft). Cupones 4-5% anual. Vencimientos 5-10 años.</li>
+                                <li><strong>30% Acciones dividendos (Dividend Aristocrats):</strong> Empresas que suben
+                                    dividendo 25+ años consecutivos. Ejemplos: Coca-Cola, Johnson & Johnson, Procter &
+                                    Gamble. Dividendo 3-4% + crecimiento 5-7%.</li>
+                                <li><strong>20% REITs (inmobiliario cotizado):</strong> Ingresos por alquiler. Dividendo
+                                    4-6% anual. Diversificación: residencial, comercial, logística.</li>
+                                <li><strong>10% Oro + Efectivo:</strong> 5% oro (refugio crisis), 5% efectivo
+                                    (oportunidades + emergencias).</li>
+                            </ul>
+                            <p><strong>Rentabilidad esperada:</strong> 5-6% anual (3-4% real tras inflación 3.2%)</p>
+                            <p><strong>Máxima caída esperada:</strong> -10% en año muy malo (crisis 2008: -12%)</p>
+                            <p><strong>Rebalanceo:</strong> Anual. Si acciones suben mucho, vender y comprar bonos para
+                                volver a 60/40.</p>
+                            <p><strong>Ejemplo con 100.000€:</strong> 40k bonos + 30k acciones dividendos + 20k REITs +
+                                5k oro + 5k efectivo</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Cartera Moderada (70/30) - Perfil Equilibrado</div>
+                        <div class="timeline-content">
+                            <p><strong>Para quién:</strong> 40-55 años, tolerancia media al riesgo, horizonte 10-20
+                                años, busca equilibrio crecimiento/estabilidad.</p>
+                            <p><strong>Objetivo principal:</strong> Crecimiento moderado con volatilidad controlada.
+                                Preparación jubilación.</p>
+                            <p><strong>Distribución detallada:</strong></p>
+                            <ul>
+                                <li><strong>50% Acciones globales diversificadas:</strong> 30% S&P 500 (USA), 15% MSCI
+                                    World ex-USA (Europa, Japón, Canadá), 5% Emergentes (China, India, Brasil). ETFs
+                                    recomendados: VOO, VEA, VWO.</li>
+                                <li><strong>20% Bonos corporativos + gubernamentales:</strong> Mix bonos empresas (60%)
+                                    y bonos gobierno (40%). Duración media 5-7 años.</li>
+                                <li><strong>15% REITs diversificados:</strong> Exposición global inmobiliario. ETF VNQ
+                                    (USA) + VNQI (internacional).</li>
+                                <li><strong>10% Acciones tech/growth (satélite):</strong> Exposición tendencias (IA,
+                                    semiconductores). NVIDIA, Microsoft, ASML. Máximo 10% para controlar riesgo.</li>
+                                <li><strong>5% Oro (cobertura):</strong> Protección contra crisis. ETF GLD o IAU.</li>
+                            </ul>
+                            <p><strong>Rentabilidad esperada:</strong> 7-8% anual (4-5% real tras inflación)</p>
+                            <p><strong>Máxima caída esperada:</strong> -18% en año muy malo (crisis 2008: -22%)</p>
+                            <p><strong>Rebalanceo:</strong> Anual o cuando alguna posición se desvíe >5% del objetivo.
+                            </p>
+                            <p><strong>Ejemplo con 100.000€:</strong> 50k acciones globales + 20k bonos + 15k REITs +
+                                10k tech + 5k oro</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Cartera Agresiva (90/10) - Perfil Crecimiento</div>
+                        <div class="timeline-content">
+                            <p><strong>Para quién:</strong>
+                                <40 años, alta tolerancia al riesgo, horizonte 20+ años, busca máximo crecimiento, puede
+                                    aguantar caídas -30%.</p>
+                                    <p><strong>Objetivo principal:</strong> Máximo crecimiento a largo plazo.
+                                        Volatilidad es oportunidad, no problema.</p>
+                                    <p><strong>Distribución detallada:</strong></p>
+                                    <ul>
+                                        <li><strong>60% Acciones globales core:</strong> 40% S&P 500, 15% NASDAQ (tech),
+                                            5% Europa. Base sólida crecimiento.</li>
+                                        <li><strong>20% Acciones tech/growth agresivo:</strong> Semiconductores (NVIDIA,
+                                            AMD, ASML), IA (Microsoft, Google), Cloud (Amazon AWS). Empresas creciendo
+                                            20-50%/año.</li>
+                                        <li><strong>10% Mercados emergentes:</strong> India (crecimiento 7%/año PIB),
+                                            Vietnam (manufactura), México (nearshoring USA). ETF VWO o EEM.</li>
+                                        <li><strong>5% Criptomonedas (especulativo):</strong> 3% Bitcoin, 2% Ethereum.
+                                            Solo si toleras volatilidad extrema. Puede caer -50% en meses.</li>
+                                        <li><strong>5% Bonos (estabilidad mínima):</strong> Pequeño colchón para
+                                            rebalancear en caídas. Bonos corto plazo (1-3 años).</li>
+                                    </ul>
+                                    <p><strong>Rentabilidad esperada:</strong> 9-11% anual (6-8% real tras inflación)
+                                    </p>
+                                    <p><strong>Máxima caída esperada:</strong> -30% en año muy malo (crisis 2008: -37%,
+                                        pero recuperó en 5 años)</p>
+                                    <p><strong>Rebalanceo:</strong> Anual. Aprovechar caídas para comprar más (DCA
+                                        agresivo).</p>
+                                    <p><strong>Ejemplo con 100.000€:</strong> 60k acciones core + 20k tech/growth + 10k
+                                        emergentes + 5k cripto + 5k bonos</p>
+                                    <p><strong>Advertencia:</strong> Esta cartera puede caer -30% en un año malo. Si eso
+                                        te haría vender en pánico, NO es para ti. Requiere disciplina férrea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container fade-in-scroll">
+                    <h3 class="chart-title">Comparativa carteras modelo: Evolución 10.000€ en 10 años</h3>
+                    <div class="chart-wrapper"><canvas id="portfolioComparisonChart"></canvas></div>
+                </div>
+                <div class="callout callout-warning">
+                    <strong>Importante:</strong> Estas carteras son MODELOS, no recetas exactas. Ajusta según tu
+                    situación. Vives en España → aumenta peso Europa. Trabajas en tech → reduce peso tech (ya tienes
+                    exposición vía sueldo). Tienes casa → reduce REITs. Personaliza siempre.
+                </div>
+            </section>
+            <section id="estrategias">
+                <h2>5. Estrategias de inversión ganadoras (probadas históricamente)</h2>
+                <p>Más importante que QUÉ comprar es CÓMO comprar. Estas estrategias han demostrado funcionar durante
+                    décadas:</p>
+                <div class="grid-two fade-in-scroll">
+                    <div class="card-info" style="border-top:4px solid #00c853;">
+                        <h3>✅ Estrategia #1: DCA (Dollar Cost Averaging)</h3>
+                        <p><strong>Qué es:</strong> Invertir cantidad fija mensual, independientemente del precio del
+                            mercado. Ejemplo: 500€/mes en S&P 500, siempre, suba o baje.</p>
+                        <p><strong>Por qué funciona:</strong> Elimina el timing (imposible de acertar). Compras más
+                            acciones cuando baja (baratas), menos cuando sube (caras). Promedio de coste favorable.</p>
+                        <p><strong>Dato histórico:</strong> DCA en S&P 500 ha superado al market timing en el 80% de
+                            periodos de 10 años (estudio Vanguard 1926-2023).</p>
+                        <p><strong>Ejemplo real:</strong> Inviertes 500€/mes durante 10 años = 60.000€ aportados. Con
+                            rentabilidad 8% anual → 91.500€ finales. Ganancia: 31.500€ (52%).</p>
+                        <p><strong>Ventaja psicológica:</strong> No sufres intentando "adivinar" el mejor momento.
+                            Automatizas y olvidas.</p>
+                        <p><strong>Cómo implementar:</strong> Transferencia automática día 1 cada mes desde cuenta a
+                            broker. Compra automática ETF (muchos brokers lo permiten).</p>
+                    </div>
+                    <div class="card-info" style="border-top:4px solid #2196f3;">
+                        <h3>✅ Estrategia #2: Buy and Hold (Comprar y mantener)</h3>
+                        <p><strong>Qué es:</strong> Comprar activos de calidad y mantenerlos 10-20-30 años, ignorando
+                            volatilidad corto plazo.</p>
+                        <p><strong>Por qué funciona:</strong> Aprovecha interés compuesto + minimiza comisiones + evita
+                            errores emocionales (vender en pánico).</p>
+                        <p><strong>Dato histórico:</strong> S&P 500 NUNCA ha dado pérdidas en periodos de 20+ años
+                            (datos desde 1926). Peor caso: +2% anual. Mejor caso: +18% anual.</p>
+                        <p><strong>Ejemplo Warren Buffett:</strong> Compró Coca-Cola en 1988 a $2.50/acción. Hoy vale
+                            $60 (24x) + dividendos acumulados. Nunca vendió.</p>
+                        <p><strong>Requisito clave:</strong> Solo invierte dinero que NO necesitarás en 10+ años. Si
+                            necesitas el dinero en 3 años, NO uses esta estrategia.</p>
+                        <p><strong>Enemigo principal:</strong> Pánico en caídas. Crisis 2008: -50%. Quien vendió →
+                            pérdida permanente. Quien mantuvo → +150% en 2024.</p>
+                    </div>
+                    <div class="card-info" style="border-top:4px solid #ff9800;">
+                        <h3>✅ Estrategia #3: Rebalanceo anual</h3>
+                        <p><strong>Qué es:</strong> Ajustar portfolio a porcentajes objetivo 1 vez/año. Si acciones
+                            suben mucho (75% vs objetivo 70%), vender 5% y comprar bonos.</p>
+                        <p><strong>Por qué funciona:</strong> Vende caro (activos que subieron) y compra barato (activos
+                            que bajaron). Disciplina automática "compra bajo, vende alto".</p>
+                        <p><strong>Ejemplo práctico:</strong> Cartera 70/30 (acciones/bonos). Tras año bueno: acciones
+                            80%, bonos 20%. Rebalanceo: vender 10% acciones, comprar bonos. Vuelves a 70/30.</p>
+                        <p><strong>Beneficio adicional:</strong> Controla riesgo. Sin rebalanceo, portfolio puede
+                            volverse 90% acciones (muy arriesgado) sin que te des cuenta.</p>
+                        <p><strong>Frecuencia óptima:</strong> 1 vez/año suficiente. Rebalancear mensual = comisiones
+                            altas + impuestos. Anual = equilibrio perfecto.</p>
+                        <p><strong>Truco fiscal:</strong> Rebalancear en cuentas con ventajas fiscales (planes
+                            pensiones, cuentas retirement) para evitar impuestos por venta.</p>
+                    </div>
+                    <div class="card-info" style="border-top:4px solid #9c27b0;">
+                        <h3>✅ Estrategia #4: Diversificación geográfica</h3>
+                        <p><strong>Qué es:</strong> No invertir solo en tu país. Distribuir entre USA (60%), Europa
+                            (25%), Asia (10%), Emergentes (5%).</p>
+                        <p><strong>Por qué funciona:</strong> Reduce riesgo país. Si USA cae (crisis 2008), Europa puede
+                            subir. Si Europa cae (crisis deuda 2011), Asia puede subir.</p>
+                        <p><strong>Dato histórico:</strong> Portfolio 100% USA (1970-2020): 10.5% anual. Portfolio
+                            global diversificado: 10.8% anual + menor volatilidad.</p>
+                        <p><strong>Cómo implementar fácil:</strong> ETF MSCI World (cubre 23 países desarrollados
+                            automáticamente). Un solo ETF = diversificación global.</p>
+                        <p><strong>Error común:</strong> "Invierto solo en España porque lo conozco". España = 1%
+                            economía mundial. Pierdes 99% oportunidades.</p>
+                        <p><strong>Recomendación 2025:</strong> 50% USA (motor innovación), 25% Europa (valuaciones
+                            baratas), 15% Asia (crecimiento), 10% emergentes (alto riesgo/retorno).</p>
+                    </div>
+                </div>
+                <div class="callout callout-success">
+                    <strong>Regla de oro final:</strong> La mejor estrategia es la que puedes MANTENER. No sirve tener
+                    la cartera "perfecta" si la abandonas en la primera caída del -20%. Elige estrategia que se adapte a
+                    tu psicología, no solo a matemáticas.
+                </div>
+            </section>
+            <section id="faq">
+                <h2>6. Preguntas frecuentes sobre inversión 2025</h2>
+                <details class="faq-item">
+                    <summary>¿Es buen momento para invertir en 2025 o espero a una corrección?</summary>
+                    <p><strong>Respuesta corta:</strong> Sí, siempre es buen momento si inviertes a largo plazo (10+
+                        años) y usas DCA.</p>
+                    <p><strong>Respuesta larga:</strong> Intentar "adivinar" el mejor momento (market timing) es
+                        imposible incluso para profesionales. Datos históricos:</p>
+                    <ul>
+                        <li>El S&P 500 sube el 70% de los años. Si esperas corrección, pierdes esos años de subida.</li>
+                        <li>Cada caída (-20%, -30%, -50%) siempre se ha recuperado. Siempre.</li>
+                        <li>Estudio Fidelity: Mejores inversores eran los que olvidaron que tenían cuenta (literalmente
+                            muertos o olvidaron contraseña).</li>
+                    </ul>
+                    <p><strong>Estrategia recomendada:</strong> Empieza con DCA (inversión mensual fija) HOY. Si cae
+                        después, compras más barato. Si sube, ya estás dentro. Ganas en ambos casos.</p>
+                    <p><strong>Excepción:</strong> Si necesitas el dinero en <5 años, NO inviertas en bolsa. Usa
+                            depósitos (3-4%) o bonos corto plazo.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto dinero necesito para empezar a invertir?</summary>
+                    <p><strong>Mínimo absoluto:</strong> 100€ (con ETFs o fondos indexados en brokers sin comisiones
+                        como DeGiro, Interactive Brokers, Trade Republic).</p>
+                    <p><strong>Recomendado para diversificar bien:</strong> 1.000€ inicial + 200-500€/mes en
+                        aportaciones.</p>
+                    <p><strong>Ejemplo inicio con 1.000€:</strong></p>
+                    <ul>
+                        <li>700€ en ETF S&P 500 (VOO o VUSA)</li>
+                        <li>200€ en ETF bonos (AGG o VGEA)</li>
+                        <li>100€ en oro (GLD)</li>
+                    </ul>
+                    <p>Luego añade 200€/mes con DCA en la misma proporción (70/20/10).</p>
+                    <p><strong>Importante:</strong> Antes de invertir, ten fondo emergencia (3-6 meses gastos en
+                        cuenta). Si no tienes colchón, primero ahorra eso.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿ETFs o fondos indexados? ¿Cuál es mejor?</summary>
+                    <p><strong>Diferencias clave:</strong></p>
+                    <ul>
+                        <li><strong>ETFs:</strong> Cotizan en bolsa como acciones. Compras/vendes en tiempo real durante
+                            horario mercado. Comisiones: 0.03-0.20% anual. Ejemplos: VOO, VTI, VWCE.</li>
+                        <li><strong>Fondos indexados:</strong> Compras al final del día (precio cierre). Comisiones:
+                            0.10-0.50% anual. Ejemplos: Vanguard Total Stock, Fidelity 500 Index.</li>
+                    </ul>
+                    <p><strong>Recomendación:</strong></p>
+                    <ul>
+                        <li><strong>ETFs si:</strong> Inviertes >1.000€, quieres menores comisiones, usas broker
+                            internacional.</li>
+                        <li><strong>Fondos si:</strong> Inviertes <1.000€, prefieres banco tradicional, quieres
+                                aportaciones automáticas sin pensar.</li>
+                    </ul>
+                    <p><strong>Mejores ETFs 2025:</strong> VOO (S&P 500, 0.03%), VTI (USA total, 0.03%), VWCE (mundo,
+                        0.22%), AGG (bonos, 0.03%).</p>
+                    <p><strong>Fiscalidad España:</strong> ETFs europeos (UCITS) tienen ventaja fiscal vs ETFs USA.
+                        Busca versión europea: VUSA (europeo) vs VOO (USA).</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Debo invertir en acciones individuales o solo ETFs?</summary>
+                    <p><strong>Para el 95% de inversores: Solo ETFs.</strong></p>
+                    <p><strong>Por qué ETFs ganan:</strong></p>
+                    <ul>
+                        <li><strong>Diversificación instantánea:</strong> S&P 500 = 500 empresas. Si una quiebra, solo
+                            pierdes 0.2%.</li>
+                        <li><strong>Menor riesgo:</strong> Enron, Lehman Brothers, Wirecard quebraron. Inversores
+                            perdieron 100%. S&P 500 siguió subiendo.</li>
+                        <li><strong>Menos tiempo:</strong> No necesitas analizar balances, leer noticias, seguir
+                            earnings. Compras y olvidas.</li>
+                        <li><strong>Mejores resultados:</strong> El 90% de gestores profesionales NO superan al S&P 500
+                            en 15 años. Si ellos no pueden, tú tampoco.</li>
+                    </ul>
+                    <p><strong>Acciones individuales solo si:</strong></p>
+                    <ul>
+                        <li>Tienes tiempo para analizar empresas (10+ horas/semana)</li>
+                        <li>Toleras volatilidad extrema (acciones individuales pueden caer -50-70%)</li>
+                        <li>Es máximo 20% de tu portfolio (80% en ETFs como base)</li>
+                    </ul>
+                    <p><strong>Ejemplo Warren Buffett:</strong> En su testamento dejó instrucciones: "90% en S&P 500,
+                        10% bonos". Ni siquiera él recomienda stock picking para su familia.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué hago si el mercado cae -20% justo después de invertir?</summary>
+                    <p><strong>Respuesta corta:</strong> Nada. Mantén y sigue invirtiendo (DCA).</p>
+                    <p><strong>Respuesta larga:</strong> Las caídas son NORMALES y OPORTUNIDADES:</p>
+                    <ul>
+                        <li>El S&P 500 cae -10% cada 1-2 años (corrección normal)</li>
+                        <li>Cae -20% cada 3-5 años (bear market)</li>
+                        <li>Cae -30%+ cada 10-15 años (crisis: 2000 dot-com, 2008 financiera, 2020 COVID)</li>
+                    </ul>
+                    <p><strong>Estrategia correcta:</strong></p>
+                    <ol>
+                        <li><strong>NO vendas:</strong> Cristalizas pérdidas. Si mantienes, es solo pérdida "en papel".
+                        </li>
+                        <li><strong>Sigue con DCA:</strong> Ahora compras 20% más barato. Oportunidad.</li>
+                        <li><strong>Recuerda historia:</strong> Todas las caídas se recuperaron. Siempre. Sin excepción.
+                        </li>
+                    </ol>
+                    <p><strong>Ejemplo real crisis 2008:</strong></p>
+                    <ul>
+                        <li>Inversor A: Invirtió 10.000€ en marzo 2008. Cayó a 5.000€ en marzo 2009 (-50%). Vendió por
+                            pánico. Pérdida: -5.000€.</li>
+                        <li>Inversor B: Invirtió 10.000€ en marzo 2008. Cayó a 5.000€. Mantuvo + siguió invirtiendo
+                            200€/mes. En 2024: 45.000€. Ganancia: +35.000€.</li>
+                    </ul>
+                    <p><strong>Clave psicológica:</strong> Solo invierte dinero que NO necesitarás en 10+ años. Así
+                        puedes aguantar caídas sin estrés.</p>
+                </details>
+            </section>
+        </article>
     </main>
-
-
-    <footer class="article-footer">
-        <p>© 2025 AV Finanzas – Todos los derechos reservados</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>AV Finanzas</h3>
+                <p>Tu portal de información financiera.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="mercados.html">Mercados</a></li>
+                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">© 2025 AV Finanzas. Todos los derechos reservados.</p>
     </footer>
-
     <script src="article-interactive.js"></script>
-
+    <script>
+        createBarChart('indicesPerformanceChart', ['S&P 500', 'NASDAQ', 'MSCI World', 'Euro Stoxx', 'Nikkei', 'Emergentes'],
+            [{ label: 'Rentabilidad 2024 (%)', data: [10.5, 12.8, 9.2, 7.5, 15.2, 6.8], backgroundColor: ['#2196f3', '#00c853', '#ff9800', '#9c27b0', '#ffc107', '#f44336'] }]);
+        const ctx = document.getElementById('riskReturnChart');
+        new Chart(ctx, {
+            type: 'scatter', data: {
+                datasets: [{ label: 'Acciones USA', data: [{ x: 20, y: 10 }], backgroundColor: '#2196f3', pointRadius: 8 },
+                { label: 'Bonos', data: [{ x: 5, y: 4.5 }], backgroundColor: '#00c853', pointRadius: 8 }, { label: 'REITs', data: [{ x: 12, y: 7 }], backgroundColor: '#ff9800', pointRadius: 8 },
+                { label: 'Oro', data: [{ x: 10, y: 4 }], backgroundColor: '#ffc107', pointRadius: 8 }, { label: 'Cripto', data: [{ x: 50, y: 15 }], backgroundColor: '#f44336', pointRadius: 8 },
+                { label: 'Depósitos', data: [{ x: 1, y: 3.5 }], backgroundColor: '#4caf50', pointRadius: 8 }]
+            },
+            options: { scales: { x: { title: { display: true, text: 'Riesgo - Volatilidad (%)' }, min: 0, max: 60 }, y: { title: { display: true, text: 'Rentabilidad esperada (%)' }, min: 0, max: 18 } }, plugins: { legend: { display: true } } }
+        });
+        createLineChart('portfolioComparisonChart', ['Año 0', 'Año 2', 'Año 4', 'Año 6', 'Año 8', 'Año 10'],
+            [{ label: 'Conservadora (60/40)', data: [10000, 11200, 12500, 14000, 15700, 17600], borderColor: '#4caf50', backgroundColor: 'rgba(76,175,80,0.1)', tension: 0.4 },
+            { label: 'Moderada (70/30)', data: [10000, 11600, 13400, 15500, 17900, 20700], borderColor: '#ff9800', backgroundColor: 'rgba(255,152,0,0.1)', tension: 0.4 },
+            { label: 'Agresiva (90/10)', data: [10000, 12100, 14600, 17700, 21400, 25900], borderColor: '#f44336', backgroundColor: 'rgba(244,67,54,0.1)', tension: 0.4 }]);
+    </script>
 </body>
 
 </html>
